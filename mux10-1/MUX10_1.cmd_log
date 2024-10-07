@@ -1,0 +1,49 @@
+xst -intstyle ise -ifn "/home/ise/mux10-1/MUX10_1.xst" -ofn "/home/ise/mux10-1/MUX10_1.syr" 
+xst -intstyle ise -ifn "/home/ise/mux10-1/MUX10_1.xst" -ofn "/home/ise/mux10-1/MUX10_1.syr" 
+netgen -intstyle ise -insert_glbl true -w -dir netgen/synthesis -ofmt verilog -sim MUX10_1.ngc MUX10_1_synthesis.v 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc /home/ise/Documents/fileganchan/ganchanmux10_1.ucf -p xc3s500e-fg320-5 MUX10_1.ngc MUX10_1.ngd  
+map -intstyle ise -p xc3s500e-fg320-5 -cm area -ir off -pr off -c 100 -o MUX10_1_map.ncd MUX10_1.ngd MUX10_1.pcf 
+par -w -intstyle ise -ol high -t 1 MUX10_1_map.ncd MUX10_1.ncd MUX10_1.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml MUX10_1.twx MUX10_1.ncd -o MUX10_1.twr MUX10_1.pcf 
+bitgen -intstyle ise -f MUX10_1.ut MUX10_1.ncd 
+xst -intstyle ise -ifn "/home/ise/mux10-1/MUX10_1.xst" -ofn "/home/ise/mux10-1/MUX10_1.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc /home/ise/Documents/fileganchan/ganchanmux10_1.ucf -p xc3s500e-fg320-5 MUX10_1.ngc MUX10_1.ngd  
+map -intstyle ise -p xc3s500e-fg320-5 -cm area -ir off -pr off -c 100 -o MUX10_1_map.ncd MUX10_1.ngd MUX10_1.pcf 
+par -w -intstyle ise -ol high -t 1 MUX10_1_map.ncd MUX10_1.ncd MUX10_1.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml MUX10_1.twx MUX10_1.ncd -o MUX10_1.twr MUX10_1.pcf 
+bitgen -intstyle ise -f MUX10_1.ut MUX10_1.ncd 
+xst -intstyle ise -ifn "/home/ise/mux10-1/MUX10_1.xst" -ofn "/home/ise/mux10-1/MUX10_1.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc /home/ise/Documents/fileganchan/ganchanmux10_1.ucf -p xc3s500e-fg320-5 MUX10_1.ngc MUX10_1.ngd  
+map -intstyle ise -p xc3s500e-fg320-5 -cm area -ir off -pr off -c 100 -o MUX10_1_map.ncd MUX10_1.ngd MUX10_1.pcf 
+par -w -intstyle ise -ol high -t 1 MUX10_1_map.ncd MUX10_1.ncd MUX10_1.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml MUX10_1.twx MUX10_1.ncd -o MUX10_1.twr MUX10_1.pcf 
+bitgen -intstyle ise -f MUX10_1.ut MUX10_1.ncd 
+xst -intstyle ise -ifn "/home/ise/mux10-1/MUX10_1.xst" -ofn "/home/ise/mux10-1/MUX10_1.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc /home/ise/Documents/fileganchan/ganchanmux10_1.ucf -p xc3s500e-fg320-5 MUX10_1.ngc MUX10_1.ngd  
+map -intstyle ise -p xc3s500e-fg320-5 -cm area -ir off -pr off -c 100 -o MUX10_1_map.ncd MUX10_1.ngd MUX10_1.pcf 
+par -w -intstyle ise -ol high -t 1 MUX10_1_map.ncd MUX10_1.ncd MUX10_1.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml MUX10_1.twx MUX10_1.ncd -o MUX10_1.twr MUX10_1.pcf 
+bitgen -intstyle ise -f MUX10_1.ut MUX10_1.ncd 
+netgen -intstyle ise -insert_glbl true -w -dir netgen/synthesis -ofmt verilog -sim MUX10_1.ngc MUX10_1_synthesis.v 
+xst -intstyle ise -ifn "/home/ise/mux10-1/MUX10_1.xst" -ofn "/home/ise/mux10-1/MUX10_1.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc /home/ise/Documents/fileganchan/ganchanmux10_1.ucf -p xc3s500e-fg320-5 MUX10_1.ngc MUX10_1.ngd  
+map -intstyle ise -p xc3s500e-fg320-5 -cm area -ir off -pr off -c 100 -o MUX10_1_map.ncd MUX10_1.ngd MUX10_1.pcf 
+par -w -intstyle ise -ol high -t 1 MUX10_1_map.ncd MUX10_1.ncd MUX10_1.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml MUX10_1.twx MUX10_1.ncd -o MUX10_1.twr MUX10_1.pcf 
+bitgen -intstyle ise -f MUX10_1.ut MUX10_1.ncd 
+netgen -intstyle ise -insert_glbl true -w -dir netgen/synthesis -ofmt verilog -sim MUX10_1.ngc MUX10_1_synthesis.v 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc /home/ise/Documents/fileganchan/ganchanmux10_1.ucf -p xc3s500e-fg320-5 MUX10_1.ngc MUX10_1.ngd  
+map -intstyle ise -p xc3s500e-fg320-5 -cm area -ir off -pr off -c 100 -o MUX10_1_map.ncd MUX10_1.ngd MUX10_1.pcf 
+par -w -intstyle ise -ol high -t 1 MUX10_1_map.ncd MUX10_1.ncd MUX10_1.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml MUX10_1.twx MUX10_1.ncd -o MUX10_1.twr MUX10_1.pcf 
+bitgen -intstyle ise -f MUX10_1.ut MUX10_1.ncd 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc /home/ise/Documents/fileganchan/ganchanmux10_1.ucf -p xc3s500e-fg320-5 MUX10_1.ngc MUX10_1.ngd  
+map -intstyle ise -p xc3s500e-fg320-5 -cm area -ir off -pr off -c 100 -o MUX10_1_map.ncd MUX10_1.ngd MUX10_1.pcf 
+par -w -intstyle ise -ol high -t 1 MUX10_1_map.ncd MUX10_1.ncd MUX10_1.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml MUX10_1.twx MUX10_1.ncd -o MUX10_1.twr MUX10_1.pcf 
+bitgen -intstyle ise -f MUX10_1.ut MUX10_1.ncd 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc /home/ise/Documents/fileganchan/ganchanmux10_1.ucf -p xc3s500e-fg320-5 MUX10_1.ngc MUX10_1.ngd  
+map -intstyle ise -p xc3s500e-fg320-5 -cm area -ir off -pr off -c 100 -o MUX10_1_map.ncd MUX10_1.ngd MUX10_1.pcf 
+par -w -intstyle ise -ol high -t 1 MUX10_1_map.ncd MUX10_1.ncd MUX10_1.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml MUX10_1.twx MUX10_1.ncd -o MUX10_1.twr MUX10_1.pcf 
+bitgen -intstyle ise -f MUX10_1.ut MUX10_1.ncd 

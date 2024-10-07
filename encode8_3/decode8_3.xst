@@ -1,0 +1,5 @@
+set -tmpdir "/home/ise/encode8_3/xst/projnav.tmp"
+set -xsthdpdir "/home/ise/encode8_3/xst"
+elaborate
+-ifn decode8_3.prj
+-ifmt mixed

@@ -1,0 +1,3 @@
+verilog work "SANGDAN_TATDAN.v"
+verilog work "../chiaxung/sw1_2.v"
+verilog work "../sangdantatdan/main.v"

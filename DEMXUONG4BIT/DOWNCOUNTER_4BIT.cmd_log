@@ -1,0 +1,2 @@
+xst -intstyle ise -ifn "/home/ise/DEMXUONG4BIT/DOWNCOUNTER_4BIT.xst" -ofn "/home/ise/DEMXUONG4BIT/DOWNCOUNTER_4BIT.syr" 
+xst -intstyle ise -ifn "/home/ise/DEMXUONG4BIT/DOWNCOUNTER_4BIT.xst" -ofn "/home/ise/DEMXUONG4BIT/DOWNCOUNTER_4BIT.syr" 

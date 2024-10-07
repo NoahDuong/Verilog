@@ -1,0 +1,8 @@
+INTSTYLE=ise
+INFILE=/home/ise/Fulladder_4bit/cong4bit.ncd
+OUTFILE=/home/ise/Fulladder_4bit/cong4bit.bit
+FAMILY=Spartan3E
+PART=xc3s500e-5fg320
+WORKINGDIR=/home/ise/Fulladder_4bit
+LICENSE=ISE
+USER_INFO=8416_11442_1478797146_620

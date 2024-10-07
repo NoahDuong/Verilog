@@ -1,0 +1,5 @@
+set -tmpdir "/home/ise/exam1/xst/projnav.tmp"
+set -xsthdpdir "/home/ise/exam1/xst"
+elaborate
+-ifn EXAM.prj
+-ifmt mixed

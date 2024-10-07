@@ -1,0 +1,3 @@
+verilog work "UPCOUNTER_4BIT.v"
+verilog work "testbenchup4bit.v"
+verilog work "/opt/Xilinx/14.7/ISE_DS/ISE//verilog/src/glbl.v"

@@ -1,0 +1,43 @@
+Release 14.7 - par P.20131013 (lin64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+
+Mon Sep 16 09:43:40 2024
+
+32 signals are not completely routed.
+
+WARNING:ParHelpers:360 - Design is not completely routed.
+
+   A_IBUF
+   B_BUFGP
+   B_BUFGP/IBUFG
+   EN_IBUF
+   GLOBAL_LOGIC1
+   IN_0_IBUF
+   IN_1_IBUF
+   IN_2_IBUF
+   N01
+   N2
+   N4
+   N6
+   OUT_0__and0000
+   OUT_0__or0000
+   OUT_1__and0000
+   OUT_1__or0000
+   OUT_2__and0000
+   OUT_2__or0000
+   OUT_3__and0000
+   OUT_3__or0000
+   OUT_4__and0000
+   OUT_4__or0000
+   OUT_5__and0000
+   OUT_5__or0000
+   OUT_6__and0000
+   OUT_6__or0000
+   OUT_7__and0000
+   OUT_7__or0000
+   OUT_mux0000<2>
+   OUT_mux0000<3>
+   OUT_mux0000<6>
+   OUT_mux0000<7>
+
+

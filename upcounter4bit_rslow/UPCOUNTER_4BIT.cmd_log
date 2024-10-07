@@ -1,0 +1,13 @@
+xst -intstyle ise -ifn "/home/ise/upcounter4bit_rslow/UPCOUNTER_4BIT.xst" -ofn "/home/ise/upcounter4bit_rslow/UPCOUNTER_4BIT.syr" 
+xst -intstyle ise -ifn "/home/ise/upcounter4bit_rslow/UPCOUNTER_4BIT.xst" -ofn "/home/ise/upcounter4bit_rslow/UPCOUNTER_4BIT.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xc3s500e-fg320-5 UPCOUNTER_4BIT.ngc UPCOUNTER_4BIT.ngd  
+map -intstyle ise -p xc3s500e-fg320-5 -cm area -ir off -pr off -c 100 -o UPCOUNTER_4BIT_map.ncd UPCOUNTER_4BIT.ngd UPCOUNTER_4BIT.pcf 
+par -w -intstyle ise -ol high -t 1 UPCOUNTER_4BIT_map.ncd UPCOUNTER_4BIT.ncd UPCOUNTER_4BIT.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml UPCOUNTER_4BIT.twx UPCOUNTER_4BIT.ncd -o UPCOUNTER_4BIT.twr UPCOUNTER_4BIT.pcf 
+bitgen -intstyle ise -f UPCOUNTER_4BIT.ut UPCOUNTER_4BIT.ncd 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc /home/ise/Documents/fileganchan/ganchanUPCOUNTER_4bit.ucf -p xc3s500e-fg320-5 UPCOUNTER_4BIT.ngc UPCOUNTER_4BIT.ngd  
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc /home/ise/Documents/fileganchan/ganchanUPCOUNTER_4bit.ucf -p xc3s500e-fg320-5 UPCOUNTER_4BIT.ngc UPCOUNTER_4BIT.ngd  
+map -intstyle ise -p xc3s500e-fg320-5 -cm area -ir off -pr off -c 100 -o UPCOUNTER_4BIT_map.ncd UPCOUNTER_4BIT.ngd UPCOUNTER_4BIT.pcf 
+par -w -intstyle ise -ol high -t 1 UPCOUNTER_4BIT_map.ncd UPCOUNTER_4BIT.ncd UPCOUNTER_4BIT.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml UPCOUNTER_4BIT.twx UPCOUNTER_4BIT.ncd -o UPCOUNTER_4BIT.twr UPCOUNTER_4BIT.pcf 
+bitgen -intstyle ise -f UPCOUNTER_4BIT.ut UPCOUNTER_4BIT.ncd 

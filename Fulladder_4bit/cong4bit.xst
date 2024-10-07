@@ -1,0 +1,5 @@
+set -tmpdir "/home/ise/Fulladder_4bit/xst/projnav.tmp"
+set -xsthdpdir "/home/ise/Fulladder_4bit/xst"
+elaborate
+-ifn cong4bit.prj
+-ifmt mixed

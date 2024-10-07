@@ -1,0 +1,21 @@
+xst -intstyle ise -ifn "/home/ise/Fulladder_4bit/cong4bit.xst" -ofn "/home/ise/Fulladder_4bit/cong4bit.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xc3s500e-fg320-5 cong4bit.ngc cong4bit.ngd  
+map -intstyle ise -p xc3s500e-fg320-5 -cm area -ir off -pr off -c 100 -o cong4bit_map.ncd cong4bit.ngd cong4bit.pcf 
+par -w -intstyle ise -ol high -t 1 cong4bit_map.ncd cong4bit.ncd cong4bit.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml cong4bit.twx cong4bit.ncd -o cong4bit.twr cong4bit.pcf 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc /home/ise/Documents/fileganchan/ganchan4bit.ucf -p xc3s500e-fg320-5 cong4bit.ngc cong4bit.ngd  
+map -intstyle ise -p xc3s500e-fg320-5 -cm area -ir off -pr off -c 100 -o cong4bit_map.ncd cong4bit.ngd cong4bit.pcf 
+par -w -intstyle ise -ol high -t 1 cong4bit_map.ncd cong4bit.ncd cong4bit.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml cong4bit.twx cong4bit.ncd -o cong4bit.twr cong4bit.pcf 
+xst -intstyle ise -ifn "/home/ise/Fulladder_4bit/cong4bit.xst" -ofn "/home/ise/Fulladder_4bit/cong4bit.syr" 
+netgen -intstyle ise -ar Structure -tm cong4bit -w -dir netgen/synthesis -ofmt vhdl -sim cong4bit.ngc cong4bit_synthesis.vhd 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc /home/ise/Documents/fileganchan/ganchan4bit.ucf -p xc3s500e-fg320-5 cong4bit.ngc cong4bit.ngd  
+map -intstyle ise -p xc3s500e-fg320-5 -cm area -ir off -pr off -c 100 -o cong4bit_map.ncd cong4bit.ngd cong4bit.pcf 
+par -w -intstyle ise -ol high -t 1 cong4bit_map.ncd cong4bit.ncd cong4bit.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml cong4bit.twx cong4bit.ncd -o cong4bit.twr cong4bit.pcf 
+bitgen -intstyle ise -f cong4bit.ut cong4bit.ncd 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc /home/ise/Documents/fileganchan/ganchan4bit.ucf -p xc3s500e-fg320-5 cong4bit.ngc cong4bit.ngd  
+map -intstyle ise -p xc3s500e-fg320-5 -cm area -ir off -pr off -c 100 -o cong4bit_map.ncd cong4bit.ngd cong4bit.pcf 
+par -w -intstyle ise -ol high -t 1 cong4bit_map.ncd cong4bit.ncd cong4bit.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml cong4bit.twx cong4bit.ncd -o cong4bit.twr cong4bit.pcf 
+bitgen -intstyle ise -f cong4bit.ut cong4bit.ncd 

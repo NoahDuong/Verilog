@@ -1,0 +1,18 @@
+#-----------------------------------------------------------
+# PlanAhead v14.7 (64-bit)
+# Build 321239 by xbuild on Fri Sep 27 19:24:36 MDT 2013
+# Start of session at: Mon Sep  9 01:40:10 2024
+# Process ID: 11525
+# Log file: /home/ise/mux10-1/planAhead_run_1/planAhead.log
+# Journal file: /home/ise/mux10-1/planAhead_run_1/planAhead.jou
+#-----------------------------------------------------------
+start_gui
+source /home/ise/mux10-1/pa.fromHdl.tcl
+update_compile_order -fileset sim_1
+startgroup
+set_property package_pin V16 [get_ports {SL[3]}]
+endgroup
+set_property iostandard LVCMOS25 [get_ports [list {IN[9]} {IN[8]} {IN[7]} {IN[6]} {IN[5]} {IN[4]} {IN[3]} {IN[2]} {IN[1]} {IN[0]}]]
+set_property iostandard LVTTL [get_ports [list {IN[9]}]]
+set_property iostandard LVTTL [get_ports [list {IN[9]} {IN[8]} {IN[7]} {IN[6]} {IN[5]} {IN[4]} {IN[3]} {IN[2]} {IN[1]} {IN[0]}]]
+save_constraints

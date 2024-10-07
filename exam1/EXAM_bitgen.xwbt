@@ -1,0 +1,8 @@
+INTSTYLE=ise
+INFILE=/home/ise/exam1/EXAM.ncd
+OUTFILE=/home/ise/exam1/EXAM.bit
+FAMILY=Spartan3E
+PART=xc3s500e-5fg320
+WORKINGDIR=/home/ise/exam1
+LICENSE=ISE
+USER_INFO=8416_11442_1478797146_620

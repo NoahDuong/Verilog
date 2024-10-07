@@ -1,0 +1,10 @@
+xst -intstyle ise -ifn "/home/ise/Decode3_8/Decoder3_8.xst" -ofn "/home/ise/Decode3_8/Decoder3_8.syr" 
+netgen -intstyle ise -ar Structure -tm Decoder3_8 -w -dir netgen/synthesis -ofmt vhdl -sim Decoder3_8.ngc Decoder3_8_synthesis.vhd 
+xst -intstyle ise -ifn "/home/ise/Decode3_8/Decoder3_8.xst" -ofn "/home/ise/Decode3_8/Decoder3_8.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc /home/ise/Documents/fileganchan/ganchandecode3_8.ucf -p xc3s500e-fg320-5 Decoder3_8.ngc Decoder3_8.ngd  
+map -intstyle ise -p xc3s500e-fg320-5 -cm area -ir off -pr off -c 100 -o Decoder3_8_map.ncd Decoder3_8.ngd Decoder3_8.pcf 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc /home/ise/Documents/fileganchan/ganchandecode3_8.ucf -p xc3s500e-fg320-5 Decoder3_8.ngc Decoder3_8.ngd  
+map -intstyle ise -p xc3s500e-fg320-5 -cm area -ir off -pr off -c 100 -o Decoder3_8_map.ncd Decoder3_8.ngd Decoder3_8.pcf 
+par -w -intstyle ise -ol high -t 1 Decoder3_8_map.ncd Decoder3_8.ncd Decoder3_8.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml Decoder3_8.twx Decoder3_8.ncd -o Decoder3_8.twr Decoder3_8.pcf 
+bitgen -intstyle ise -f Decoder3_8.ut Decoder3_8.ncd 

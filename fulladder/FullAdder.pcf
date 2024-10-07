@@ -1,0 +1,12 @@
+//! **************************************************************************
+// Written by: Map P.20131013 on Sun Sep 08 22:15:50 2024
+//! **************************************************************************
+
+SCHEMATIC START;
+COMP "Cout" LOCATE = SITE "E9" LEVEL 1;
+COMP "A" LOCATE = SITE "L13" LEVEL 1;
+COMP "B" LOCATE = SITE "L14" LEVEL 1;
+COMP "Sum" LOCATE = SITE "F9" LEVEL 1;
+COMP "Cin" LOCATE = SITE "H18" LEVEL 1;
+SCHEMATIC END;
+

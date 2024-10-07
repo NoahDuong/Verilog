@@ -1,0 +1,30 @@
+xst -intstyle ise -ifn "/home/ise/chiaxung/sw1_2.xst" -ofn "/home/ise/chiaxung/sw1_2.syr" 
+xst -intstyle ise -ifn "/home/ise/chiaxung/sw1_2.xst" -ofn "/home/ise/chiaxung/sw1_2.syr" 
+xst -intstyle ise -ifn "/home/ise/chiaxung/sw1_2.xst" -ofn "/home/ise/chiaxung/sw1_2.syr" 
+xst -intstyle ise -ifn "/home/ise/chiaxung/sw1_2.xst" -ofn "/home/ise/chiaxung/sw1_2.syr" 
+xst -intstyle ise -ifn "/home/ise/chiaxung/sw1_2.xst" -ofn "/home/ise/chiaxung/sw1_2.syr" 
+xst -intstyle ise -ifn "/home/ise/chiaxung/sw1_2.xst" -ofn "/home/ise/chiaxung/sw1_2.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc /home/ise/Documents/fileganchan/ganchanchiaxung.ucf -p xc3s500e-fg320-5 sw1_2.ngc sw1_2.ngd  
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc /home/ise/Documents/fileganchan/ganchanchiaxung.ucf -p xc3s500e-fg320-5 sw1_2.ngc sw1_2.ngd  
+map -intstyle ise -p xc3s500e-fg320-5 -cm area -ir off -pr off -c 100 -o sw1_2_map.ncd sw1_2.ngd sw1_2.pcf 
+par -w -intstyle ise -ol high -t 1 sw1_2_map.ncd sw1_2.ncd sw1_2.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml sw1_2.twx sw1_2.ncd -o sw1_2.twr sw1_2.pcf 
+bitgen -intstyle ise -f sw1_2.ut sw1_2.ncd 
+xst -intstyle ise -ifn "/home/ise/chiaxung/sw1_2.xst" -ofn "/home/ise/chiaxung/sw1_2.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc /home/ise/Documents/fileganchan/ganchanchiaxung.ucf -p xc3s500e-fg320-5 sw1_2.ngc sw1_2.ngd  
+map -intstyle ise -p xc3s500e-fg320-5 -cm area -ir off -pr off -c 100 -o sw1_2_map.ncd sw1_2.ngd sw1_2.pcf 
+par -w -intstyle ise -ol high -t 1 sw1_2_map.ncd sw1_2.ncd sw1_2.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml sw1_2.twx sw1_2.ncd -o sw1_2.twr sw1_2.pcf 
+bitgen -intstyle ise -f sw1_2.ut sw1_2.ncd 
+xst -intstyle ise -ifn "/home/ise/chiaxung/sw1_2.xst" -ofn "/home/ise/chiaxung/sw1_2.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc /home/ise/Documents/fileganchan/ganchanchiaxung.ucf -p xc3s500e-fg320-5 sw1_2.ngc sw1_2.ngd  
+map -intstyle ise -p xc3s500e-fg320-5 -cm area -ir off -pr off -c 100 -o sw1_2_map.ncd sw1_2.ngd sw1_2.pcf 
+par -w -intstyle ise -ol high -t 1 sw1_2_map.ncd sw1_2.ncd sw1_2.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml sw1_2.twx sw1_2.ncd -o sw1_2.twr sw1_2.pcf 
+bitgen -intstyle ise -f sw1_2.ut sw1_2.ncd 
+xst -intstyle ise -ifn "/home/ise/chiaxung/sw1_2.xst" -ofn "/home/ise/chiaxung/sw1_2.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc /home/ise/Documents/fileganchan/ganchanchiaxung.ucf -p xc3s500e-fg320-5 sw1_2.ngc sw1_2.ngd  
+map -intstyle ise -p xc3s500e-fg320-5 -cm area -ir off -pr off -c 100 -o sw1_2_map.ncd sw1_2.ngd sw1_2.pcf 
+par -w -intstyle ise -ol high -t 1 sw1_2_map.ncd sw1_2.ncd sw1_2.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml sw1_2.twx sw1_2.ncd -o sw1_2.twr sw1_2.pcf 
+bitgen -intstyle ise -f sw1_2.ut sw1_2.ncd 

@@ -1,0 +1,28 @@
+xst -intstyle ise -ifn "/home/ise/UP_DOWNCOUNTER_4BIT_SWITCH/DEMLEN_XUONG_MANUAL.xst" -ofn "/home/ise/UP_DOWNCOUNTER_4BIT_SWITCH/DEMLEN_XUONG_MANUAL.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc /home/ise/Documents/fileganchan/ganchanUP_DOWN_MANUAL.ucf -p xc3s500e-fg320-5 DEMLEN_XUONG_MANUAL.ngc DEMLEN_XUONG_MANUAL.ngd  
+map -intstyle ise -p xc3s500e-fg320-5 -cm area -ir off -pr off -c 100 -o DEMLEN_XUONG_MANUAL_map.ncd DEMLEN_XUONG_MANUAL.ngd DEMLEN_XUONG_MANUAL.pcf 
+par -w -intstyle ise -ol high -t 1 DEMLEN_XUONG_MANUAL_map.ncd DEMLEN_XUONG_MANUAL.ncd DEMLEN_XUONG_MANUAL.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml DEMLEN_XUONG_MANUAL.twx DEMLEN_XUONG_MANUAL.ncd -o DEMLEN_XUONG_MANUAL.twr DEMLEN_XUONG_MANUAL.pcf 
+bitgen -intstyle ise -f DEMLEN_XUONG_MANUAL.ut DEMLEN_XUONG_MANUAL.ncd 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc /home/ise/Documents/fileganchan/ganchanUP_DOWN_MANUAL.ucf -p xc3s500e-fg320-5 DEMLEN_XUONG_MANUAL.ngc DEMLEN_XUONG_MANUAL.ngd  
+map -intstyle ise -p xc3s500e-fg320-5 -cm area -ir off -pr off -c 100 -o DEMLEN_XUONG_MANUAL_map.ncd DEMLEN_XUONG_MANUAL.ngd DEMLEN_XUONG_MANUAL.pcf 
+par -w -intstyle ise -ol high -t 1 DEMLEN_XUONG_MANUAL_map.ncd DEMLEN_XUONG_MANUAL.ncd DEMLEN_XUONG_MANUAL.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml DEMLEN_XUONG_MANUAL.twx DEMLEN_XUONG_MANUAL.ncd -o DEMLEN_XUONG_MANUAL.twr DEMLEN_XUONG_MANUAL.pcf 
+bitgen -intstyle ise -f DEMLEN_XUONG_MANUAL.ut DEMLEN_XUONG_MANUAL.ncd 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc /home/ise/Documents/fileganchan/ganchanUP_DOWN_MANUAL.ucf -p xc3s500e-fg320-5 DEMLEN_XUONG_MANUAL.ngc DEMLEN_XUONG_MANUAL.ngd  
+map -intstyle ise -p xc3s500e-fg320-5 -cm area -ir off -pr off -c 100 -o DEMLEN_XUONG_MANUAL_map.ncd DEMLEN_XUONG_MANUAL.ngd DEMLEN_XUONG_MANUAL.pcf 
+par -w -intstyle ise -ol high -t 1 DEMLEN_XUONG_MANUAL_map.ncd DEMLEN_XUONG_MANUAL.ncd DEMLEN_XUONG_MANUAL.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml DEMLEN_XUONG_MANUAL.twx DEMLEN_XUONG_MANUAL.ncd -o DEMLEN_XUONG_MANUAL.twr DEMLEN_XUONG_MANUAL.pcf 
+bitgen -intstyle ise -f DEMLEN_XUONG_MANUAL.ut DEMLEN_XUONG_MANUAL.ncd 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc /home/ise/Documents/fileganchan/ganchanUP_DOWN_MANUAL.ucf -p xc3s500e-fg320-5 DEMLEN_XUONG_MANUAL.ngc DEMLEN_XUONG_MANUAL.ngd  
+map -intstyle ise -p xc3s500e-fg320-5 -cm area -ir off -pr off -c 100 -o DEMLEN_XUONG_MANUAL_map.ncd DEMLEN_XUONG_MANUAL.ngd DEMLEN_XUONG_MANUAL.pcf 
+par -w -intstyle ise -ol high -t 1 DEMLEN_XUONG_MANUAL_map.ncd DEMLEN_XUONG_MANUAL.ncd DEMLEN_XUONG_MANUAL.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml DEMLEN_XUONG_MANUAL.twx DEMLEN_XUONG_MANUAL.ncd -o DEMLEN_XUONG_MANUAL.twr DEMLEN_XUONG_MANUAL.pcf 
+bitgen -intstyle ise -f DEMLEN_XUONG_MANUAL.ut DEMLEN_XUONG_MANUAL.ncd 
+xst -intstyle ise -ifn "/home/ise/UP_DOWNCOUNTER_4BIT_SWITCH/DEMLEN_XUONG_MANUAL.xst" -ofn "/home/ise/UP_DOWNCOUNTER_4BIT_SWITCH/DEMLEN_XUONG_MANUAL.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc /home/ise/Documents/fileganchan/ganchanUP_DOWN_MANUAL.ucf -p xc3s500e-fg320-5 DEMLEN_XUONG_MANUAL.ngc DEMLEN_XUONG_MANUAL.ngd  
+map -intstyle ise -p xc3s500e-fg320-5 -cm area -ir off -pr off -c 100 -o DEMLEN_XUONG_MANUAL_map.ncd DEMLEN_XUONG_MANUAL.ngd DEMLEN_XUONG_MANUAL.pcf 
+par -w -intstyle ise -ol high -t 1 DEMLEN_XUONG_MANUAL_map.ncd DEMLEN_XUONG_MANUAL.ncd DEMLEN_XUONG_MANUAL.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml DEMLEN_XUONG_MANUAL.twx DEMLEN_XUONG_MANUAL.ncd -o DEMLEN_XUONG_MANUAL.twr DEMLEN_XUONG_MANUAL.pcf 
+bitgen -intstyle ise -f DEMLEN_XUONG_MANUAL.ut DEMLEN_XUONG_MANUAL.ncd 
+xst -intstyle ise -ifn "/home/ise/UP_DOWNCOUNTER_4BIT_SWITCH/DEMLEN_XUONG_MANUAL.xst" -ofn "/home/ise/UP_DOWNCOUNTER_4BIT_SWITCH/DEMLEN_XUONG_MANUAL.syr" 

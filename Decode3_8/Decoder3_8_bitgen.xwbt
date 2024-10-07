@@ -1,0 +1,8 @@
+INTSTYLE=ise
+INFILE=/home/ise/Decode3_8/Decoder3_8.ncd
+OUTFILE=/home/ise/Decode3_8/Decoder3_8.bit
+FAMILY=Spartan3E
+PART=xc3s500e-5fg320
+WORKINGDIR=/home/ise/Decode3_8
+LICENSE=ISE
+USER_INFO=8416_11442_1478797146_620

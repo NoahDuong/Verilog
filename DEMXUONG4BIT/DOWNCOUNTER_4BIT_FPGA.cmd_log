@@ -1,0 +1,1 @@
+xst -intstyle ise -ifn "/home/ise/DEMXUONG4BIT/DOWNCOUNTER_4BIT_FPGA.xst" -ofn "/home/ise/DEMXUONG4BIT/DOWNCOUNTER_4BIT_FPGA.syr" 

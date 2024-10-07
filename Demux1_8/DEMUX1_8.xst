@@ -1,0 +1,5 @@
+set -tmpdir "/home/ise/Demux1_8/xst/projnav.tmp"
+set -xsthdpdir "/home/ise/Demux1_8/xst"
+elaborate
+-ifn DEMUX1_8.prj
+-ifmt mixed

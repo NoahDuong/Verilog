@@ -1,0 +1,8 @@
+INTSTYLE=ise
+INFILE=/home/ise/Decoder2_4/DEC24.ncd
+OUTFILE=/home/ise/Decoder2_4/DEC24.bit
+FAMILY=Spartan3E
+PART=xc3s500e-5fg320
+WORKINGDIR=/home/ise/Decoder2_4
+LICENSE=ISE
+USER_INFO=8416_11442_1478797146_620

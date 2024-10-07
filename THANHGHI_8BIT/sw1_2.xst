@@ -1,0 +1,5 @@
+set -tmpdir "/home/ise/THANHGHI_8BIT/xst/projnav.tmp"
+set -xsthdpdir "/home/ise/THANHGHI_8BIT/xst"
+elaborate
+-ifn sw1_2.prj
+-ifmt mixed

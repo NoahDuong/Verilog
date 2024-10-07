@@ -1,0 +1,13 @@
+xst -intstyle ise -ifn "/home/ise/Mux4_1/Mux4_1.xst" -ofn "/home/ise/Mux4_1/Mux4_1.syr" 
+xst -intstyle ise -ifn "/home/ise/Mux4_1/Mux4_1.xst" -ofn "/home/ise/Mux4_1/Mux4_1.syr" 
+netgen -intstyle ise -ar Structure -tm Mux4_1 -w -dir netgen/synthesis -ofmt vhdl -sim Mux4_1.ngc Mux4_1_synthesis.vhd 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xc3s500e-fg320-5 Mux4_1.ngc Mux4_1.ngd  
+map -intstyle ise -p xc3s500e-fg320-5 -cm area -ir off -pr off -c 100 -o Mux4_1_map.ncd Mux4_1.ngd Mux4_1.pcf 
+par -w -intstyle ise -ol high -t 1 Mux4_1_map.ncd Mux4_1.ncd Mux4_1.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml Mux4_1.twx Mux4_1.ncd -o Mux4_1.twr Mux4_1.pcf 
+bitgen -intstyle ise -f Mux4_1.ut Mux4_1.ncd 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc /home/ise/Documents/fileganchan/ganchanmux4-1.ucf -p xc3s500e-fg320-5 Mux4_1.ngc Mux4_1.ngd  
+map -intstyle ise -p xc3s500e-fg320-5 -cm area -ir off -pr off -c 100 -o Mux4_1_map.ncd Mux4_1.ngd Mux4_1.pcf 
+par -w -intstyle ise -ol high -t 1 Mux4_1_map.ncd Mux4_1.ncd Mux4_1.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml Mux4_1.twx Mux4_1.ncd -o Mux4_1.twr Mux4_1.pcf 
+bitgen -intstyle ise -f Mux4_1.ut Mux4_1.ncd 

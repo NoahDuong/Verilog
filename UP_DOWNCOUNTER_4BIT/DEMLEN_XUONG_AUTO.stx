@@ -1,0 +1,45 @@
+Release 14.7 - xst P.20131013 (lin64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+--> 
+Parameter TMPDIR set to /home/ise/UP_DOWNCOUNTER_4BIT/xst/projnav.tmp
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.01 secs
+ 
+--> 
+Parameter xsthdpdir set to /home/ise/UP_DOWNCOUNTER_4BIT/xst
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.01 secs
+ 
+--> 
+WARNING:Xst:3164 - Option "-debug" found multiple times in the command line. Only the first occurence is considered.
+
+=========================================================================
+*                          HDL Compilation                              *
+=========================================================================
+Compiling verilog file "DEMXUONG4BIT.v" in library work
+Compiling verilog include file "sw1_2.v"
+Compiling verilog include file "UPDOWNCOUNTER.v"
+Module <sw1_2> compiled
+Module <UPDOWNCOUNTER> compiled
+Module <DEMLEN_XUONG_AUTO> compiled
+No errors in compilation
+Analysis of file <"DEMLEN_XUONG_AUTO.prj"> succeeded.
+ 
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.03 secs
+ 
+--> 
+
+
+Total memory usage is 566008 kilobytes
+
+Number of errors   :    0 (   0 filtered)
+Number of warnings :    1 (   0 filtered)
+Number of infos    :    0 (   0 filtered)
+

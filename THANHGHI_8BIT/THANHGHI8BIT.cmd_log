@@ -1,0 +1,15 @@
+xst -intstyle ise -ifn "/home/ise/THANHGHI_8BIT/THANHGHI8BIT.xst" -ofn "/home/ise/THANHGHI_8BIT/THANHGHI8BIT.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc /home/ise/Documents/fileganchan/ganchanthanhghi8bit.ucf -p xc3s500e-fg320-5 THANHGHI8BIT.ngc THANHGHI8BIT.ngd  
+map -intstyle ise -p xc3s500e-fg320-5 -cm area -ir off -pr off -c 100 -o THANHGHI8BIT_map.ncd THANHGHI8BIT.ngd THANHGHI8BIT.pcf 
+par -w -intstyle ise -ol high -t 1 THANHGHI8BIT_map.ncd THANHGHI8BIT.ncd THANHGHI8BIT.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml THANHGHI8BIT.twx THANHGHI8BIT.ncd -o THANHGHI8BIT.twr THANHGHI8BIT.pcf 
+xst -intstyle ise -ifn "/home/ise/THANHGHI_8BIT/THANHGHI8BIT.xst" -ofn "/home/ise/THANHGHI_8BIT/THANHGHI8BIT.syr" 
+xst -intstyle ise -ifn "/home/ise/THANHGHI_8BIT/THANHGHI8BIT.xst" -ofn "/home/ise/THANHGHI_8BIT/THANHGHI8BIT.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc /home/ise/Documents/fileganchan/ganchanthanhghi8bit.ucf -p xc3s500e-fg320-5 THANHGHI8BIT.ngc THANHGHI8BIT.ngd  
+map -intstyle ise -p xc3s500e-fg320-5 -cm area -ir off -pr off -c 100 -o THANHGHI8BIT_map.ncd THANHGHI8BIT.ngd THANHGHI8BIT.pcf 
+par -w -intstyle ise -ol high -t 1 THANHGHI8BIT_map.ncd THANHGHI8BIT.ncd THANHGHI8BIT.pcf 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc /home/ise/Documents/fileganchan/ganchanthanhghi8bit.ucf -p xc3s500e-fg320-5 THANHGHI8BIT.ngc THANHGHI8BIT.ngd  
+map -intstyle ise -p xc3s500e-fg320-5 -cm area -ir off -pr off -c 100 -o THANHGHI8BIT_map.ncd THANHGHI8BIT.ngd THANHGHI8BIT.pcf 
+par -w -intstyle ise -ol high -t 1 THANHGHI8BIT_map.ncd THANHGHI8BIT.ncd THANHGHI8BIT.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml THANHGHI8BIT.twx THANHGHI8BIT.ncd -o THANHGHI8BIT.twr THANHGHI8BIT.pcf 
+bitgen -intstyle ise -f THANHGHI8BIT.ut THANHGHI8BIT.ncd 

@@ -1,0 +1,10 @@
+xst -intstyle ise -ifn "/home/ise/Decoder2_4/DEC24.xst" -ofn "/home/ise/Decoder2_4/DEC24.syr" 
+xst -intstyle ise -ifn "/home/ise/Decoder2_4/DEC24.xst" -ofn "/home/ise/Decoder2_4/DEC24.syr" 
+xst -intstyle ise -ifn "/home/ise/Decoder2_4/DEC24.xst" -ofn "/home/ise/Decoder2_4/DEC24.syr" 
+netgen -intstyle ise -ar Structure -tm DEC24 -w -dir netgen/synthesis -ofmt vhdl -sim DEC24.ngc DEC24_synthesis.vhd 
+xst -intstyle ise -ifn "/home/ise/Decoder2_4/DEC24.xst" -ofn "/home/ise/Decoder2_4/DEC24.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc /home/ise/Documents/fileganchan/ganchandecode2_4.ucf -p xc3s500e-fg320-5 DEC24.ngc DEC24.ngd  
+map -intstyle ise -p xc3s500e-fg320-5 -cm area -ir off -pr off -c 100 -o DEC24_map.ncd DEC24.ngd DEC24.pcf 
+par -w -intstyle ise -ol high -t 1 DEC24_map.ncd DEC24.ncd DEC24.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml DEC24.twx DEC24.ncd -o DEC24.twr DEC24.pcf 
+bitgen -intstyle ise -f DEC24.ut DEC24.ncd 

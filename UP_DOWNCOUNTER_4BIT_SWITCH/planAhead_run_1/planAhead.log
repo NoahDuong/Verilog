@@ -1,0 +1,50 @@
+#-----------------------------------------------------------
+# PlanAhead v14.7 (64-bit)
+# Build 321239 by xbuild on Fri Sep 27 19:24:36 MDT 2013
+# Start of session at: Thu Oct  3 04:02:05 2024
+# Process ID: 5618
+# Log file: /home/ise/UP_DOWNCOUNTER_4BIT_SWITCH/planAhead_run_1/planAhead.log
+# Journal file: /home/ise/UP_DOWNCOUNTER_4BIT_SWITCH/planAhead_run_1/planAhead.jou
+#-----------------------------------------------------------
+INFO: [Common 17-78] Attempting to get a license: PlanAhead
+INFO: [Common 17-290] Got license for PlanAhead
+INFO: [Common 17-86] Your PlanAhead license expires in -2713 day(s)
+INFO: [Device 21-36] Loading parts and site information from /opt/Xilinx/14.7/ISE_DS/PlanAhead/data/parts/arch.xml
+Parsing RTL primitives file [/opt/Xilinx/14.7/ISE_DS/PlanAhead/data/parts/xilinx/rtl/prims/rtl_prims.xml]
+Finished parsing RTL primitives file [/opt/Xilinx/14.7/ISE_DS/PlanAhead/data/parts/xilinx/rtl/prims/rtl_prims.xml]
+start_gui
+source /home/ise/UP_DOWNCOUNTER_4BIT_SWITCH/pa.fromHdl.tcl
+# create_project -name UP_DOWNCOUNTER_4BIT_SWITCH -dir "/home/ise/UP_DOWNCOUNTER_4BIT_SWITCH/planAhead_run_2" -part xc3s500efg320-5
+# set_param project.pinAheadLayout yes
+# set srcset [get_property srcset [current_run -impl]]
+# set_property target_constrs_file "/home/ise/Documents/fileganchan/ganchanUP_DOWN_MANUAL.ucf" [current_fileset -constrset]
+Adding file '/home/ise/Documents/fileganchan/ganchanUP_DOWN_MANUAL.ucf' to fileset 'constrs_1'
+# set hdlfile [add_files [list {DEMXUONG4BIT.v}]]
+# set_property file_type Verilog $hdlfile
+# set_property library work $hdlfile
+# set_property top DEMLEN_XUONG_MANUAL $srcset
+# add_files [list {/home/ise/Documents/fileganchan/ganchanUP_DOWN_MANUAL.ucf}] -fileset [get_property constrset [current_run]]
+# open_rtl_design -part xc3s500efg320-5
+Using Verific elaboration
+Parsing VHDL file "/opt/Xilinx/14.7/ISE_DS/PlanAhead/data/parts/xilinx/rtl/lib/synplify/synattr.vhd" into library synplify
+Analyzing Verilog file "/home/ise/UP_DOWNCOUNTER_4BIT_SWITCH/DEMXUONG4BIT.v" into library work
+Parsing verilog file "sw1_2.v" included at line 2. [/home/ise/UP_DOWNCOUNTER_4BIT_SWITCH/DEMXUONG4BIT.v:2]
+Parsing verilog file "UP_DOWNCOUNTER.v" included at line 3. [/home/ise/UP_DOWNCOUNTER_4BIT_SWITCH/DEMXUONG4BIT.v:3]
+INFO: [Designutils 20-910] Reading macro library /opt/Xilinx/14.7/ISE_DS/PlanAhead/data/./parts/xilinx/spartan3e/spartan3e/hd_int_macros.edn
+Parsing EDIF File [/opt/Xilinx/14.7/ISE_DS/PlanAhead/data/./parts/xilinx/spartan3e/spartan3e/hd_int_macros.edn]
+Finished Parsing EDIF File [/opt/Xilinx/14.7/ISE_DS/PlanAhead/data/./parts/xilinx/spartan3e/spartan3e/hd_int_macros.edn]
+Loading clock regions from /opt/Xilinx/14.7/ISE_DS/PlanAhead/data/parts/xilinx/spartan3e/spartan3e/xc3s500e/ClockRegion.xml
+Loading clock buffers from /opt/Xilinx/14.7/ISE_DS/PlanAhead/data/parts/xilinx/spartan3e/spartan3e/xc3s500e/ClockBuffers.xml
+Loading package from /opt/Xilinx/14.7/ISE_DS/PlanAhead/data/parts/xilinx/spartan3e/spartan3e/xc3s500e/fg320/Package.xml
+Loading io standards from /opt/Xilinx/14.7/ISE_DS/PlanAhead/data/./parts/xilinx/spartan3e/IOStandards.xml
+INFO: [Device 21-19] Loading pkg sso from /opt/Xilinx/14.7/ISE_DS/PlanAhead/data/parts/xilinx/spartan3e/spartan3e/xc3s500e/fg320/SSORules.xml
+Loading list of drcs for the architecture : /opt/Xilinx/14.7/ISE_DS/PlanAhead/data/./parts/xilinx/spartan3e/spartan3e/drc.xml
+INFO: [Timing 38-77] Reading timing library /opt/Xilinx/14.7/ISE_DS/PlanAhead/data/parts/xilinx/spartan3e/spartan3e/spartan3e-5.lib.
+INFO: [Timing 38-34] Done reading timing library /opt/Xilinx/14.7/ISE_DS/PlanAhead/data/parts/xilinx/spartan3e/spartan3e/spartan3e-5.lib.
+Parsing UCF File [/home/ise/Documents/fileganchan/ganchanUP_DOWN_MANUAL.ucf]
+Finished Parsing UCF File [/home/ise/Documents/fileganchan/ganchanUP_DOWN_MANUAL.ucf]
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Phase 0 | Netlist Checksum: ff3f3ba6
+update_compile_order -fileset sim_1

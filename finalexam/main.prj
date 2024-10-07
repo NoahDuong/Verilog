@@ -1,0 +1,3 @@
+verilog work "UPDOWN_COUNTER.v"
+verilog work "sw1_2.v"
+verilog work "main.v"

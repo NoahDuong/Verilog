@@ -1,0 +1,1 @@
+xst -intstyle ise -ifn "/home/ise/encode8_3/decode8_3.xst" -ofn "/home/ise/encode8_3/decode8_3.syr" 

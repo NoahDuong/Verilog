@@ -1,0 +1,5 @@
+set -tmpdir "/home/ise/UP_DOWNCOUNTER_4BIT_SWITCH/xst/projnav.tmp"
+set -xsthdpdir "/home/ise/UP_DOWNCOUNTER_4BIT_SWITCH/xst"
+elaborate
+-ifn UP_DOWNCOUNTER.prj
+-ifmt mixed

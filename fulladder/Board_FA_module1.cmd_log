@@ -1,0 +1,10 @@
+xst -intstyle ise -ifn "/home/ise/fulladder/Board_FA_module1.xst" -ofn "/home/ise/fulladder/Board_FA_module1.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc /home/ise/Documents/fileganchan/ganchan.ucf -p xc3s500e-pq208-5 Board_FA_module1.ngc Board_FA_module1.ngd  
+xst -intstyle ise -ifn "/home/ise/fulladder/Board_FA_module1.xst" -ofn "/home/ise/fulladder/Board_FA_module1.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc /home/ise/Documents/fileganchan/ganchan.ucf -p xc3s500e-pq208-5 Board_FA_module1.ngc Board_FA_module1.ngd  
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc /home/ise/Documents/fileganchan/ganchan.ucf -p xc3s500e-pq208-5 Board_FA_module1.ngc Board_FA_module1.ngd  
+xst -intstyle ise -ifn "/home/ise/fulladder/Board_FA_module1.xst" -ofn "/home/ise/fulladder/Board_FA_module1.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc /home/ise/Documents/fileganchan/ganchan.ucf -p xc3s500e-pq208-5 Board_FA_module1.ngc Board_FA_module1.ngd  
+xst -intstyle ise -ifn "/home/ise/fulladder/Board_FA_module1.xst" -ofn "/home/ise/fulladder/Board_FA_module1.syr" 
+xst -intstyle ise -ifn "/home/ise/fulladder/Board_FA_module1.xst" -ofn "/home/ise/fulladder/Board_FA_module1.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc /home/ise/Documents/fileganchan/ganchan.ucf -p xc3s500e-fg320-5 Board_FA_module1.ngc Board_FA_module1.ngd  

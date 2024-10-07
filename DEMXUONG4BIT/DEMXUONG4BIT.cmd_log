@@ -1,0 +1,13 @@
+xst -intstyle ise -ifn "/home/ise/DEMXUONG4BIT/DEMXUONG4BIT.xst" -ofn "/home/ise/DEMXUONG4BIT/DEMXUONG4BIT.syr" 
+xst -intstyle ise -ifn "/home/ise/DEMXUONG4BIT/DEMXUONG4BIT.xst" -ofn "/home/ise/DEMXUONG4BIT/DEMXUONG4BIT.syr" 
+xst -intstyle ise -ifn "/home/ise/DEMXUONG4BIT/DEMXUONG4BIT.xst" -ofn "/home/ise/DEMXUONG4BIT/DEMXUONG4BIT.syr" 
+xst -intstyle ise -ifn "/home/ise/DEMXUONG4BIT/DEMXUONG4BIT.xst" -ofn "/home/ise/DEMXUONG4BIT/DEMXUONG4BIT.syr" 
+xst -intstyle ise -ifn "/home/ise/DEMXUONG4BIT/DEMXUONG4BIT.xst" -ofn "/home/ise/DEMXUONG4BIT/DEMXUONG4BIT.syr" 
+xst -intstyle ise -ifn "/home/ise/DEMXUONG4BIT/DEMXUONG4BIT.xst" -ofn "/home/ise/DEMXUONG4BIT/DEMXUONG4BIT.syr" 
+xst -intstyle ise -ifn "/home/ise/DEMXUONG4BIT/DEMXUONG4BIT.xst" -ofn "/home/ise/DEMXUONG4BIT/DEMXUONG4BIT.syr" 
+xst -intstyle ise -ifn "/home/ise/DEMXUONG4BIT/DEMXUONG4BIT.xst" -ofn "/home/ise/DEMXUONG4BIT/DEMXUONG4BIT.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc /home/ise/Documents/fileganchan/ganchanDOWNCOUNTER_4bit.ucf -p xc3s500e-fg320-5 DEMXUONG4BIT.ngc DEMXUONG4BIT.ngd  
+map -intstyle ise -p xc3s500e-fg320-5 -cm area -ir off -pr off -c 100 -o DEMXUONG4BIT_map.ncd DEMXUONG4BIT.ngd DEMXUONG4BIT.pcf 
+par -w -intstyle ise -ol high -t 1 DEMXUONG4BIT_map.ncd DEMXUONG4BIT.ncd DEMXUONG4BIT.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml DEMXUONG4BIT.twx DEMXUONG4BIT.ncd -o DEMXUONG4BIT.twr DEMXUONG4BIT.pcf 
+bitgen -intstyle ise -f DEMXUONG4BIT.ut DEMXUONG4BIT.ncd 

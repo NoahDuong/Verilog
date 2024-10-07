@@ -1,0 +1,31 @@
+`timescale 1ns / 1ps
+//////////////////////////////////////////////////////////////////////////////////
+// Company: 
+// Engineer: 
+// 
+// Create Date:    01:39:46 09/09/2024 
+// Design Name: 
+// Module Name:    module 
+// Project Name: 
+// Target Devices: 
+// Tool versions: 
+// Description: 
+//
+// Dependencies: 
+//
+// Revision: 
+// Revision 0.01 - File Created
+// Additional Comments: 
+//
+//////////////////////////////////////////////////////////////////////////////////
+`include "module.v"
+module MUX_4_1(
+	input [3:0] IN,
+	input [1:0] SEL,
+	input EN,
+	output OUT
+);
+		wire[3:0] OUT;
+			module i_module(.en(EN), .in(SEL), .OUT(OUT));
+		or(OUT, IN[0]&OUT[0], IN[1]&OUT[1], IN[2]&OUT[2], IN[3]&OUT[3]);
+endmodule

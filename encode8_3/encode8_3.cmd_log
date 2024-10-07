@@ -1,0 +1,6 @@
+xst -intstyle ise -ifn "/home/ise/encode8_3/encode8_3.xst" -ofn "/home/ise/encode8_3/encode8_3.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc /home/ise/Documents/fileganchan/ganchandecode8_3.ucf -p xc3s500e-fg320-5 encode8_3.ngc encode8_3.ngd  
+map -intstyle ise -p xc3s500e-fg320-5 -cm area -ir off -pr off -c 100 -o encode8_3_map.ncd encode8_3.ngd encode8_3.pcf 
+par -w -intstyle ise -ol high -t 1 encode8_3_map.ncd encode8_3.ncd encode8_3.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml encode8_3.twx encode8_3.ncd -o encode8_3.twr encode8_3.pcf 
+bitgen -intstyle ise -f encode8_3.ut encode8_3.ncd 

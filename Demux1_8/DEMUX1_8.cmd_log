@@ -1,0 +1,17 @@
+xst -intstyle ise -ifn "/home/ise/Demux1_8/DEMUX1_8.xst" -ofn "/home/ise/Demux1_8/DEMUX1_8.syr" 
+netgen -intstyle ise -insert_glbl true -w -dir netgen/synthesis -ofmt verilog -sim DEMUX1_8.ngc DEMUX1_8_synthesis.v 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xc3s500e-fg320-5 DEMUX1_8.ngc DEMUX1_8.ngd  
+map -intstyle ise -p xc3s500e-fg320-5 -cm area -ir off -pr off -c 100 -o DEMUX1_8_map.ncd DEMUX1_8.ngd DEMUX1_8.pcf 
+par -w -intstyle ise -ol high -t 1 DEMUX1_8_map.ncd DEMUX1_8.ncd DEMUX1_8.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml DEMUX1_8.twx DEMUX1_8.ncd -o DEMUX1_8.twr DEMUX1_8.pcf 
+xst -intstyle ise -ifn "/home/ise/Demux1_8/DEMUX1_8.xst" -ofn "/home/ise/Demux1_8/DEMUX1_8.syr" 
+netgen -intstyle ise -insert_glbl true -w -dir netgen/synthesis -ofmt verilog -sim DEMUX1_8.ngc DEMUX1_8_synthesis.v 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xc3s500e-fg320-5 DEMUX1_8.ngc DEMUX1_8.ngd  
+map -intstyle ise -p xc3s500e-fg320-5 -cm area -ir off -pr off -c 100 -o DEMUX1_8_map.ncd DEMUX1_8.ngd DEMUX1_8.pcf 
+par -w -intstyle ise -ol high -t 1 DEMUX1_8_map.ncd DEMUX1_8.ncd DEMUX1_8.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml DEMUX1_8.twx DEMUX1_8.ncd -o DEMUX1_8.twr DEMUX1_8.pcf 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc /home/ise/Documents/fileganchan/ganchandemux1_8.ucf -p xc3s500e-fg320-5 DEMUX1_8.ngc DEMUX1_8.ngd  
+map -intstyle ise -p xc3s500e-fg320-5 -cm area -ir off -pr off -c 100 -o DEMUX1_8_map.ncd DEMUX1_8.ngd DEMUX1_8.pcf 
+par -w -intstyle ise -ol high -t 1 DEMUX1_8_map.ncd DEMUX1_8.ncd DEMUX1_8.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml DEMUX1_8.twx DEMUX1_8.ncd -o DEMUX1_8.twr DEMUX1_8.pcf 
+bitgen -intstyle ise -f DEMUX1_8.ut DEMUX1_8.ncd 

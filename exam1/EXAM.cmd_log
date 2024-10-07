@@ -1,0 +1,42 @@
+xst -intstyle ise -ifn "/home/ise/exam1/EXAM.xst" -ofn "/home/ise/exam1/EXAM.syr" 
+xst -intstyle ise -ifn "/home/ise/exam1/EXAM.xst" -ofn "/home/ise/exam1/EXAM.syr" 
+netgen -intstyle ise -ar Structure -tm EXAM -w -dir netgen/synthesis -ofmt vhdl -sim EXAM.ngc EXAM_synthesis.vhd 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc /home/ise/Documents/fileganchan/ganchanexam1.ucf -p xc3s500e-fg320-5 EXAM.ngc EXAM.ngd  
+map -intstyle ise -p xc3s500e-fg320-5 -cm area -ir off -pr off -c 100 -o EXAM_map.ncd EXAM.ngd EXAM.pcf 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc /home/ise/Documents/fileganchan/ganchanexam1.ucf -p xc3s500e-fg320-5 EXAM.ngc EXAM.ngd  
+map -intstyle ise -p xc3s500e-fg320-5 -cm area -ir off -pr off -c 100 -o EXAM_map.ncd EXAM.ngd EXAM.pcf 
+par -w -intstyle ise -ol high -t 1 EXAM_map.ncd EXAM.ncd EXAM.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml EXAM.twx EXAM.ncd -o EXAM.twr EXAM.pcf 
+bitgen -intstyle ise -f EXAM.ut EXAM.ncd 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc /home/ise/Documents/fileganchan/ganchanexam1.ucf -p xc3s500e-fg320-5 EXAM.ngc EXAM.ngd  
+map -intstyle ise -p xc3s500e-fg320-5 -cm area -ir off -pr off -c 100 -o EXAM_map.ncd EXAM.ngd EXAM.pcf 
+par -w -intstyle ise -ol high -t 1 EXAM_map.ncd EXAM.ncd EXAM.pcf 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc /home/ise/Documents/fileganchan/ganchanexam1.ucf -p xc3s500e-fg320-5 EXAM.ngc EXAM.ngd  
+map -intstyle ise -p xc3s500e-fg320-5 -cm area -ir off -pr off -c 100 -o EXAM_map.ncd EXAM.ngd EXAM.pcf 
+par -w -intstyle ise -ol high -t 1 EXAM_map.ncd EXAM.ncd EXAM.pcf 
+xst -intstyle ise -ifn "/home/ise/exam1/EXAM.xst" -ofn "/home/ise/exam1/EXAM.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc /home/ise/Documents/fileganchan/ganchanexam1.ucf -p xc3s500e-fg320-5 EXAM.ngc EXAM.ngd  
+map -intstyle ise -p xc3s500e-fg320-5 -cm area -ir off -pr off -c 100 -o EXAM_map.ncd EXAM.ngd EXAM.pcf 
+par -w -intstyle ise -ol high -t 1 EXAM_map.ncd EXAM.ncd EXAM.pcf 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc /home/ise/Documents/fileganchan/ganchanexam1.ucf -p xc3s500e-fg320-5 EXAM.ngc EXAM.ngd  
+map -intstyle ise -p xc3s500e-fg320-5 -cm area -ir off -pr off -c 100 -o EXAM_map.ncd EXAM.ngd EXAM.pcf 
+par -w -intstyle ise -ol high -t 1 EXAM_map.ncd EXAM.ncd EXAM.pcf 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc /home/ise/Documents/fileganchan/ganchanexam1.ucf -p xc3s500e-fg320-5 EXAM.ngc EXAM.ngd  
+map -intstyle ise -p xc3s500e-fg320-5 -cm area -ir off -pr off -c 100 -o EXAM_map.ncd EXAM.ngd EXAM.pcf 
+par -w -intstyle ise -ol high -t 1 EXAM_map.ncd EXAM.ncd EXAM.pcf 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc /home/ise/Documents/fileganchan/ganchanexam1.ucf -p xc3s500e-fg320-5 EXAM.ngc EXAM.ngd  
+map -intstyle ise -p xc3s500e-fg320-5 -cm area -ir off -pr off -c 100 -o EXAM_map.ncd EXAM.ngd EXAM.pcf 
+par -w -intstyle ise -ol high -t 1 EXAM_map.ncd EXAM.ncd EXAM.pcf 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc /home/ise/Documents/fileganchan/ganchanexam1.ucf -p xc3s500e-fg320-5 EXAM.ngc EXAM.ngd  
+map -intstyle ise -p xc3s500e-fg320-5 -cm area -ir off -pr off -c 100 -o EXAM_map.ncd EXAM.ngd EXAM.pcf 
+par -w -intstyle ise -ol high -t 1 EXAM_map.ncd EXAM.ncd EXAM.pcf 
+par -w -intstyle ise -ol high -t 1 EXAM_map.ncd EXAM.ncd EXAM.pcf 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc /home/ise/Documents/fileganchan/ganchanexam1.ucf -p xc3s500e-fg320-5 EXAM.ngc EXAM.ngd  
+map -intstyle ise -p xc3s500e-fg320-5 -cm area -ir off -pr off -c 100 -o EXAM_map.ncd EXAM.ngd EXAM.pcf 
+par -w -intstyle ise -ol high -t 1 EXAM_map.ncd EXAM.ncd EXAM.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml EXAM.twx EXAM.ncd -o EXAM.twr EXAM.pcf 
+bitgen -intstyle ise -f EXAM.ut EXAM.ncd 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc /home/ise/Documents/fileganchan/ganchanexam1.ucf -p xc3s500e-fg320-5 EXAM.ngc EXAM.ngd  
+map -intstyle ise -p xc3s500e-fg320-5 -cm area -ir off -pr off -c 100 -o EXAM_map.ncd EXAM.ngd EXAM.pcf 
+par -w -intstyle ise -ol high -t 1 EXAM_map.ncd EXAM.ncd EXAM.pcf 
+par -w -intstyle ise -ol high -t 1 EXAM_map.ncd EXAM.ncd EXAM.pcf 

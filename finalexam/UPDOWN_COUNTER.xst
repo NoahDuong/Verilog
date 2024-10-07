@@ -1,0 +1,5 @@
+set -tmpdir "/home/ise/finalexam/xst/projnav.tmp"
+set -xsthdpdir "/home/ise/finalexam/xst"
+elaborate
+-ifn UPDOWN_COUNTER.prj
+-ifmt mixed

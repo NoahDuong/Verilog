@@ -1,0 +1,5 @@
+set -tmpdir "/home/ise/Mux4_1/xst/projnav.tmp"
+set -xsthdpdir "/home/ise/Mux4_1/xst"
+elaborate
+-ifn MUX_4_1.prj
+-ifmt mixed
