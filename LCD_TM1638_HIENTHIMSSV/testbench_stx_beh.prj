@@ -1,0 +1,6 @@
+verilog isim_temp "TM1638_Controller.v"
+verilog isim_temp "sw1_2.v"
+verilog isim_temp "chuyendoiLED7doan.v"
+verilog isim_temp "LCD.v"
+verilog isim_temp "testbench.v"
+verilog isim_temp "/opt/Xilinx/14.7/ISE_DS/ISE//verilog/src/glbl.v"

@@ -1,0 +1,4 @@
+verilog work "TM1638_config.v"
+verilog work "Clock.v"
+verilog work "bodem.v"
+verilog work "main.v"

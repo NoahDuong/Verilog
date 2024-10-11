@@ -1,0 +1,1 @@
+-intstyle "ise" -incremental -lib "unisims_ver" -lib "unimacro_ver" -lib "xilinxcorelib_ver" -o "/home/ise/FPGA/LCD_TM1638_HIENTHIMSSV/testbench_isim_beh.exe" -prj "/home/ise/FPGA/LCD_TM1638_HIENTHIMSSV/testbench_beh.prj" "work.testbench" "work.glbl" 

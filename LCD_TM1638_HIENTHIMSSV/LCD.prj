@@ -1,0 +1,4 @@
+verilog work "TM1638_Controller.v"
+verilog work "sw1_2.v"
+verilog work "chuyendoiLED7doan.v"
+verilog work "LCD.v"

@@ -1,0 +1,35 @@
+Release 14.7 - xst P.20131013 (lin64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+--> 
+Parameter TMPDIR set to /home/ise/FPGA/LCD_TM1638_HIENTHIMSSV/xst/projnav.tmp
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.04 secs
+ 
+--> 
+Parameter xsthdpdir set to /home/ise/FPGA/LCD_TM1638_HIENTHIMSSV/xst
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.04 secs
+ 
+--> 
+WARNING:Xst:3164 - Option "-debug" found multiple times in the command line. Only the first occurence is considered.
+
+=========================================================================
+*                          HDL Compilation                              *
+=========================================================================
+Compiling verilog file "TM1638_Controller.v" in library work
+ERROR:HDLCompilers:27 - "TM1638_Controller.v" line 31 Illegal redeclaration of 'clk'
+Module <TM1638_Controller> compiled
+Analysis of file <"TM1638_Controller.prj"> failed.
+--> 
+
+
+Total memory usage is 566008 kilobytes
+
+Number of errors   :    1 (   0 filtered)
+Number of warnings :    1 (   0 filtered)
+Number of infos    :    0 (   0 filtered)
+

@@ -1,0 +1,29 @@
+Running: /opt/Xilinx/14.7/ISE_DS/ISE/bin/lin64/unwrapped/fuse -intstyle ise -incremental -lib unisims_ver -lib unimacro_ver -lib xilinxcorelib_ver -o /home/ise/FPGA/LCD_TM1638_HIENTHIMSSV/testbench_isim_beh.exe -prj /home/ise/FPGA/LCD_TM1638_HIENTHIMSSV/testbench_beh.prj work.testbench work.glbl 
+ISim P.20131013 (signature 0xfbc00daa)
+Number of CPUs detected in this system: 8
+Turning on mult-threading, number of parallel sub-compilation jobs: 16 
+Determining compilation order of HDL files
+Analyzing Verilog file "/home/ise/FPGA/LCD_TM1638_HIENTHIMSSV/TM1638_Controller.v" into library work
+Analyzing Verilog file "/home/ise/FPGA/LCD_TM1638_HIENTHIMSSV/sw1_2.v" into library work
+Analyzing Verilog file "/home/ise/FPGA/LCD_TM1638_HIENTHIMSSV/chuyendoiLED7doan.v" into library work
+Analyzing Verilog file "/home/ise/FPGA/LCD_TM1638_HIENTHIMSSV/LCD.v" into library work
+Analyzing Verilog file "/home/ise/FPGA/LCD_TM1638_HIENTHIMSSV/testbench.v" into library work
+Analyzing Verilog file "/opt/Xilinx/14.7/ISE_DS/ISE//verilog/src/glbl.v" into library work
+Starting static elaboration
+WARNING:HDLCompiler:1016 - "/home/ise/FPGA/LCD_TM1638_HIENTHIMSSV/testbench.v" Line 38: Port sseg0 is not connected to this instance
+Completed static elaboration
+Fuse Memory Usage: 94920 KB
+Fuse CPU Usage: 1030 ms
+Compiling module sw1_2
+Compiling module chuyendoiLED7doan
+Compiling module TM1638_Controller
+Compiling module LCD
+Compiling module testbench
+Compiling module glbl
+Time Resolution for simulation is 1ps.
+Waiting for 1 sub-compilation(s) to finish...
+Compiled 6 Verilog Units
+Built simulation executable /home/ise/FPGA/LCD_TM1638_HIENTHIMSSV/testbench_isim_beh.exe
+Fuse Memory Usage: 1177396 KB
+Fuse CPU Usage: 1070 ms
+GCC CPU Usage: 210 ms

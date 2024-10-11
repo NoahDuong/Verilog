@@ -1,0 +1,1 @@
+xst -intstyle ise -ifn "/home/ise/FPGA/HIENTHIMSSV/topmodule.xst" -ofn "/home/ise/FPGA/HIENTHIMSSV/topmodule.syr" 

@@ -1,0 +1,28 @@
+Running: /opt/Xilinx/14.7/ISE_DS/ISE/bin/lin64/unwrapped/fuse -intstyle ise -incremental -lib unisims_ver -lib unimacro_ver -lib xilinxcorelib_ver -o /home/ise/FPGA/Countermod60_onLED7seg/testbench_isim_beh.exe -prj /home/ise/FPGA/Countermod60_onLED7seg/testbench_beh.prj work.testbench work.glbl 
+ISim P.20131013 (signature 0xfbc00daa)
+Number of CPUs detected in this system: 8
+Turning on mult-threading, number of parallel sub-compilation jobs: 16 
+Determining compilation order of HDL files
+Analyzing Verilog file "/home/ise/FPGA/Countermod60_onLED7seg/TM1638_config.v" into library work
+Analyzing Verilog file "/home/ise/FPGA/Countermod60_onLED7seg/Clock.v" into library work
+Analyzing Verilog file "/home/ise/FPGA/Countermod60_onLED7seg/bodem.v" into library work
+Analyzing Verilog file "/home/ise/FPGA/Countermod60_onLED7seg/main.v" into library work
+Analyzing Verilog file "/home/ise/FPGA/Countermod60_onLED7seg/testbench.v" into library work
+Analyzing Verilog file "/opt/Xilinx/14.7/ISE_DS/ISE//verilog/src/glbl.v" into library work
+Starting static elaboration
+Completed static elaboration
+Fuse Memory Usage: 94976 KB
+Fuse CPU Usage: 1020 ms
+Compiling module Clock
+Compiling module TM1638_config
+Compiling module bodem
+Compiling module main
+Compiling module testbench
+Compiling module glbl
+Time Resolution for simulation is 1ps.
+Waiting for 1 sub-compilation(s) to finish...
+Compiled 6 Verilog Units
+Built simulation executable /home/ise/FPGA/Countermod60_onLED7seg/testbench_isim_beh.exe
+Fuse Memory Usage: 1177624 KB
+Fuse CPU Usage: 1100 ms
+GCC CPU Usage: 290 ms

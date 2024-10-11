@@ -1,0 +1,10 @@
+xst -intstyle ise -ifn "/home/ise/FPGA/LCD_TM1638_HIENTHIMSSV/LCD.xst" -ofn "/home/ise/FPGA/LCD_TM1638_HIENTHIMSSV/LCD.syr" 
+xst -intstyle ise -ifn "/home/ise/FPGA/LCD_TM1638_HIENTHIMSSV/LCD.xst" -ofn "/home/ise/FPGA/LCD_TM1638_HIENTHIMSSV/LCD.syr" 
+xst -intstyle ise -ifn "/home/ise/FPGA/LCD_TM1638_HIENTHIMSSV/LCD.xst" -ofn "/home/ise/FPGA/LCD_TM1638_HIENTHIMSSV/LCD.syr" 
+xst -intstyle ise -ifn "/home/ise/FPGA/LCD_TM1638_HIENTHIMSSV/LCD.xst" -ofn "/home/ise/FPGA/LCD_TM1638_HIENTHIMSSV/LCD.syr" 
+xst -intstyle ise -ifn "/home/ise/FPGA/LCD_TM1638_HIENTHIMSSV/LCD.xst" -ofn "/home/ise/FPGA/LCD_TM1638_HIENTHIMSSV/LCD.syr" 
+xst -intstyle ise -ifn "/home/ise/FPGA/LCD_TM1638_HIENTHIMSSV/LCD.xst" -ofn "/home/ise/FPGA/LCD_TM1638_HIENTHIMSSV/LCD.syr" 
+netgen -intstyle ise -ar Structure -tm LCD -w -dir netgen/synthesis -ofmt vhdl -sim LCD.ngc LCD_synthesis.vhd 
+xst -intstyle ise -ifn "/home/ise/FPGA/LCD_TM1638_HIENTHIMSSV/LCD.xst" -ofn "/home/ise/FPGA/LCD_TM1638_HIENTHIMSSV/LCD.syr" 
+xst -intstyle ise -ifn "/home/ise/FPGA/LCD_TM1638_HIENTHIMSSV/LCD.xst" -ofn "/home/ise/FPGA/LCD_TM1638_HIENTHIMSSV/LCD.syr" 
+xst -intstyle ise -ifn "/home/ise/FPGA/LCD_TM1638_HIENTHIMSSV/LCD.xst" -ofn "/home/ise/FPGA/LCD_TM1638_HIENTHIMSSV/LCD.syr" 

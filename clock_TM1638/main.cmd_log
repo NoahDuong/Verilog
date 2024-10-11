@@ -1,0 +1,2 @@
+xst -intstyle ise -ifn "/home/ise/FPGA/clock_TM1638/main.xst" -ofn "/home/ise/FPGA/clock_TM1638/main.syr" 
+xst -intstyle ise -ifn "/home/ise/FPGA/clock_TM1638/main.xst" -ofn "/home/ise/FPGA/clock_TM1638/main.syr" 

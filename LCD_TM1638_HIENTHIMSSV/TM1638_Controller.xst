@@ -1,0 +1,5 @@
+set -tmpdir "/home/ise/FPGA/LCD_TM1638_HIENTHIMSSV/xst/projnav.tmp"
+set -xsthdpdir "/home/ise/FPGA/LCD_TM1638_HIENTHIMSSV/xst"
+elaborate
+-ifn TM1638_Controller.prj
+-ifmt mixed

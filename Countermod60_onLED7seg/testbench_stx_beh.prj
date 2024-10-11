@@ -1,0 +1,6 @@
+verilog isim_temp "TM1638_config.v"
+verilog isim_temp "Clock.v"
+verilog isim_temp "bodem.v"
+verilog isim_temp "main.v"
+verilog isim_temp "testbench.v"
+verilog isim_temp "/opt/Xilinx/14.7/ISE_DS/ISE//verilog/src/glbl.v"

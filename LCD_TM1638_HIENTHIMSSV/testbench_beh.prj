@@ -1,0 +1,6 @@
+verilog work "TM1638_Controller.v"
+verilog work "sw1_2.v"
+verilog work "chuyendoiLED7doan.v"
+verilog work "LCD.v"
+verilog work "testbench.v"
+verilog work "/opt/Xilinx/14.7/ISE_DS/ISE//verilog/src/glbl.v"
