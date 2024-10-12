@@ -18,7 +18,7 @@
 // Additional Comments: 
 //
 //////////////////////////////////////////////////////////////////////////////////
-module cong4bit(
+module FullAdder(
     input [3:0] A,
     input [3:0] B,
     input  Cin,

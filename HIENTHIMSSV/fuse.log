@@ -1,27 +1,29 @@
-Running: /opt/Xilinx/14.7/ISE_DS/ISE/bin/lin64/unwrapped/fuse -intstyle ise -incremental -lib unisims_ver -lib unimacro_ver -lib xilinxcorelib_ver -o /home/ise/FPGA/HIENTHIMSSV/gdajh_isim_beh.exe -prj /home/ise/FPGA/HIENTHIMSSV/gdajh_beh.prj work.gdajh work.glbl 
+Running: /opt/Xilinx/14.7/ISE_DS/ISE/bin/lin64/unwrapped/fuse -intstyle ise -incremental -lib unisims_ver -lib unimacro_ver -lib xilinxcorelib_ver -o /home/ise/FPGA/HIENTHIMSSV/topmodule_tb_isim_beh.exe -prj /home/ise/FPGA/HIENTHIMSSV/topmodule_tb_beh.prj work.topmodule_tb work.glbl 
 ISim P.20131013 (signature 0xfbc00daa)
 Number of CPUs detected in this system: 8
 Turning on mult-threading, number of parallel sub-compilation jobs: 16 
 Determining compilation order of HDL files
 Analyzing Verilog file "/home/ise/FPGA/HIENTHIMSSV/hienthi22119166.v" into library work
+WARNING:HDLCompiler:751 - "/home/ise/FPGA/HIENTHIMSSV/hienthi22119166.v" Line 38: Redeclaration of ansi port LED7SEG_0 is not allowed
+WARNING:HDLCompiler:751 - "/home/ise/FPGA/HIENTHIMSSV/hienthi22119166.v" Line 39: Redeclaration of ansi port LED7SEG_3 is not allowed
+WARNING:HDLCompiler:751 - "/home/ise/FPGA/HIENTHIMSSV/hienthi22119166.v" Line 40: Redeclaration of ansi port LED7SEG_6 is not allowed
 Analyzing Verilog file "/home/ise/FPGA/HIENTHIMSSV/gdajh.v" into library work
 Analyzing Verilog file "/opt/Xilinx/14.7/ISE_DS/ISE//verilog/src/glbl.v" into library work
 Starting static elaboration
-WARNING:HDLCompiler:189 - "/home/ise/FPGA/HIENTHIMSSV/hienthi22119166.v" Line 37: Size mismatch in connection of port <Mode>. Formal port size is 1-bit while actual signal size is 32-bit.
-WARNING:HDLCompiler:189 - "/home/ise/FPGA/HIENTHIMSSV/hienthi22119166.v" Line 41: Size mismatch in connection of port <led>. Formal port size is 8-bit while actual signal size is 1-bit.
-WARNING:HDLCompiler:189 - "/home/ise/FPGA/HIENTHIMSSV/hienthi22119166.v" Line 46: Size mismatch in connection of port <seg4>. Formal port size is 4-bit while actual signal size is 1-bit.
+WARNING:HDLCompiler:189 - "/home/ise/FPGA/HIENTHIMSSV/hienthi22119166.v" Line 45: Size mismatch in connection of port <Mode>. Formal port size is 1-bit while actual signal size is 32-bit.
+WARNING:HDLCompiler:189 - "/home/ise/FPGA/HIENTHIMSSV/hienthi22119166.v" Line 49: Size mismatch in connection of port <led>. Formal port size is 8-bit while actual signal size is 1-bit.
 Completed static elaboration
-Fuse Memory Usage: 94936 KB
-Fuse CPU Usage: 1040 ms
+Fuse Memory Usage: 95252 KB
+Fuse CPU Usage: 1020 ms
 Compiling module sw1_2
 Compiling module TM1638_config
 Compiling module topmodule
-Compiling module gdajh
+Compiling module topmodule_tb
 Compiling module glbl
 Time Resolution for simulation is 1ps.
 Waiting for 1 sub-compilation(s) to finish...
 Compiled 5 Verilog Units
-Built simulation executable /home/ise/FPGA/HIENTHIMSSV/gdajh_isim_beh.exe
-Fuse Memory Usage: 1177680 KB
+Built simulation executable /home/ise/FPGA/HIENTHIMSSV/topmodule_tb_isim_beh.exe
+Fuse Memory Usage: 1177688 KB
 Fuse CPU Usage: 1070 ms
-GCC CPU Usage: 230 ms
+GCC CPU Usage: 280 ms

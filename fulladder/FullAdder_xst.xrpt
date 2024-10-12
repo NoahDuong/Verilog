@@ -5,7 +5,7 @@
     The structure and the elements are likely to change over the next few releases.
     This means code written to parse this file will need to be revisited each subsequent release.-->
 
-  <application stringID="Xst" timeStamp="Sun Sep  8 22:15:41 2024">
+  <application stringID="Xst" timeStamp="Sat Oct 12 14:40:29 2024">
     <section stringID="User_Env">
       <table stringID="User_EnvVar">
         <column stringID="variable"/>
@@ -43,7 +43,7 @@
         <item stringID="User_EnvOsname" value="OracleServer"/>
         <item stringID="User_EnvOsrelease" value="Oracle Linux Server release 6.4"/>
       </item>
-      <item stringID="User_EnvHost" value="localhost.localdomain"/>
+      <item stringID="User_EnvHost" value="192.168.2.38"/>
       <table stringID="User_EnvCpu">
         <column stringID="arch"/>
         <column stringID="speed"/>

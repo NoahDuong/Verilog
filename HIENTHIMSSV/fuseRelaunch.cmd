@@ -1,1 +1,1 @@
--intstyle "ise" -incremental -lib "unisims_ver" -lib "unimacro_ver" -lib "xilinxcorelib_ver" -o "/home/ise/FPGA/HIENTHIMSSV/gdajh_isim_beh.exe" -prj "/home/ise/FPGA/HIENTHIMSSV/gdajh_beh.prj" "work.gdajh" "work.glbl" 
+-intstyle "ise" -incremental -lib "unisims_ver" -lib "unimacro_ver" -lib "xilinxcorelib_ver" -o "/home/ise/FPGA/HIENTHIMSSV/topmodule_tb_isim_beh.exe" -prj "/home/ise/FPGA/HIENTHIMSSV/topmodule_tb_beh.prj" "work.topmodule_tb" "work.glbl" 

@@ -1,0 +1,4 @@
+verilog work "tm1638.v"
+verilog work "counter.v"
+verilog work "Clock.v"
+verilog work "mainblock.v"

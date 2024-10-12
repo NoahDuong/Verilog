@@ -18,7 +18,7 @@
 // Revision: 
 // Revision 0.01 - File Created
 // Additional Comments: 
-//
+//s
 //////////////////////////////////////////////////////////////////////////////////
 module DEMLEN4BIT_MOD10(
     input Clk,
@@ -26,6 +26,6 @@ module DEMLEN4BIT_MOD10(
     output [3:0] OUT
     );
 	wire _2HZ_CLK;
-	sw1_2 P_DIV(.Clk(Clk), .Mode(0), .Clk_O(_2HZ_CLK));
+	sw1_2 chiaxung(.Clk(Clk), .Mode(0), .Clk_O(_2HZ_CLK));
 	UPCOUNTER_4BIT U_C4B(.Clk(_2HZ_CLK), .RST(RST), .OUT(OUT));
 endmodule

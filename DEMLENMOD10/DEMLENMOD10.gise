@@ -76,6 +76,7 @@
   <transforms xmlns="http://www.xilinx.com/XMLSchema">
     <transform xil_pn:end_ts="1727093418" xil_pn:name="TRAN_copyInitialToXSTAbstractSynthesis" xil_pn:start_ts="1727093418">
       <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
     </transform>
     <transform xil_pn:end_ts="1727093418" xil_pn:name="TRAN_schematicsToHdl" xil_pn:prop_ck="-2616793781719787625" xil_pn:start_ts="1727093418">
       <status xil_pn:value="SuccessfullyRun"/>
@@ -101,11 +102,9 @@
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
     </transform>
-    <transform xil_pn:end_ts="1727093552" xil_pn:in_ck="938921960016482727" xil_pn:name="TRANEXT_xstsynthesize_spartan3e" xil_pn:prop_ck="-2019330925361141905" xil_pn:start_ts="1727093547">
+    <transform xil_pn:end_ts="1728745713" xil_pn:in_ck="938921960016482727" xil_pn:name="TRANEXT_xstsynthesize_spartan3e" xil_pn:prop_ck="-1633360335513511173" xil_pn:start_ts="1728745709">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
-      <status xil_pn:value="OutOfDateForOutputs"/>
-      <status xil_pn:value="OutputChanged"/>
       <outfile xil_pn:name="DEMLEN4BIT_MOD10.lso"/>
       <outfile xil_pn:name="DEMLEN4BIT_MOD10.ngc"/>
       <outfile xil_pn:name="DEMLEN4BIT_MOD10.ngr"/>
@@ -125,6 +124,8 @@
     <transform xil_pn:end_ts="1727093556" xil_pn:in_ck="6611359268936881153" xil_pn:name="TRANEXT_ngdbuild_FPGA" xil_pn:prop_ck="-8377594739698513909" xil_pn:start_ts="1727093552">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
+      <status xil_pn:value="OutOfDateForInputs"/>
+      <status xil_pn:value="InputChanged"/>
       <outfile xil_pn:name="DEMLEN4BIT_MOD10.bld"/>
       <outfile xil_pn:name="DEMLEN4BIT_MOD10.ngd"/>
       <outfile xil_pn:name="DEMLEN4BIT_MOD10_ngdbuild.xrpt"/>
@@ -135,6 +136,7 @@
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="WarningsGenerated"/>
       <status xil_pn:value="ReadyToRun"/>
+      <status xil_pn:value="OutOfDateForPredecessor"/>
       <status xil_pn:value="OutOfDateForOutputs"/>
       <status xil_pn:value="OutputChanged"/>
       <outfile xil_pn:name="DEMLEN4BIT_MOD10.pcf"/>
@@ -151,6 +153,7 @@
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="WarningsGenerated"/>
       <status xil_pn:value="ReadyToRun"/>
+      <status xil_pn:value="OutOfDateForPredecessor"/>
       <outfile xil_pn:name="DEMLEN4BIT_MOD10.ncd"/>
       <outfile xil_pn:name="DEMLEN4BIT_MOD10.pad"/>
       <outfile xil_pn:name="DEMLEN4BIT_MOD10.par"/>
@@ -165,6 +168,10 @@
     <transform xil_pn:end_ts="1727093574" xil_pn:in_ck="1857093765345332395" xil_pn:name="TRANEXT_bitFile_spartan3e" xil_pn:prop_ck="287829442711806529" xil_pn:start_ts="1727093570">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
+      <status xil_pn:value="OutOfDateForProperties"/>
+      <status xil_pn:value="OutOfDateForPredecessor"/>
+      <status xil_pn:value="OutOfDateForOutputs"/>
+      <status xil_pn:value="OutputChanged"/>
       <outfile xil_pn:name="DEMLEN4BIT_MOD10.bgn"/>
       <outfile xil_pn:name="DEMLEN4BIT_MOD10.bit"/>
       <outfile xil_pn:name="DEMLEN4BIT_MOD10.drc"/>
@@ -176,10 +183,12 @@
     <transform xil_pn:end_ts="1727093574" xil_pn:in_ck="1857093765345319541" xil_pn:name="TRAN_impactProgrammingTool" xil_pn:prop_ck="1890673188639090495" xil_pn:start_ts="1727093574">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
+      <status xil_pn:value="OutOfDateForPredecessor"/>
     </transform>
     <transform xil_pn:end_ts="1727093570" xil_pn:in_ck="-3911904854159234530" xil_pn:name="TRAN_postRouteTrce" xil_pn:prop_ck="445577401284416187" xil_pn:start_ts="1727093568">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
+      <status xil_pn:value="OutOfDateForPredecessor"/>
       <outfile xil_pn:name="DEMLEN4BIT_MOD10.twr"/>
       <outfile xil_pn:name="DEMLEN4BIT_MOD10.twx"/>
       <outfile xil_pn:name="_xmsgs/trce.xmsgs"/>

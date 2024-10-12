@@ -6,3 +6,4 @@ map -intstyle ise -p xc3s500e-fg320-5 -cm area -ir off -pr off -c 100 -o DEMLEN_
 par -w -intstyle ise -ol high -t 1 DEMLEN_XUONG_AUTO_map.ncd DEMLEN_XUONG_AUTO.ncd DEMLEN_XUONG_AUTO.pcf 
 trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml DEMLEN_XUONG_AUTO.twx DEMLEN_XUONG_AUTO.ncd -o DEMLEN_XUONG_AUTO.twr DEMLEN_XUONG_AUTO.pcf -ucf ganchanUPCOUNTER_4bit.ucf 
 bitgen -intstyle ise -f DEMLEN_XUONG_AUTO.ut DEMLEN_XUONG_AUTO.ncd 
+xst -intstyle ise -ifn "/home/ise/FPGA/UP_DOWNCOUNTER_4BIT/DEMLEN_XUONG_AUTO.xst" -ofn "/home/ise/FPGA/UP_DOWNCOUNTER_4BIT/DEMLEN_XUONG_AUTO.syr" 

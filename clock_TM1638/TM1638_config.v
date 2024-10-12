@@ -1,23 +1,4 @@
 `timescale 1ns / 1ps
-//////////////////////////////////////////////////////////////////////////////////
-// Company: 
-// Engineer: 
-// 
-// Create Date:    16:31:51 10/11/2024 
-// Design Name: 
-// Module Name:    TM1638_config 
-// Project Name: 
-// Target Devices: 
-// Tool versions: 
-// Description: 
-//
-// Dependencies: 
-//
-// Revision: 
-// Revision 0.01 - File Created
-// Additional Comments: 
-//
-//////////////////////////////////////////////////////////////////////////////////
 module TM1638_config(clk, RST, stb, dio, sclk, data_check, sec_tens, sec_digits, min_tens, min_digits, hour_tens, hour_digits);
     input clk, RST;
     output reg stb, dio, sclk;
@@ -66,11 +47,11 @@ module TM1638_config(clk, RST, stb, dio, sclk, data_check, sec_tens, sec_digits,
     assign sseg2 = decode_sseg2(sec_digits);
     // ... (similar assignments for min_tens, min_digits, hour_tens, hour_digits)
 
-    // Command and data signals
-    reg [47:0] data_hold = 0;
-    reg [7:0] command_activate = 8'h8f; // Command according to the datasheet
-    reg [7:0] command_mode = 8'h44; // Command for setting mode
-    reg [7:0] command_addr1 = 8'hc0; // Command for setting address segg1
+        // Command and data signals
+        reg [47:0] data_hold = 0;
+        reg [7:0] command_activate = 8'h8f; // Command according to the datasheet
+        reg [7:0] command_mode = 8'h44; // Command for setting mode
+        reg [7:0] command_addr1 = 8'hc0; // Command for setting address segg1
     reg [7:0] command_addr2 = 8'hc2; // Command for setting address sseg2
     // ... (similar command signals for sseg3, sseg4, sseg5, sseg6)
 

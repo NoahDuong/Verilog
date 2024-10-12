@@ -5,14 +5,14 @@ Parameter TMPDIR set to xst/projnav.tmp
 
 
 Total REAL time to Xst completion: 0.00 secs
-Total CPU time to Xst completion: 0.01 secs
+Total CPU time to Xst completion: 0.02 secs
  
 --> 
 Parameter xsthdpdir set to xst
 
 
 Total REAL time to Xst completion: 0.00 secs
-Total CPU time to Xst completion: 0.01 secs
+Total CPU time to Xst completion: 0.02 secs
  
 --> 
 Reading design: DEMLEN_XUONG_AUTO.prj
@@ -71,7 +71,7 @@ Automatic Register Balancing       : No
 
 ---- Target Options
 Add IO Buffers                     : YES
-Global Maximum Fanout              : 500
+Global Maximum Fanout              : 100000
 Add Generic Clock Buffer(BUFG)     : 24
 Register Duplication               : YES
 Slice Packing                      : YES
@@ -425,7 +425,7 @@ Offset:              4.285ns (Levels of Logic = 1)
 
 
 Total REAL time to Xst completion: 2.00 secs
-Total CPU time to Xst completion: 2.01 secs
+Total CPU time to Xst completion: 2.04 secs
  
 --> 
 

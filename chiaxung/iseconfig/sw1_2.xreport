@@ -1,11 +1,11 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <report-views version="2.0" >
  <header>
-  <DateModified>2024-10-03T05:55:12</DateModified>
+  <DateModified>2024-10-12T14:50:36</DateModified>
   <ModuleName>sw1_2</ModuleName>
   <SummaryTimeStamp>2024-09-23T07:39:40</SummaryTimeStamp>
-  <SavedFilePath>/home/ise/chiaxung/iseconfig/sw1_2.xreport</SavedFilePath>
-  <ImplementationReportsDirectory>/home/ise/chiaxung/</ImplementationReportsDirectory>
+  <SavedFilePath>/home/ise/FPGA/chiaxung/iseconfig/sw1_2.xreport</SavedFilePath>
+  <ImplementationReportsDirectory>/home/ise/FPGA/chiaxung/</ImplementationReportsDirectory>
   <DateInitialized>2024-09-23T07:08:00</DateInitialized>
   <EnableMessageFiltering>false</EnableMessageFiltering>
  </header>

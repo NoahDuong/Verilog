@@ -180,11 +180,15 @@
     <transform xil_pn:end_ts="1727077160" xil_pn:in_ck="3067765473389724222" xil_pn:name="TRAN_compileBCD2" xil_pn:prop_ck="4066557905393457326" xil_pn:start_ts="1727077160">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
+      <status xil_pn:value="OutOfDateForInputs"/>
+      <status xil_pn:value="InputChanged"/>
     </transform>
     <transform xil_pn:end_ts="1727086604" xil_pn:in_ck="2102198171646556400" xil_pn:name="TRANEXT_ngdbuild_FPGA" xil_pn:prop_ck="-6386492836658548177" xil_pn:start_ts="1727086600">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
       <status xil_pn:value="OutOfDateForInputs"/>
+      <status xil_pn:value="OutOfDateForPredecessor"/>
+      <status xil_pn:value="InputChanged"/>
       <outfile xil_pn:name="_ngo"/>
       <outfile xil_pn:name="_xmsgs/ngdbuild.xmsgs"/>
       <outfile xil_pn:name="sw1_2.bld"/>
@@ -198,6 +202,7 @@
       <status xil_pn:value="OutOfDateForInputs"/>
       <status xil_pn:value="OutOfDateForPredecessor"/>
       <status xil_pn:value="OutOfDateForOutputs"/>
+      <status xil_pn:value="InputChanged"/>
       <status xil_pn:value="OutputChanged"/>
       <outfile xil_pn:name="_xmsgs/map.xmsgs"/>
       <outfile xil_pn:name="sw1_2.pcf"/>
@@ -214,6 +219,7 @@
       <status xil_pn:value="ReadyToRun"/>
       <status xil_pn:value="OutOfDateForInputs"/>
       <status xil_pn:value="OutOfDateForPredecessor"/>
+      <status xil_pn:value="InputChanged"/>
       <outfile xil_pn:name="_xmsgs/par.xmsgs"/>
       <outfile xil_pn:name="sw1_2.ncd"/>
       <outfile xil_pn:name="sw1_2.pad"/>
@@ -245,7 +251,9 @@
     <transform xil_pn:end_ts="1727086618" xil_pn:in_ck="2102198171646556269" xil_pn:name="TRAN_postRouteTrce" xil_pn:prop_ck="445577401284416187" xil_pn:start_ts="1727086615">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
+      <status xil_pn:value="OutOfDateForInputs"/>
       <status xil_pn:value="OutOfDateForPredecessor"/>
+      <status xil_pn:value="InputChanged"/>
       <outfile xil_pn:name="_xmsgs/trce.xmsgs"/>
       <outfile xil_pn:name="sw1_2.twr"/>
       <outfile xil_pn:name="sw1_2.twx"/>

@@ -5,7 +5,7 @@
 // 
 // Create Date:    09:35:42 08/26/2024 
 // Design Name: 
-// Module Name:    Board_FA_module1 
+// Module Name:    FullAdder
 // Project Name: 
 // Target Devices: 
 // Tool versions: 

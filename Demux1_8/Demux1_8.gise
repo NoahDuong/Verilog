@@ -184,10 +184,15 @@
     <transform xil_pn:end_ts="1727070873" xil_pn:in_ck="3113926528595039250" xil_pn:name="TRAN_compileBCD2" xil_pn:prop_ck="4784892131053158093" xil_pn:start_ts="1727070873">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
+      <status xil_pn:value="OutOfDateForInputs"/>
+      <status xil_pn:value="InputChanged"/>
     </transform>
     <transform xil_pn:end_ts="1727070879" xil_pn:in_ck="3768139813070400739" xil_pn:name="TRANEXT_ngdbuild_FPGA" xil_pn:prop_ck="289661708000742542" xil_pn:start_ts="1727070875">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
+      <status xil_pn:value="OutOfDateForInputs"/>
+      <status xil_pn:value="OutOfDateForPredecessor"/>
+      <status xil_pn:value="InputChanged"/>
       <outfile xil_pn:name="DEMUX1_8.bld"/>
       <outfile xil_pn:name="DEMUX1_8.ngd"/>
       <outfile xil_pn:name="DEMUX1_8_ngdbuild.xrpt"/>
@@ -198,7 +203,10 @@
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="WarningsGenerated"/>
       <status xil_pn:value="ReadyToRun"/>
+      <status xil_pn:value="OutOfDateForInputs"/>
+      <status xil_pn:value="OutOfDateForPredecessor"/>
       <status xil_pn:value="OutOfDateForOutputs"/>
+      <status xil_pn:value="InputChanged"/>
       <status xil_pn:value="OutputChanged"/>
       <outfile xil_pn:name="DEMUX1_8.pcf"/>
       <outfile xil_pn:name="DEMUX1_8_map.map"/>
@@ -213,6 +221,9 @@
     <transform xil_pn:end_ts="1727070892" xil_pn:in_ck="-7616597789369561603" xil_pn:name="TRANEXT_par_spartan3" xil_pn:prop_ck="-5563652517805085498" xil_pn:start_ts="1727070883">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
+      <status xil_pn:value="OutOfDateForInputs"/>
+      <status xil_pn:value="OutOfDateForPredecessor"/>
+      <status xil_pn:value="InputChanged"/>
       <outfile xil_pn:name="DEMUX1_8.ncd"/>
       <outfile xil_pn:name="DEMUX1_8.pad"/>
       <outfile xil_pn:name="DEMUX1_8.par"/>
@@ -227,6 +238,7 @@
     <transform xil_pn:end_ts="1727070898" xil_pn:in_ck="3546239239439134030" xil_pn:name="TRANEXT_bitFile_spartan3e" xil_pn:prop_ck="-7817169320884990698" xil_pn:start_ts="1727070895">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
+      <status xil_pn:value="OutOfDateForPredecessor"/>
       <outfile xil_pn:name="DEMUX1_8.bgn"/>
       <outfile xil_pn:name="DEMUX1_8.bit"/>
       <outfile xil_pn:name="DEMUX1_8.drc"/>
@@ -238,14 +250,19 @@
     <transform xil_pn:end_ts="1727071806" xil_pn:in_ck="3546239239439121176" xil_pn:name="TRAN_impactProgrammingTool" xil_pn:prop_ck="1890673188639090495" xil_pn:start_ts="1727071805">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
+      <status xil_pn:value="OutOfDateForPredecessor"/>
     </transform>
     <transform xil_pn:end_ts="1727070900" xil_pn:in_ck="3546239239439121176" xil_pn:name="TRAN_genImpactFile" xil_pn:prop_ck="7121392639749839438" xil_pn:start_ts="1727070898">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
+      <status xil_pn:value="OutOfDateForPredecessor"/>
     </transform>
     <transform xil_pn:end_ts="1727070892" xil_pn:in_ck="3768139813070400608" xil_pn:name="TRAN_postRouteTrce" xil_pn:prop_ck="445577401284416187" xil_pn:start_ts="1727070889">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
+      <status xil_pn:value="OutOfDateForInputs"/>
+      <status xil_pn:value="OutOfDateForPredecessor"/>
+      <status xil_pn:value="InputChanged"/>
       <outfile xil_pn:name="DEMUX1_8.twr"/>
       <outfile xil_pn:name="DEMUX1_8.twx"/>
       <outfile xil_pn:name="_xmsgs/trce.xmsgs"/>
@@ -253,6 +270,7 @@
     <transform xil_pn:end_ts="1726467827" xil_pn:in_ck="3546239239439134161" xil_pn:name="TRAN_postSynthesisSimModel" xil_pn:prop_ck="-7698387710861319553" xil_pn:start_ts="1726467824">
       <status xil_pn:value="AbortedRun"/>
       <status xil_pn:value="ReadyToRun"/>
+      <status xil_pn:value="OutOfDateForPredecessor"/>
       <outfile xil_pn:name="netgen"/>
       <outfile xil_pn:name="netgen/synthesis/DEMUX1_8_synthesis.nlf"/>
       <outfile xil_pn:name="netgen/synthesis/DEMUX1_8_synthesis.v"/>

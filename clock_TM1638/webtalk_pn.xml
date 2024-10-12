@@ -3,7 +3,7 @@
 <!--The data in this file is primarily intended for consumption by Xilinx tools.
 The structure and the elements are likely to change over the next few releases.
 This means code written to parse this file will need to be revisited each subsequent release.-->
-<application name="pn" timeStamp="Fri Oct 11 16:48:06 2024">
+<application name="pn" timeStamp="Sat Oct 12 18:52:19 2024">
 <section name="Project Information" visible="false">
 <property name="ProjectID" value="654AFE5B85EA7293C769B17F079CAEA9" type="project"/>
 <property name="ProjectIteration" value="0" type="project"/>
@@ -11,6 +11,7 @@ This means code written to parse this file will need to be revisited each subseq
 <property name="ProjectCreationTimestamp" value="2024-10-11T16:04:36" type="project"/>
 </section>
 <section name="Project Statistics" visible="true">
+<property name="PROPEXT_xilxSynthMaxFanout_virtex2" value="100000" type="process"/>
 <property name="PROP_Enable_Message_Filtering" value="false" type="design"/>
 <property name="PROP_FitterReportFormat" value="HTML" type="process"/>
 <property name="PROP_LastAppliedGoal" value="Balanced" type="design"/>
@@ -28,6 +29,7 @@ This means code written to parse this file will need to be revisited each subseq
 <property name="PROP_intWorkingDirLocWRTProjDir" value="Same" type="design"/>
 <property name="PROP_intWorkingDirUsed" value="No" type="design"/>
 <property name="PROP_selectedSimRootSourceNode_behav" value="work.testbench" type="process"/>
+<property name="PROP_xilxBitgStart_IntDone" value="true" type="process"/>
 <property name="PROP_AutoTop" value="true" type="design"/>
 <property name="PROP_DevFamily" value="Spartan3E" type="design"/>
 <property name="PROP_DevDevice" value="xc3s500e" type="design"/>

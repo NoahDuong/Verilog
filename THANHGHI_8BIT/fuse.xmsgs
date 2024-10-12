@@ -5,7 +5,7 @@
      behavior or data corruption.  It is strongly advised that
      users do not edit the contents of this file. -->
 <messages>
-<msg type="warning" file="HDLCompiler" num="189" delta="unknown" >"/home/ise/THANHGHI_8BIT/THANHGHI8BIT.v" Line 30: Size mismatch in connection of port &lt;<arg fmt="%s" index="3">Mode</arg>&gt;. Formal port size is <arg fmt="%d" index="2">1</arg>-bit while actual signal size is <arg fmt="%d" index="1">32</arg>-bit.
+<msg type="warning" file="HDLCompiler" num="189" delta="unknown" >"/home/ise/FPGA/THANHGHI_8BIT/THANHGHI8BIT.v" Line 30: Size mismatch in connection of port &lt;<arg fmt="%s" index="3">Mode</arg>&gt;. Formal port size is <arg fmt="%d" index="2">1</arg>-bit while actual signal size is <arg fmt="%d" index="1">32</arg>-bit.
 </msg>
 
 </messages>

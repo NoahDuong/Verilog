@@ -185,10 +185,15 @@
     <transform xil_pn:end_ts="1726470726" xil_pn:in_ck="8493784355643592242" xil_pn:name="TRAN_compileBCD2" xil_pn:prop_ck="1262981232820852813" xil_pn:start_ts="1726470726">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
+      <status xil_pn:value="OutOfDateForInputs"/>
+      <status xil_pn:value="InputChanged"/>
     </transform>
     <transform xil_pn:end_ts="1726470730" xil_pn:in_ck="2848964192141580931" xil_pn:name="TRANEXT_ngdbuild_FPGA" xil_pn:prop_ck="7748332714617378286" xil_pn:start_ts="1726470726">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
+      <status xil_pn:value="OutOfDateForInputs"/>
+      <status xil_pn:value="OutOfDateForPredecessor"/>
+      <status xil_pn:value="InputChanged"/>
       <outfile xil_pn:name="MUX10_1.bld"/>
       <outfile xil_pn:name="MUX10_1.ngd"/>
       <outfile xil_pn:name="MUX10_1_ngdbuild.xrpt"/>
@@ -199,7 +204,10 @@
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="WarningsGenerated"/>
       <status xil_pn:value="ReadyToRun"/>
+      <status xil_pn:value="OutOfDateForInputs"/>
+      <status xil_pn:value="OutOfDateForPredecessor"/>
       <status xil_pn:value="OutOfDateForOutputs"/>
+      <status xil_pn:value="InputChanged"/>
       <status xil_pn:value="OutputChanged"/>
       <outfile xil_pn:name="MUX10_1.pcf"/>
       <outfile xil_pn:name="MUX10_1_map.map"/>
@@ -214,6 +222,9 @@
     <transform xil_pn:end_ts="1726470742" xil_pn:in_ck="-3840597597751440483" xil_pn:name="TRANEXT_par_spartan3" xil_pn:prop_ck="-5563652517805085498" xil_pn:start_ts="1726470734">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
+      <status xil_pn:value="OutOfDateForInputs"/>
+      <status xil_pn:value="OutOfDateForPredecessor"/>
+      <status xil_pn:value="InputChanged"/>
       <outfile xil_pn:name="MUX10_1.ncd"/>
       <outfile xil_pn:name="MUX10_1.pad"/>
       <outfile xil_pn:name="MUX10_1.par"/>
@@ -228,6 +239,7 @@
     <transform xil_pn:end_ts="1726470745" xil_pn:in_ck="122002476069850894" xil_pn:name="TRANEXT_bitFile_spartan3e" xil_pn:prop_ck="-7817169320884990698" xil_pn:start_ts="1726470742">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
+      <status xil_pn:value="OutOfDateForPredecessor"/>
       <outfile xil_pn:name="MUX10_1.bgn"/>
       <outfile xil_pn:name="MUX10_1.bit"/>
       <outfile xil_pn:name="MUX10_1.drc"/>
@@ -239,11 +251,13 @@
     <transform xil_pn:end_ts="1726470745" xil_pn:in_ck="122002476069838040" xil_pn:name="TRAN_impactProgrammingTool" xil_pn:prop_ck="1890673188639090495" xil_pn:start_ts="1726470745">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
+      <status xil_pn:value="OutOfDateForPredecessor"/>
     </transform>
     <transform xil_pn:end_ts="1725841290" xil_pn:in_ck="122002476069838040" xil_pn:name="TRAN_configureTargetDevice" xil_pn:prop_ck="5582947192412673156" xil_pn:start_ts="1725841289">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
       <status xil_pn:value="OutOfDateForInputs"/>
+      <status xil_pn:value="OutOfDateForPredecessor"/>
       <status xil_pn:value="InputAdded"/>
       <status xil_pn:value="InputChanged"/>
       <status xil_pn:value="InputRemoved"/>
@@ -252,6 +266,7 @@
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
       <status xil_pn:value="OutOfDateForInputs"/>
+      <status xil_pn:value="OutOfDateForPredecessor"/>
       <status xil_pn:value="InputAdded"/>
       <status xil_pn:value="InputChanged"/>
       <status xil_pn:value="InputRemoved"/>
@@ -259,6 +274,9 @@
     <transform xil_pn:end_ts="1726470742" xil_pn:in_ck="2848964192141580800" xil_pn:name="TRAN_postRouteTrce" xil_pn:prop_ck="445577401284416187" xil_pn:start_ts="1726470739">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
+      <status xil_pn:value="OutOfDateForInputs"/>
+      <status xil_pn:value="OutOfDateForPredecessor"/>
+      <status xil_pn:value="InputChanged"/>
       <outfile xil_pn:name="MUX10_1.twr"/>
       <outfile xil_pn:name="MUX10_1.twx"/>
       <outfile xil_pn:name="_xmsgs/trce.xmsgs"/>
@@ -266,6 +284,7 @@
     <transform xil_pn:end_ts="1725841288" xil_pn:in_ck="122002476069851025" xil_pn:name="TRAN_postSynthesisSimModel" xil_pn:prop_ck="6442405061453248351" xil_pn:start_ts="1725841285">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
+      <status xil_pn:value="OutOfDateForPredecessor"/>
       <outfile xil_pn:name="netgen"/>
       <outfile xil_pn:name="netgen/synthesis/MUX10_1_synthesis.nlf"/>
       <outfile xil_pn:name="netgen/synthesis/MUX10_1_synthesis.v"/>

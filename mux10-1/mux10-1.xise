@@ -25,7 +25,7 @@
       <association xil_pn:name="PostRouteSimulation" xil_pn:seqID="16"/>
       <association xil_pn:name="PostTranslateSimulation" xil_pn:seqID="16"/>
     </file>
-    <file xil_pn:name="../Documents/fileganchan/ganchanmux10_1.ucf" xil_pn:type="FILE_UCF">
+    <file xil_pn:name="../../Documents/fileganchan/ganchanmux10_1.ucf" xil_pn:type="FILE_UCF">
       <association xil_pn:name="Implementation" xil_pn:seqID="66"/>
     </file>
   </files>

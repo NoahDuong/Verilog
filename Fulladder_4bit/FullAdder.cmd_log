@@ -1,0 +1,1 @@
+xst -intstyle ise -ifn "/home/ise/FPGA/Fulladder_4bit/FullAdder.xst" -ofn "/home/ise/FPGA/Fulladder_4bit/FullAdder.syr" 

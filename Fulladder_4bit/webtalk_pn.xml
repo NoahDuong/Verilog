@@ -3,11 +3,11 @@
 <!--The data in this file is primarily intended for consumption by Xilinx tools.
 The structure and the elements are likely to change over the next few releases.
 This means code written to parse this file will need to be revisited each subsequent release.-->
-<application name="pn" timeStamp="Mon Sep 23 06:06:31 2024">
+<application name="pn" timeStamp="Sat Oct 12 16:03:37 2024">
 <section name="Project Information" visible="false">
 <property name="ProjectID" value="FD41C12D9730BCF8B06E5B1E2C867482" type="project"/>
 <property name="ProjectIteration" value="4" type="project"/>
-<property name="ProjectFile" value="/home/ise/Fulladder_4bit/Fulladder_4bit.xise" type="project"/>
+<property name="ProjectFile" value="/home/ise/FPGA/Fulladder_4bit/Fulladder_4bit.xise" type="project"/>
 <property name="ProjectCreationTimestamp" value="2024-09-08T23:25:52" type="project"/>
 </section>
 <section name="Project Statistics" visible="true">

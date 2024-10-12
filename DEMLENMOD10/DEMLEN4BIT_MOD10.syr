@@ -5,14 +5,14 @@ Parameter TMPDIR set to xst/projnav.tmp
 
 
 Total REAL time to Xst completion: 0.00 secs
-Total CPU time to Xst completion: 0.01 secs
+Total CPU time to Xst completion: 0.02 secs
  
 --> 
 Parameter xsthdpdir set to xst
 
 
 Total REAL time to Xst completion: 0.00 secs
-Total CPU time to Xst completion: 0.01 secs
+Total CPU time to Xst completion: 0.02 secs
  
 --> 
 Reading design: DEMLEN4BIT_MOD10.prj
@@ -71,7 +71,7 @@ Automatic Register Balancing       : No
 
 ---- Target Options
 Add IO Buffers                     : YES
-Global Maximum Fanout              : 500
+Global Maximum Fanout              : 100000
 Add Generic Clock Buffer(BUFG)     : 24
 Register Duplication               : YES
 Slice Packing                      : YES
@@ -301,7 +301,7 @@ Clock Information:
 Clock Signal                       | Clock buffer(FF name)  | Load  |
 -----------------------------------+------------------------+-------+
 Clk                                | BUFGP                  | 33    |
-P_DIV/Clk_O                        | NONE(U_C4B/CACHE_0)    | 4     |
+chiaxung/Clk_O                     | NONE(U_C4B/CACHE_0)    | 4     |
 -----------------------------------+------------------------+-------+
 INFO:Xst:2169 - HDL ADVISOR - Some clock signals were not automatically buffered by XST with BUFG/BUFR resources. Please use the buffer_type constraint in order to insert these buffers to the clock signals to help prevent skew problems.
 
@@ -328,40 +328,40 @@ Timing constraint: Default period analysis for Clock 'Clk'
   Total number of paths / destination ports: 1585 / 66
 -------------------------------------------------------------------------
 Delay:               4.528ns (Levels of Logic = 9)
-  Source:            P_DIV/COUNT_8 (FF)
-  Destination:       P_DIV/COUNT_0 (FF)
+  Source:            chiaxung/COUNT_8 (FF)
+  Destination:       chiaxung/COUNT_0 (FF)
   Source Clock:      Clk rising
   Destination Clock: Clk rising
 
-  Data Path: P_DIV/COUNT_8 to P_DIV/COUNT_0
+  Data Path: chiaxung/COUNT_8 to chiaxung/COUNT_0
                                 Gate     Net
     Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
     ----------------------------------------  ------------
-     FDR:C->Q              2   0.514   0.532  P_DIV/COUNT_8 (P_DIV/COUNT_8)
-     LUT4:I0->O            1   0.612   0.000  P_DIV/Clk_O_cmp_eq0000_wg_lut<0> (P_DIV/Clk_O_cmp_eq0000_wg_lut<0>)
-     MUXCY:S->O            1   0.404   0.000  P_DIV/Clk_O_cmp_eq0000_wg_cy<0> (P_DIV/Clk_O_cmp_eq0000_wg_cy<0>)
-     MUXCY:CI->O           1   0.052   0.000  P_DIV/Clk_O_cmp_eq0000_wg_cy<1> (P_DIV/Clk_O_cmp_eq0000_wg_cy<1>)
-     MUXCY:CI->O           1   0.052   0.000  P_DIV/Clk_O_cmp_eq0000_wg_cy<2> (P_DIV/Clk_O_cmp_eq0000_wg_cy<2>)
-     MUXCY:CI->O           1   0.052   0.000  P_DIV/Clk_O_cmp_eq0000_wg_cy<3> (P_DIV/Clk_O_cmp_eq0000_wg_cy<3>)
-     MUXCY:CI->O           1   0.052   0.000  P_DIV/Clk_O_cmp_eq0000_wg_cy<4> (P_DIV/Clk_O_cmp_eq0000_wg_cy<4>)
-     MUXCY:CI->O           1   0.052   0.000  P_DIV/Clk_O_cmp_eq0000_wg_cy<5> (P_DIV/Clk_O_cmp_eq0000_wg_cy<5>)
-     MUXCY:CI->O           1   0.052   0.000  P_DIV/Clk_O_cmp_eq0000_wg_cy<6> (P_DIV/Clk_O_cmp_eq0000_wg_cy<6>)
-     MUXCY:CI->O          33   0.289   1.073  P_DIV/Clk_O_cmp_eq0000_wg_cy<7> (P_DIV/Clk_O_cmp_eq0000)
-     FDR:R                     0.795          P_DIV/COUNT_0
+     FDR:C->Q              2   0.514   0.532  chiaxung/COUNT_8 (chiaxung/COUNT_8)
+     LUT4:I0->O            1   0.612   0.000  chiaxung/Clk_O_cmp_eq0000_wg_lut<0> (chiaxung/Clk_O_cmp_eq0000_wg_lut<0>)
+     MUXCY:S->O            1   0.404   0.000  chiaxung/Clk_O_cmp_eq0000_wg_cy<0> (chiaxung/Clk_O_cmp_eq0000_wg_cy<0>)
+     MUXCY:CI->O           1   0.052   0.000  chiaxung/Clk_O_cmp_eq0000_wg_cy<1> (chiaxung/Clk_O_cmp_eq0000_wg_cy<1>)
+     MUXCY:CI->O           1   0.052   0.000  chiaxung/Clk_O_cmp_eq0000_wg_cy<2> (chiaxung/Clk_O_cmp_eq0000_wg_cy<2>)
+     MUXCY:CI->O           1   0.052   0.000  chiaxung/Clk_O_cmp_eq0000_wg_cy<3> (chiaxung/Clk_O_cmp_eq0000_wg_cy<3>)
+     MUXCY:CI->O           1   0.052   0.000  chiaxung/Clk_O_cmp_eq0000_wg_cy<4> (chiaxung/Clk_O_cmp_eq0000_wg_cy<4>)
+     MUXCY:CI->O           1   0.052   0.000  chiaxung/Clk_O_cmp_eq0000_wg_cy<5> (chiaxung/Clk_O_cmp_eq0000_wg_cy<5>)
+     MUXCY:CI->O           1   0.052   0.000  chiaxung/Clk_O_cmp_eq0000_wg_cy<6> (chiaxung/Clk_O_cmp_eq0000_wg_cy<6>)
+     MUXCY:CI->O          33   0.289   1.073  chiaxung/Clk_O_cmp_eq0000_wg_cy<7> (chiaxung/Clk_O_cmp_eq0000)
+     FDR:R                     0.795          chiaxung/COUNT_0
     ----------------------------------------
     Total                      4.528ns (2.923ns logic, 1.605ns route)
                                        (64.5% logic, 35.5% route)
 
 =========================================================================
-Timing constraint: Default period analysis for Clock 'P_DIV/Clk_O'
+Timing constraint: Default period analysis for Clock 'chiaxung/Clk_O'
   Clock period: 3.825ns (frequency: 261.438MHz)
   Total number of paths / destination ports: 26 / 8
 -------------------------------------------------------------------------
 Delay:               3.825ns (Levels of Logic = 2)
   Source:            U_C4B/CACHE_1 (FF)
   Destination:       U_C4B/CACHE_0 (FF)
-  Source Clock:      P_DIV/Clk_O rising
-  Destination Clock: P_DIV/Clk_O rising
+  Source Clock:      chiaxung/Clk_O rising
+  Destination Clock: chiaxung/Clk_O rising
 
   Data Path: U_C4B/CACHE_1 to U_C4B/CACHE_0
                                 Gate     Net
@@ -376,13 +376,13 @@ Delay:               3.825ns (Levels of Logic = 2)
                                        (66.2% logic, 33.8% route)
 
 =========================================================================
-Timing constraint: Default OFFSET IN BEFORE for Clock 'P_DIV/Clk_O'
+Timing constraint: Default OFFSET IN BEFORE for Clock 'chiaxung/Clk_O'
   Total number of paths / destination ports: 4 / 4
 -------------------------------------------------------------------------
 Offset:              3.521ns (Levels of Logic = 2)
   Source:            RST (PAD)
   Destination:       U_C4B/CACHE_0 (FF)
-  Destination Clock: P_DIV/Clk_O rising
+  Destination Clock: chiaxung/Clk_O rising
 
   Data Path: RST to U_C4B/CACHE_0
                                 Gate     Net
@@ -396,13 +396,13 @@ Offset:              3.521ns (Levels of Logic = 2)
                                        (71.4% logic, 28.6% route)
 
 =========================================================================
-Timing constraint: Default OFFSET OUT AFTER for Clock 'P_DIV/Clk_O'
+Timing constraint: Default OFFSET OUT AFTER for Clock 'chiaxung/Clk_O'
   Total number of paths / destination ports: 4 / 4
 -------------------------------------------------------------------------
 Offset:              4.252ns (Levels of Logic = 1)
   Source:            U_C4B/CACHE_0 (FF)
   Destination:       OUT<0> (PAD)
-  Source Clock:      P_DIV/Clk_O rising
+  Source Clock:      chiaxung/Clk_O rising
 
   Data Path: U_C4B/CACHE_0 to OUT<0>
                                 Gate     Net
@@ -418,12 +418,12 @@ Offset:              4.252ns (Levels of Logic = 1)
 
 
 Total REAL time to Xst completion: 2.00 secs
-Total CPU time to Xst completion: 1.98 secs
+Total CPU time to Xst completion: 2.06 secs
  
 --> 
 
 
-Total memory usage is 607352 kilobytes
+Total memory usage is 607392 kilobytes
 
 Number of errors   :    0 (   0 filtered)
 Number of warnings :    1 (   0 filtered)

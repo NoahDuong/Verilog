@@ -1,11 +1,11 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <report-views version="2.0" >
  <header>
-  <DateModified>2024-10-11T16:47:45</DateModified>
+  <DateModified>2024-10-12T18:58:06</DateModified>
   <ModuleName>main</ModuleName>
-  <SummaryTimeStamp>2024-10-11T16:36:59</SummaryTimeStamp>
+  <SummaryTimeStamp>2024-10-12T18:52:24</SummaryTimeStamp>
   <SavedFilePath>/home/ise/FPGA/clock_TM1638/iseconfig/main.xreport</SavedFilePath>
-  <ImplementationReportsDirectory>/home/ise/FPGA/clock_TM1638</ImplementationReportsDirectory>
+  <ImplementationReportsDirectory>/home/ise/FPGA/clock_TM1638/</ImplementationReportsDirectory>
   <DateInitialized>2024-10-11T16:30:29</DateInitialized>
   <EnableMessageFiltering>false</EnableMessageFiltering>
  </header>

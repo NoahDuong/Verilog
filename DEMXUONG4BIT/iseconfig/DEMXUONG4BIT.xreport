@@ -1,11 +1,11 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <report-views version="2.0" >
  <header>
-  <DateModified>2024-09-23T11:51:46</DateModified>
+  <DateModified>2024-10-12T15:00:20</DateModified>
   <ModuleName>DEMXUONG4BIT</ModuleName>
   <SummaryTimeStamp>2024-09-23T11:50:30</SummaryTimeStamp>
-  <SavedFilePath>/home/ise/DEMXUONG4BIT/iseconfig/DEMXUONG4BIT.xreport</SavedFilePath>
-  <ImplementationReportsDirectory>/home/ise/DEMXUONG4BIT</ImplementationReportsDirectory>
+  <SavedFilePath>/home/ise/FPGA/DEMXUONG4BIT/iseconfig/DEMXUONG4BIT.xreport</SavedFilePath>
+  <ImplementationReportsDirectory>/home/ise/FPGA/DEMXUONG4BIT/</ImplementationReportsDirectory>
   <DateInitialized>2024-09-23T11:51:46</DateInitialized>
   <EnableMessageFiltering>false</EnableMessageFiltering>
  </header>

@@ -24,12 +24,12 @@ module main(
     output [7:0] Q
 );
     wire _1Hz;
-    sw1_2 pldv(
+    sw1_2 chiaxung(
         .Clk(CLK),
         .Clk_O(_1Hz),
         .Mode(1)
     );
-SANGDAN_TATHET sd_th(
+SANGDAN_TATHET sd_td(
         .CLK(_1Hz),
         .RST(RST),
         .Q(Q)

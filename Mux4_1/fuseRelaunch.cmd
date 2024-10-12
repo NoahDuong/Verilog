@@ -1,0 +1,1 @@
+-intstyle "ise" -incremental -lib "unisims_ver" -lib "unimacro_ver" -lib "xilinxcorelib_ver" -o "/home/ise/FPGA/Mux4_1/Mux4_1_isim_beh.exe" -prj "/home/ise/FPGA/Mux4_1/Mux4_1_beh.prj" "work.Mux4_1" "work.glbl" 

@@ -1,5 +1,5 @@
 ISim log file
-Running: /home/ise/THANHGHI_8BIT/testbench_isim_beh.exe -intstyle ise -gui -tclbatch isim.cmd -wdb /home/ise/THANHGHI_8BIT/testbench_isim_beh.wdb 
+Running: /home/ise/FPGA/THANHGHI_8BIT/testbench_isim_beh.exe -intstyle ise -gui -tclbatch isim.cmd -wdb /home/ise/FPGA/THANHGHI_8BIT/testbench_isim_beh.wdb 
 ISim P.20131013 (signature 0xfbc00daa)
 ----------------------------------------------------------------------
 WARNING:Security:42 - Your software subscription period has lapsed. Your current version of Xilinx tools will continue to function, but you no longer qualify for Xilinx software updates or new releases.
@@ -14,5 +14,7 @@ Time resolution is 1 ps
 # run 1000 ns
 Simulator is doing circuit initialization process.
 Finished circuit initialization process.
-# run 10s
+# run 2s
+# run all
+Stopped at time : 4840429940 ns : File "/home/ise/FPGA/THANHGHI_8BIT/testbench.v" Line 44
 # exit 0

@@ -5,14 +5,14 @@ Parameter TMPDIR set to xst/projnav.tmp
 
 
 Total REAL time to Xst completion: 0.00 secs
-Total CPU time to Xst completion: 0.02 secs
+Total CPU time to Xst completion: 0.03 secs
  
 --> 
 Parameter xsthdpdir set to xst
 
 
 Total REAL time to Xst completion: 0.00 secs
-Total CPU time to Xst completion: 0.02 secs
+Total CPU time to Xst completion: 0.03 secs
  
 --> 
 Reading design: main.prj
@@ -313,7 +313,7 @@ Clock Information:
 Clock Signal                       | Clock buffer(FF name)  | Load  |
 -----------------------------------+------------------------+-------+
 CLK                                | BUFGP                  | 33    |
-pldv/Clk_O                         | NONE(sd_th/Q_7)        | 9     |
+chiaxung/Clk_O                     | NONE(sd_td/Q_7)        | 9     |
 -----------------------------------+------------------------+-------+
 INFO:Xst:2169 - HDL ADVISOR - Some clock signals were not automatically buffered by XST with BUFG/BUFR resources. Please use the buffer_type constraint in order to insert these buffers to the clock signals to help prevent skew problems.
 
@@ -340,127 +340,127 @@ Timing constraint: Default period analysis for Clock 'CLK'
   Total number of paths / destination ports: 19537 / 66
 -------------------------------------------------------------------------
 Delay:               7.821ns (Levels of Logic = 48)
-  Source:            pldv/COUNT_0 (FF)
-  Destination:       pldv/COUNT_31 (FF)
+  Source:            chiaxung/COUNT_0 (FF)
+  Destination:       chiaxung/COUNT_31 (FF)
   Source Clock:      CLK rising
   Destination Clock: CLK rising
 
-  Data Path: pldv/COUNT_0 to pldv/COUNT_31
+  Data Path: chiaxung/COUNT_0 to chiaxung/COUNT_31
                                 Gate     Net
     Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
     ----------------------------------------  ------------
-     FDR:C->Q              3   0.514   0.603  pldv/COUNT_0 (pldv/COUNT_0)
-     LUT4:I0->O            1   0.612   0.000  pldv/Mcompar_old_COUNT_2_cmp_gt0000_lut<0> (pldv/Mcompar_old_COUNT_2_cmp_gt0000_lut<0>)
-     MUXCY:S->O            1   0.404   0.000  pldv/Mcompar_old_COUNT_2_cmp_gt0000_cy<0> (pldv/Mcompar_old_COUNT_2_cmp_gt0000_cy<0>)
-     MUXCY:CI->O           1   0.051   0.000  pldv/Mcompar_old_COUNT_2_cmp_gt0000_cy<1> (pldv/Mcompar_old_COUNT_2_cmp_gt0000_cy<1>)
-     MUXCY:CI->O           1   0.051   0.000  pldv/Mcompar_old_COUNT_2_cmp_gt0000_cy<2> (pldv/Mcompar_old_COUNT_2_cmp_gt0000_cy<2>)
-     MUXCY:CI->O           1   0.051   0.000  pldv/Mcompar_old_COUNT_2_cmp_gt0000_cy<3> (pldv/Mcompar_old_COUNT_2_cmp_gt0000_cy<3>)
-     MUXCY:CI->O           1   0.051   0.000  pldv/Mcompar_old_COUNT_2_cmp_gt0000_cy<4> (pldv/Mcompar_old_COUNT_2_cmp_gt0000_cy<4>)
-     MUXCY:CI->O           1   0.051   0.000  pldv/Mcompar_old_COUNT_2_cmp_gt0000_cy<5> (pldv/Mcompar_old_COUNT_2_cmp_gt0000_cy<5>)
-     MUXCY:CI->O           1   0.051   0.000  pldv/Mcompar_old_COUNT_2_cmp_gt0000_cy<6> (pldv/Mcompar_old_COUNT_2_cmp_gt0000_cy<6>)
-     MUXCY:CI->O           1   0.051   0.000  pldv/Mcompar_old_COUNT_2_cmp_gt0000_cy<7> (pldv/Mcompar_old_COUNT_2_cmp_gt0000_cy<7>)
-     MUXCY:CI->O           1   0.051   0.000  pldv/Mcompar_old_COUNT_2_cmp_gt0000_cy<8> (pldv/Mcompar_old_COUNT_2_cmp_gt0000_cy<8>)
-     MUXCY:CI->O           1   0.051   0.000  pldv/Mcompar_old_COUNT_2_cmp_gt0000_cy<9> (pldv/Mcompar_old_COUNT_2_cmp_gt0000_cy<9>)
-     MUXCY:CI->O           1   0.051   0.000  pldv/Mcompar_old_COUNT_2_cmp_gt0000_cy<10> (pldv/Mcompar_old_COUNT_2_cmp_gt0000_cy<10>)
-     MUXCY:CI->O           1   0.051   0.000  pldv/Mcompar_old_COUNT_2_cmp_gt0000_cy<11> (pldv/Mcompar_old_COUNT_2_cmp_gt0000_cy<11>)
-     MUXCY:CI->O           1   0.051   0.000  pldv/Mcompar_old_COUNT_2_cmp_gt0000_cy<12> (pldv/Mcompar_old_COUNT_2_cmp_gt0000_cy<12>)
-     MUXCY:CI->O          33   0.399   1.142  pldv/Mcompar_old_COUNT_2_cmp_gt0000_cy<13> (pldv/Mcompar_old_COUNT_2_cmp_gt0000_cy<13>)
-     LUT2:I1->O            1   0.612   0.000  pldv/Madd_COUNT_add0000_lut<0> (pldv/Madd_COUNT_add0000_lut<0>)
-     MUXCY:S->O            1   0.404   0.000  pldv/Madd_COUNT_add0000_cy<0> (pldv/Madd_COUNT_add0000_cy<0>)
-     MUXCY:CI->O           1   0.052   0.000  pldv/Madd_COUNT_add0000_cy<1> (pldv/Madd_COUNT_add0000_cy<1>)
-     MUXCY:CI->O           1   0.052   0.000  pldv/Madd_COUNT_add0000_cy<2> (pldv/Madd_COUNT_add0000_cy<2>)
-     MUXCY:CI->O           1   0.052   0.000  pldv/Madd_COUNT_add0000_cy<3> (pldv/Madd_COUNT_add0000_cy<3>)
-     MUXCY:CI->O           1   0.052   0.000  pldv/Madd_COUNT_add0000_cy<4> (pldv/Madd_COUNT_add0000_cy<4>)
-     MUXCY:CI->O           1   0.052   0.000  pldv/Madd_COUNT_add0000_cy<5> (pldv/Madd_COUNT_add0000_cy<5>)
-     MUXCY:CI->O           1   0.052   0.000  pldv/Madd_COUNT_add0000_cy<6> (pldv/Madd_COUNT_add0000_cy<6>)
-     MUXCY:CI->O           1   0.052   0.000  pldv/Madd_COUNT_add0000_cy<7> (pldv/Madd_COUNT_add0000_cy<7>)
-     MUXCY:CI->O           1   0.052   0.000  pldv/Madd_COUNT_add0000_cy<8> (pldv/Madd_COUNT_add0000_cy<8>)
-     MUXCY:CI->O           1   0.052   0.000  pldv/Madd_COUNT_add0000_cy<9> (pldv/Madd_COUNT_add0000_cy<9>)
-     MUXCY:CI->O           1   0.052   0.000  pldv/Madd_COUNT_add0000_cy<10> (pldv/Madd_COUNT_add0000_cy<10>)
-     MUXCY:CI->O           1   0.051   0.000  pldv/Madd_COUNT_add0000_cy<11> (pldv/Madd_COUNT_add0000_cy<11>)
-     MUXCY:CI->O           1   0.051   0.000  pldv/Madd_COUNT_add0000_cy<12> (pldv/Madd_COUNT_add0000_cy<12>)
-     MUXCY:CI->O           1   0.051   0.000  pldv/Madd_COUNT_add0000_cy<13> (pldv/Madd_COUNT_add0000_cy<13>)
-     MUXCY:CI->O           1   0.051   0.000  pldv/Madd_COUNT_add0000_cy<14> (pldv/Madd_COUNT_add0000_cy<14>)
-     MUXCY:CI->O           1   0.051   0.000  pldv/Madd_COUNT_add0000_cy<15> (pldv/Madd_COUNT_add0000_cy<15>)
-     MUXCY:CI->O           1   0.051   0.000  pldv/Madd_COUNT_add0000_cy<16> (pldv/Madd_COUNT_add0000_cy<16>)
-     MUXCY:CI->O           1   0.051   0.000  pldv/Madd_COUNT_add0000_cy<17> (pldv/Madd_COUNT_add0000_cy<17>)
-     MUXCY:CI->O           1   0.051   0.000  pldv/Madd_COUNT_add0000_cy<18> (pldv/Madd_COUNT_add0000_cy<18>)
-     MUXCY:CI->O           1   0.051   0.000  pldv/Madd_COUNT_add0000_cy<19> (pldv/Madd_COUNT_add0000_cy<19>)
-     MUXCY:CI->O           1   0.051   0.000  pldv/Madd_COUNT_add0000_cy<20> (pldv/Madd_COUNT_add0000_cy<20>)
-     MUXCY:CI->O           1   0.051   0.000  pldv/Madd_COUNT_add0000_cy<21> (pldv/Madd_COUNT_add0000_cy<21>)
-     MUXCY:CI->O           1   0.051   0.000  pldv/Madd_COUNT_add0000_cy<22> (pldv/Madd_COUNT_add0000_cy<22>)
-     MUXCY:CI->O           1   0.051   0.000  pldv/Madd_COUNT_add0000_cy<23> (pldv/Madd_COUNT_add0000_cy<23>)
-     MUXCY:CI->O           1   0.051   0.000  pldv/Madd_COUNT_add0000_cy<24> (pldv/Madd_COUNT_add0000_cy<24>)
-     MUXCY:CI->O           1   0.051   0.000  pldv/Madd_COUNT_add0000_cy<25> (pldv/Madd_COUNT_add0000_cy<25>)
-     MUXCY:CI->O           1   0.051   0.000  pldv/Madd_COUNT_add0000_cy<26> (pldv/Madd_COUNT_add0000_cy<26>)
-     MUXCY:CI->O           1   0.051   0.000  pldv/Madd_COUNT_add0000_cy<27> (pldv/Madd_COUNT_add0000_cy<27>)
-     MUXCY:CI->O           1   0.051   0.000  pldv/Madd_COUNT_add0000_cy<28> (pldv/Madd_COUNT_add0000_cy<28>)
-     MUXCY:CI->O           1   0.051   0.000  pldv/Madd_COUNT_add0000_cy<29> (pldv/Madd_COUNT_add0000_cy<29>)
-     MUXCY:CI->O           0   0.051   0.000  pldv/Madd_COUNT_add0000_cy<30> (pldv/Madd_COUNT_add0000_cy<30>)
-     XORCY:CI->O           1   0.699   0.000  pldv/Madd_COUNT_add0000_xor<31> (pldv/COUNT_add0000<31>)
-     FDR:D                     0.268          pldv/COUNT_31
+     FDR:C->Q              3   0.514   0.603  chiaxung/COUNT_0 (chiaxung/COUNT_0)
+     LUT4:I0->O            1   0.612   0.000  chiaxung/Mcompar_old_COUNT_2_cmp_gt0000_lut<0> (chiaxung/Mcompar_old_COUNT_2_cmp_gt0000_lut<0>)
+     MUXCY:S->O            1   0.404   0.000  chiaxung/Mcompar_old_COUNT_2_cmp_gt0000_cy<0> (chiaxung/Mcompar_old_COUNT_2_cmp_gt0000_cy<0>)
+     MUXCY:CI->O           1   0.051   0.000  chiaxung/Mcompar_old_COUNT_2_cmp_gt0000_cy<1> (chiaxung/Mcompar_old_COUNT_2_cmp_gt0000_cy<1>)
+     MUXCY:CI->O           1   0.051   0.000  chiaxung/Mcompar_old_COUNT_2_cmp_gt0000_cy<2> (chiaxung/Mcompar_old_COUNT_2_cmp_gt0000_cy<2>)
+     MUXCY:CI->O           1   0.051   0.000  chiaxung/Mcompar_old_COUNT_2_cmp_gt0000_cy<3> (chiaxung/Mcompar_old_COUNT_2_cmp_gt0000_cy<3>)
+     MUXCY:CI->O           1   0.051   0.000  chiaxung/Mcompar_old_COUNT_2_cmp_gt0000_cy<4> (chiaxung/Mcompar_old_COUNT_2_cmp_gt0000_cy<4>)
+     MUXCY:CI->O           1   0.051   0.000  chiaxung/Mcompar_old_COUNT_2_cmp_gt0000_cy<5> (chiaxung/Mcompar_old_COUNT_2_cmp_gt0000_cy<5>)
+     MUXCY:CI->O           1   0.051   0.000  chiaxung/Mcompar_old_COUNT_2_cmp_gt0000_cy<6> (chiaxung/Mcompar_old_COUNT_2_cmp_gt0000_cy<6>)
+     MUXCY:CI->O           1   0.051   0.000  chiaxung/Mcompar_old_COUNT_2_cmp_gt0000_cy<7> (chiaxung/Mcompar_old_COUNT_2_cmp_gt0000_cy<7>)
+     MUXCY:CI->O           1   0.051   0.000  chiaxung/Mcompar_old_COUNT_2_cmp_gt0000_cy<8> (chiaxung/Mcompar_old_COUNT_2_cmp_gt0000_cy<8>)
+     MUXCY:CI->O           1   0.051   0.000  chiaxung/Mcompar_old_COUNT_2_cmp_gt0000_cy<9> (chiaxung/Mcompar_old_COUNT_2_cmp_gt0000_cy<9>)
+     MUXCY:CI->O           1   0.051   0.000  chiaxung/Mcompar_old_COUNT_2_cmp_gt0000_cy<10> (chiaxung/Mcompar_old_COUNT_2_cmp_gt0000_cy<10>)
+     MUXCY:CI->O           1   0.051   0.000  chiaxung/Mcompar_old_COUNT_2_cmp_gt0000_cy<11> (chiaxung/Mcompar_old_COUNT_2_cmp_gt0000_cy<11>)
+     MUXCY:CI->O           1   0.051   0.000  chiaxung/Mcompar_old_COUNT_2_cmp_gt0000_cy<12> (chiaxung/Mcompar_old_COUNT_2_cmp_gt0000_cy<12>)
+     MUXCY:CI->O          33   0.399   1.142  chiaxung/Mcompar_old_COUNT_2_cmp_gt0000_cy<13> (chiaxung/Mcompar_old_COUNT_2_cmp_gt0000_cy<13>)
+     LUT2:I1->O            1   0.612   0.000  chiaxung/Madd_COUNT_add0000_lut<0> (chiaxung/Madd_COUNT_add0000_lut<0>)
+     MUXCY:S->O            1   0.404   0.000  chiaxung/Madd_COUNT_add0000_cy<0> (chiaxung/Madd_COUNT_add0000_cy<0>)
+     MUXCY:CI->O           1   0.052   0.000  chiaxung/Madd_COUNT_add0000_cy<1> (chiaxung/Madd_COUNT_add0000_cy<1>)
+     MUXCY:CI->O           1   0.052   0.000  chiaxung/Madd_COUNT_add0000_cy<2> (chiaxung/Madd_COUNT_add0000_cy<2>)
+     MUXCY:CI->O           1   0.052   0.000  chiaxung/Madd_COUNT_add0000_cy<3> (chiaxung/Madd_COUNT_add0000_cy<3>)
+     MUXCY:CI->O           1   0.052   0.000  chiaxung/Madd_COUNT_add0000_cy<4> (chiaxung/Madd_COUNT_add0000_cy<4>)
+     MUXCY:CI->O           1   0.052   0.000  chiaxung/Madd_COUNT_add0000_cy<5> (chiaxung/Madd_COUNT_add0000_cy<5>)
+     MUXCY:CI->O           1   0.052   0.000  chiaxung/Madd_COUNT_add0000_cy<6> (chiaxung/Madd_COUNT_add0000_cy<6>)
+     MUXCY:CI->O           1   0.052   0.000  chiaxung/Madd_COUNT_add0000_cy<7> (chiaxung/Madd_COUNT_add0000_cy<7>)
+     MUXCY:CI->O           1   0.052   0.000  chiaxung/Madd_COUNT_add0000_cy<8> (chiaxung/Madd_COUNT_add0000_cy<8>)
+     MUXCY:CI->O           1   0.052   0.000  chiaxung/Madd_COUNT_add0000_cy<9> (chiaxung/Madd_COUNT_add0000_cy<9>)
+     MUXCY:CI->O           1   0.052   0.000  chiaxung/Madd_COUNT_add0000_cy<10> (chiaxung/Madd_COUNT_add0000_cy<10>)
+     MUXCY:CI->O           1   0.051   0.000  chiaxung/Madd_COUNT_add0000_cy<11> (chiaxung/Madd_COUNT_add0000_cy<11>)
+     MUXCY:CI->O           1   0.051   0.000  chiaxung/Madd_COUNT_add0000_cy<12> (chiaxung/Madd_COUNT_add0000_cy<12>)
+     MUXCY:CI->O           1   0.051   0.000  chiaxung/Madd_COUNT_add0000_cy<13> (chiaxung/Madd_COUNT_add0000_cy<13>)
+     MUXCY:CI->O           1   0.051   0.000  chiaxung/Madd_COUNT_add0000_cy<14> (chiaxung/Madd_COUNT_add0000_cy<14>)
+     MUXCY:CI->O           1   0.051   0.000  chiaxung/Madd_COUNT_add0000_cy<15> (chiaxung/Madd_COUNT_add0000_cy<15>)
+     MUXCY:CI->O           1   0.051   0.000  chiaxung/Madd_COUNT_add0000_cy<16> (chiaxung/Madd_COUNT_add0000_cy<16>)
+     MUXCY:CI->O           1   0.051   0.000  chiaxung/Madd_COUNT_add0000_cy<17> (chiaxung/Madd_COUNT_add0000_cy<17>)
+     MUXCY:CI->O           1   0.051   0.000  chiaxung/Madd_COUNT_add0000_cy<18> (chiaxung/Madd_COUNT_add0000_cy<18>)
+     MUXCY:CI->O           1   0.051   0.000  chiaxung/Madd_COUNT_add0000_cy<19> (chiaxung/Madd_COUNT_add0000_cy<19>)
+     MUXCY:CI->O           1   0.051   0.000  chiaxung/Madd_COUNT_add0000_cy<20> (chiaxung/Madd_COUNT_add0000_cy<20>)
+     MUXCY:CI->O           1   0.051   0.000  chiaxung/Madd_COUNT_add0000_cy<21> (chiaxung/Madd_COUNT_add0000_cy<21>)
+     MUXCY:CI->O           1   0.051   0.000  chiaxung/Madd_COUNT_add0000_cy<22> (chiaxung/Madd_COUNT_add0000_cy<22>)
+     MUXCY:CI->O           1   0.051   0.000  chiaxung/Madd_COUNT_add0000_cy<23> (chiaxung/Madd_COUNT_add0000_cy<23>)
+     MUXCY:CI->O           1   0.051   0.000  chiaxung/Madd_COUNT_add0000_cy<24> (chiaxung/Madd_COUNT_add0000_cy<24>)
+     MUXCY:CI->O           1   0.051   0.000  chiaxung/Madd_COUNT_add0000_cy<25> (chiaxung/Madd_COUNT_add0000_cy<25>)
+     MUXCY:CI->O           1   0.051   0.000  chiaxung/Madd_COUNT_add0000_cy<26> (chiaxung/Madd_COUNT_add0000_cy<26>)
+     MUXCY:CI->O           1   0.051   0.000  chiaxung/Madd_COUNT_add0000_cy<27> (chiaxung/Madd_COUNT_add0000_cy<27>)
+     MUXCY:CI->O           1   0.051   0.000  chiaxung/Madd_COUNT_add0000_cy<28> (chiaxung/Madd_COUNT_add0000_cy<28>)
+     MUXCY:CI->O           1   0.051   0.000  chiaxung/Madd_COUNT_add0000_cy<29> (chiaxung/Madd_COUNT_add0000_cy<29>)
+     MUXCY:CI->O           0   0.051   0.000  chiaxung/Madd_COUNT_add0000_cy<30> (chiaxung/Madd_COUNT_add0000_cy<30>)
+     XORCY:CI->O           1   0.699   0.000  chiaxung/Madd_COUNT_add0000_xor<31> (chiaxung/COUNT_add0000<31>)
+     FDR:D                     0.268          chiaxung/COUNT_31
     ----------------------------------------
     Total                      7.821ns (6.075ns logic, 1.745ns route)
                                        (77.7% logic, 22.3% route)
 
 =========================================================================
-Timing constraint: Default period analysis for Clock 'pldv/Clk_O'
+Timing constraint: Default period analysis for Clock 'chiaxung/Clk_O'
   Clock period: 5.464ns (frequency: 183.014MHz)
   Total number of paths / destination ports: 53 / 11
 -------------------------------------------------------------------------
 Delay:               5.464ns (Levels of Logic = 4)
-  Source:            sd_th/Q_2 (FF)
-  Destination:       sd_th/SANG_TAT (FF)
-  Source Clock:      pldv/Clk_O rising
-  Destination Clock: pldv/Clk_O rising
+  Source:            sd_td/Q_2 (FF)
+  Destination:       sd_td/SANG_TAT (FF)
+  Source Clock:      chiaxung/Clk_O rising
+  Destination Clock: chiaxung/Clk_O rising
 
-  Data Path: sd_th/Q_2 to sd_th/SANG_TAT
+  Data Path: sd_td/Q_2 to sd_td/SANG_TAT
                                 Gate     Net
     Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
     ----------------------------------------  ------------
-     FDR:C->Q              5   0.514   0.690  sd_th/Q_2 (sd_th/Q_2)
-     LUT3:I0->O            1   0.612   0.360  sd_th/Q_mux0000<0>2_SW0 (N4)
-     LUT4_D:I3->LO         1   0.612   0.252  sd_th/Q_mux0000<0>2 (N9)
-     LUT2:I0->O            1   0.612   0.360  sd_th/SANG_TAT_not00011_SW0 (N2)
-     LUT4:I3->O            1   0.612   0.357  sd_th/SANG_TAT_not00011 (sd_th/SANG_TAT_not0001)
-     FDSE:CE                   0.483          sd_th/SANG_TAT
+     FDR:C->Q              5   0.514   0.690  sd_td/Q_2 (sd_td/Q_2)
+     LUT3:I0->O            1   0.612   0.360  sd_td/Q_mux0000<0>2_SW0 (N4)
+     LUT4_D:I3->LO         1   0.612   0.252  sd_td/Q_mux0000<0>2 (N9)
+     LUT2:I0->O            1   0.612   0.360  sd_td/SANG_TAT_not00011_SW0 (N2)
+     LUT4:I3->O            1   0.612   0.357  sd_td/SANG_TAT_not00011 (sd_td/SANG_TAT_not0001)
+     FDSE:CE                   0.483          sd_td/SANG_TAT
     ----------------------------------------
     Total                      5.464ns (3.445ns logic, 2.019ns route)
                                        (63.0% logic, 37.0% route)
 
 =========================================================================
-Timing constraint: Default OFFSET IN BEFORE for Clock 'pldv/Clk_O'
+Timing constraint: Default OFFSET IN BEFORE for Clock 'chiaxung/Clk_O'
   Total number of paths / destination ports: 9 / 9
 -------------------------------------------------------------------------
 Offset:              2.598ns (Levels of Logic = 1)
   Source:            RST (PAD)
-  Destination:       sd_th/Q_7 (FF)
-  Destination Clock: pldv/Clk_O rising
+  Destination:       sd_td/Q_7 (FF)
+  Destination Clock: chiaxung/Clk_O rising
 
-  Data Path: RST to sd_th/Q_7
+  Data Path: RST to sd_td/Q_7
                                 Gate     Net
     Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
     ----------------------------------------  ------------
      IBUF:I->O             9   1.106   0.697  RST_IBUF (RST_IBUF)
-     FDSE:S                    0.795          sd_th/SANG_TAT
+     FDSE:S                    0.795          sd_td/SANG_TAT
     ----------------------------------------
     Total                      2.598ns (1.901ns logic, 0.697ns route)
                                        (73.2% logic, 26.8% route)
 
 =========================================================================
-Timing constraint: Default OFFSET OUT AFTER for Clock 'pldv/Clk_O'
+Timing constraint: Default OFFSET OUT AFTER for Clock 'chiaxung/Clk_O'
   Total number of paths / destination ports: 8 / 8
 -------------------------------------------------------------------------
 Offset:              4.221ns (Levels of Logic = 1)
-  Source:            sd_th/Q_6 (FF)
+  Source:            sd_td/Q_6 (FF)
   Destination:       Q<6> (PAD)
-  Source Clock:      pldv/Clk_O rising
+  Source Clock:      chiaxung/Clk_O rising
 
-  Data Path: sd_th/Q_6 to Q<6>
+  Data Path: sd_td/Q_6 to Q<6>
                                 Gate     Net
     Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
     ----------------------------------------  ------------
-     FDR:C->Q              5   0.514   0.538  sd_th/Q_6 (sd_th/Q_6)
+     FDR:C->Q              5   0.514   0.538  sd_td/Q_6 (sd_td/Q_6)
      OBUF:I->O                 3.169          Q_6_OBUF (Q<6>)
     ----------------------------------------
     Total                      4.221ns (3.683ns logic, 0.538ns route)
@@ -470,12 +470,12 @@ Offset:              4.221ns (Levels of Logic = 1)
 
 
 Total REAL time to Xst completion: 2.00 secs
-Total CPU time to Xst completion: 2.15 secs
+Total CPU time to Xst completion: 2.12 secs
  
 --> 
 
 
-Total memory usage is 608096 kilobytes
+Total memory usage is 608068 kilobytes
 
 Number of errors   :    0 (   0 filtered)
 Number of warnings :    1 (   0 filtered)

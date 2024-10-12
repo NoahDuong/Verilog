@@ -1,0 +1,4 @@
+verilog isim_temp "../chiaxung/sw1_2.v"
+verilog isim_temp "../sangdantatdan/main.v"
+verilog isim_temp "testbench.v"
+verilog isim_temp "/opt/Xilinx/14.7/ISE_DS/ISE//verilog/src/glbl.v"

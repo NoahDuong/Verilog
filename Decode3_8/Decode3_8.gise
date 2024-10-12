@@ -182,10 +182,15 @@
     <transform xil_pn:end_ts="1727071309" xil_pn:in_ck="-7936509224682383691" xil_pn:name="TRAN_compileBCD2" xil_pn:prop_ck="8765747907587277122" xil_pn:start_ts="1727071309">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
+      <status xil_pn:value="OutOfDateForInputs"/>
+      <status xil_pn:value="InputChanged"/>
     </transform>
     <transform xil_pn:end_ts="1727071313" xil_pn:in_ck="-4554855693470029381" xil_pn:name="TRANEXT_ngdbuild_FPGA" xil_pn:prop_ck="-1520211108056465949" xil_pn:start_ts="1727071309">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
+      <status xil_pn:value="OutOfDateForInputs"/>
+      <status xil_pn:value="OutOfDateForPredecessor"/>
+      <status xil_pn:value="InputChanged"/>
       <outfile xil_pn:name="Decoder3_8.bld"/>
       <outfile xil_pn:name="Decoder3_8.ngd"/>
       <outfile xil_pn:name="Decoder3_8_ngdbuild.xrpt"/>
@@ -196,7 +201,10 @@
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="WarningsGenerated"/>
       <status xil_pn:value="ReadyToRun"/>
+      <status xil_pn:value="OutOfDateForInputs"/>
+      <status xil_pn:value="OutOfDateForPredecessor"/>
       <status xil_pn:value="OutOfDateForOutputs"/>
+      <status xil_pn:value="InputChanged"/>
       <status xil_pn:value="OutputChanged"/>
       <outfile xil_pn:name="Decoder3_8.pcf"/>
       <outfile xil_pn:name="Decoder3_8_map.map"/>
@@ -211,6 +219,9 @@
     <transform xil_pn:end_ts="1727071325" xil_pn:in_ck="5708018562952132309" xil_pn:name="TRANEXT_par_spartan3" xil_pn:prop_ck="-5563652517805085498" xil_pn:start_ts="1727071317">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
+      <status xil_pn:value="OutOfDateForInputs"/>
+      <status xil_pn:value="OutOfDateForPredecessor"/>
+      <status xil_pn:value="InputChanged"/>
       <outfile xil_pn:name="Decoder3_8.ncd"/>
       <outfile xil_pn:name="Decoder3_8.pad"/>
       <outfile xil_pn:name="Decoder3_8.par"/>
@@ -225,6 +236,7 @@
     <transform xil_pn:end_ts="1727071327" xil_pn:in_ck="5669630874412153283" xil_pn:name="TRANEXT_bitFile_spartan3e" xil_pn:prop_ck="-7817169320884990698" xil_pn:start_ts="1727071325">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
+      <status xil_pn:value="OutOfDateForPredecessor"/>
       <outfile xil_pn:name="Decoder3_8.bgn"/>
       <outfile xil_pn:name="Decoder3_8.bit"/>
       <outfile xil_pn:name="Decoder3_8.drc"/>
@@ -236,10 +248,14 @@
     <transform xil_pn:end_ts="1727071749" xil_pn:in_ck="5669630874412140429" xil_pn:name="TRAN_impactProgrammingTool" xil_pn:prop_ck="1890673188639090495" xil_pn:start_ts="1727071749">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
+      <status xil_pn:value="OutOfDateForPredecessor"/>
     </transform>
     <transform xil_pn:end_ts="1727071325" xil_pn:in_ck="-4554855693470029512" xil_pn:name="TRAN_postRouteTrce" xil_pn:prop_ck="445577401284416187" xil_pn:start_ts="1727071322">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
+      <status xil_pn:value="OutOfDateForInputs"/>
+      <status xil_pn:value="OutOfDateForPredecessor"/>
+      <status xil_pn:value="InputChanged"/>
       <outfile xil_pn:name="Decoder3_8.twr"/>
       <outfile xil_pn:name="Decoder3_8.twx"/>
       <outfile xil_pn:name="_xmsgs/trce.xmsgs"/>
@@ -248,6 +264,7 @@
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
       <status xil_pn:value="OutOfDateForInputs"/>
+      <status xil_pn:value="OutOfDateForPredecessor"/>
       <status xil_pn:value="InputChanged"/>
       <outfile xil_pn:name="netgen"/>
       <outfile xil_pn:name="netgen/synthesis/Decoder3_8_synthesis.nlf"/>

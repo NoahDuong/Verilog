@@ -11,3 +11,4 @@ map -intstyle ise -p xc3s500e-fg320-5 -cm area -ir off -pr off -c 100 -o DEMXUON
 par -w -intstyle ise -ol high -t 1 DEMXUONG4BIT_map.ncd DEMXUONG4BIT.ncd DEMXUONG4BIT.pcf 
 trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml DEMXUONG4BIT.twx DEMXUONG4BIT.ncd -o DEMXUONG4BIT.twr DEMXUONG4BIT.pcf 
 bitgen -intstyle ise -f DEMXUONG4BIT.ut DEMXUONG4BIT.ncd 
+xst -intstyle ise -ifn "/home/ise/FPGA/DEMXUONG4BIT/DEMXUONG4BIT.xst" -ofn "/home/ise/FPGA/DEMXUONG4BIT/DEMXUONG4BIT.syr" 

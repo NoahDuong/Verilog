@@ -33,7 +33,7 @@
       <association xil_pn:name="PostRouteSimulation" xil_pn:seqID="22"/>
       <association xil_pn:name="PostTranslateSimulation" xil_pn:seqID="22"/>
     </file>
-    <file xil_pn:name="../Documents/fileganchan/ganchansangdan_tatdan.ucf" xil_pn:type="FILE_UCF">
+    <file xil_pn:name="../../Documents/fileganchan/ganchansangdan_tatdan.ucf" xil_pn:type="FILE_UCF">
       <association xil_pn:name="Implementation" xil_pn:seqID="0"/>
     </file>
   </files>
@@ -340,7 +340,7 @@
   </properties>
 
   <bindings>
-    <binding xil_pn:location="/main" xil_pn:name="../Documents/fileganchan/ganchansangdan_tatdan.ucf"/>
+    <binding xil_pn:location="/main" xil_pn:name="../../Documents/fileganchan/ganchansangdan_tatdan.ucf"/>
   </bindings>
 
   <libraries/>

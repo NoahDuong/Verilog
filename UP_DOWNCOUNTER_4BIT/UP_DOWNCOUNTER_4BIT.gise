@@ -46,6 +46,7 @@
     <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_BITGEN_REPORT" xil_pn:name="DEMLEN_XUONG_AUTO.ut" xil_pn:subbranch="FPGAConfiguration"/>
     <file xil_pn:fileType="FILE_XPI" xil_pn:name="DEMLEN_XUONG_AUTO.xpi"/>
     <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST" xil_pn:name="DEMLEN_XUONG_AUTO.xst"/>
+    <file xil_pn:fileType="FILE_HTML" xil_pn:name="DEMLEN_XUONG_AUTO_envsettings.html"/>
     <file xil_pn:fileType="FILE_NCD" xil_pn:name="DEMLEN_XUONG_AUTO_guide.ncd" xil_pn:origination="imported"/>
     <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_MAP_REPORT" xil_pn:name="DEMLEN_XUONG_AUTO_map.map" xil_pn:subbranch="Map"/>
     <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_MAP_REPORT" xil_pn:name="DEMLEN_XUONG_AUTO_map.mrp" xil_pn:subbranch="Map"/>
@@ -56,6 +57,7 @@
     <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_PAD_EXCEL_REPORT" xil_pn:name="DEMLEN_XUONG_AUTO_pad.csv" xil_pn:subbranch="Par"/>
     <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_PAD_TXT_REPORT" xil_pn:name="DEMLEN_XUONG_AUTO_pad.txt" xil_pn:subbranch="Par"/>
     <file xil_pn:fileType="FILE_XRPT" xil_pn:name="DEMLEN_XUONG_AUTO_par.xrpt"/>
+    <file xil_pn:fileType="FILE_HTML" xil_pn:name="DEMLEN_XUONG_AUTO_summary.html"/>
     <file xil_pn:fileType="FILE_FITTER_REPORT" xil_pn:name="DEMLEN_XUONG_AUTO_summary.xml"/>
     <file xil_pn:fileType="FILE_WEBTALK" xil_pn:name="DEMLEN_XUONG_AUTO_usage.xml"/>
     <file xil_pn:fileType="FILE_XRPT" xil_pn:name="DEMLEN_XUONG_AUTO_xst.xrpt"/>
@@ -78,6 +80,7 @@
   <transforms xmlns="http://www.xilinx.com/XMLSchema">
     <transform xil_pn:end_ts="1727095492" xil_pn:name="TRAN_copyInitialToXSTAbstractSynthesis" xil_pn:start_ts="1727095492">
       <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
     </transform>
     <transform xil_pn:end_ts="1727095492" xil_pn:name="TRAN_schematicsToHdl" xil_pn:prop_ck="-935046845665533556" xil_pn:start_ts="1727095492">
       <status xil_pn:value="SuccessfullyRun"/>
@@ -103,11 +106,9 @@
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
     </transform>
-    <transform xil_pn:end_ts="1727095809" xil_pn:in_ck="-2303331655640215633" xil_pn:name="TRANEXT_xstsynthesize_spartan3e" xil_pn:prop_ck="2517811750942293348" xil_pn:start_ts="1727095804">
+    <transform xil_pn:end_ts="1728746193" xil_pn:in_ck="-2303331655640215633" xil_pn:name="TRANEXT_xstsynthesize_spartan3e" xil_pn:prop_ck="-3191902857795444112" xil_pn:start_ts="1728746189">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
-      <status xil_pn:value="OutOfDateForOutputs"/>
-      <status xil_pn:value="OutputChanged"/>
       <outfile xil_pn:name=".lso"/>
       <outfile xil_pn:name="DEMLEN_XUONG_AUTO.lso"/>
       <outfile xil_pn:name="DEMLEN_XUONG_AUTO.ngc"/>
@@ -128,6 +129,8 @@
     <transform xil_pn:end_ts="1727095856" xil_pn:in_ck="8123457487841724406" xil_pn:name="TRANEXT_ngdbuild_FPGA" xil_pn:prop_ck="-8065149647860790560" xil_pn:start_ts="1727095852">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
+      <status xil_pn:value="OutOfDateForInputs"/>
+      <status xil_pn:value="InputChanged"/>
       <outfile xil_pn:name="DEMLEN_XUONG_AUTO.bld"/>
       <outfile xil_pn:name="DEMLEN_XUONG_AUTO.ngd"/>
       <outfile xil_pn:name="DEMLEN_XUONG_AUTO_ngdbuild.xrpt"/>
@@ -138,6 +141,7 @@
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="WarningsGenerated"/>
       <status xil_pn:value="ReadyToRun"/>
+      <status xil_pn:value="OutOfDateForPredecessor"/>
       <status xil_pn:value="OutOfDateForOutputs"/>
       <status xil_pn:value="OutputChanged"/>
       <outfile xil_pn:name="DEMLEN_XUONG_AUTO.pcf"/>
@@ -154,6 +158,7 @@
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="WarningsGenerated"/>
       <status xil_pn:value="ReadyToRun"/>
+      <status xil_pn:value="OutOfDateForPredecessor"/>
       <outfile xil_pn:name="DEMLEN_XUONG_AUTO.ncd"/>
       <outfile xil_pn:name="DEMLEN_XUONG_AUTO.pad"/>
       <outfile xil_pn:name="DEMLEN_XUONG_AUTO.par"/>
@@ -168,6 +173,10 @@
     <transform xil_pn:end_ts="1727095872" xil_pn:in_ck="-616623672387926272" xil_pn:name="TRANEXT_bitFile_spartan3e" xil_pn:prop_ck="287829442711806529" xil_pn:start_ts="1727095870">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
+      <status xil_pn:value="OutOfDateForProperties"/>
+      <status xil_pn:value="OutOfDateForPredecessor"/>
+      <status xil_pn:value="OutOfDateForOutputs"/>
+      <status xil_pn:value="OutputChanged"/>
       <outfile xil_pn:name="DEMLEN_XUONG_AUTO.bgn"/>
       <outfile xil_pn:name="DEMLEN_XUONG_AUTO.bit"/>
       <outfile xil_pn:name="DEMLEN_XUONG_AUTO.drc"/>
@@ -179,10 +188,12 @@
     <transform xil_pn:end_ts="1727095873" xil_pn:in_ck="-616623672387939126" xil_pn:name="TRAN_impactProgrammingTool" xil_pn:prop_ck="1890673188639090495" xil_pn:start_ts="1727095872">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
+      <status xil_pn:value="OutOfDateForPredecessor"/>
     </transform>
     <transform xil_pn:end_ts="1727095870" xil_pn:in_ck="-2399806635254391277" xil_pn:name="TRAN_postRouteTrce" xil_pn:prop_ck="445577401284416187" xil_pn:start_ts="1727095867">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
+      <status xil_pn:value="OutOfDateForPredecessor"/>
       <outfile xil_pn:name="DEMLEN_XUONG_AUTO.twr"/>
       <outfile xil_pn:name="DEMLEN_XUONG_AUTO.twx"/>
       <outfile xil_pn:name="_xmsgs/trce.xmsgs"/>

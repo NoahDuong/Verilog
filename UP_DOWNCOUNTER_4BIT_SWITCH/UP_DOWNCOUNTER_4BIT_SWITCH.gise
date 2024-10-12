@@ -126,11 +126,14 @@
     <transform xil_pn:end_ts="1727097460" xil_pn:in_ck="-6972279059629161952" xil_pn:name="TRAN_compileBCD2" xil_pn:prop_ck="-1096737373192477980" xil_pn:start_ts="1727097460">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
+      <status xil_pn:value="OutOfDateForInputs"/>
+      <status xil_pn:value="InputChanged"/>
     </transform>
     <transform xil_pn:end_ts="1727097695" xil_pn:in_ck="-6856297112875173688" xil_pn:name="TRANEXT_ngdbuild_FPGA" xil_pn:prop_ck="4577072849264711909" xil_pn:start_ts="1727097691">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
       <status xil_pn:value="OutOfDateForInputs"/>
+      <status xil_pn:value="OutOfDateForPredecessor"/>
       <status xil_pn:value="InputChanged"/>
       <outfile xil_pn:name="DEMLEN_XUONG_MANUAL.bld"/>
       <outfile xil_pn:name="DEMLEN_XUONG_MANUAL.ngd"/>
@@ -142,8 +145,10 @@
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="WarningsGenerated"/>
       <status xil_pn:value="ReadyToRun"/>
+      <status xil_pn:value="OutOfDateForInputs"/>
       <status xil_pn:value="OutOfDateForPredecessor"/>
       <status xil_pn:value="OutOfDateForOutputs"/>
+      <status xil_pn:value="InputChanged"/>
       <status xil_pn:value="OutputChanged"/>
       <outfile xil_pn:name="DEMLEN_XUONG_MANUAL.pcf"/>
       <outfile xil_pn:name="DEMLEN_XUONG_MANUAL_map.map"/>
@@ -159,7 +164,9 @@
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="WarningsGenerated"/>
       <status xil_pn:value="ReadyToRun"/>
+      <status xil_pn:value="OutOfDateForInputs"/>
       <status xil_pn:value="OutOfDateForPredecessor"/>
+      <status xil_pn:value="InputChanged"/>
       <outfile xil_pn:name="DEMLEN_XUONG_MANUAL.ncd"/>
       <outfile xil_pn:name="DEMLEN_XUONG_MANUAL.pad"/>
       <outfile xil_pn:name="DEMLEN_XUONG_MANUAL.par"/>
@@ -194,7 +201,9 @@
     <transform xil_pn:end_ts="1727097711" xil_pn:in_ck="-6856297112875173819" xil_pn:name="TRAN_postRouteTrce" xil_pn:prop_ck="445577401284416187" xil_pn:start_ts="1727097708">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
+      <status xil_pn:value="OutOfDateForInputs"/>
       <status xil_pn:value="OutOfDateForPredecessor"/>
+      <status xil_pn:value="InputChanged"/>
       <outfile xil_pn:name="DEMLEN_XUONG_MANUAL.twr"/>
       <outfile xil_pn:name="DEMLEN_XUONG_MANUAL.twx"/>
       <outfile xil_pn:name="_xmsgs/trce.xmsgs"/>

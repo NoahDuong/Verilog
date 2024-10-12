@@ -34,7 +34,7 @@ module testbench;
 	wire Cout;
 
 	// Instantiate the Unit Under Test (UUT)
-	Board_FA_module1 uut (
+	Fulladder uut (
 		.A(A), 
 		.B(B), 
 		.Cin(Cin), 

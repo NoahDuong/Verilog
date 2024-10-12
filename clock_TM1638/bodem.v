@@ -1,23 +1,4 @@
 `timescale 1ns / 1ps
-//////////////////////////////////////////////////////////////////////////////////
-// Company: 
-// Engineer: 
-// 
-// Create Date:    16:31:27 10/11/2024 
-// Design Name: 
-// Module Name:    bodem 
-// Project Name: 
-// Target Devices: 
-// Tool versions: 
-// Description: 
-//
-// Dependencies: 
-//
-// Revision: 
-// Revision 0.01 - File Created
-// Additional Comments: 
-//
-//////////////////////////////////////////////////////////////////////////////////
 module bodem(clk, RST, sec_tens, sec_digits, min_tens, min_digits, hour_tens, hour_digits);
     input clk, RST;
     output reg [3:0] sec_tens, sec_digits, min_tens, min_digits, hour_tens, hour_digits;

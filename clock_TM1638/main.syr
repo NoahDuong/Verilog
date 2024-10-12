@@ -71,7 +71,7 @@ Automatic Register Balancing       : No
 
 ---- Target Options
 Add IO Buffers                     : YES
-Global Maximum Fanout              : 500
+Global Maximum Fanout              : 100000
 Add Generic Clock Buffer(BUFG)     : 24
 Register Duplication               : YES
 Slice Packing                      : YES
@@ -203,24 +203,24 @@ Synthesizing Unit <bodem>.
     Found 4-bit register for signal <hour_digits>.
     Found 4-bit subtractor for signal <hour_digits$share0000>.
     Found 8-bit register for signal <hour_o>.
-    Found 8-bit adder for signal <hour_o$addsub0000> created at line 74.
-    Found 8-bit comparator greatequal for signal <hour_tens$cmp_ge0000> created at line 66.
-    Found 8-bit comparator greatequal for signal <hour_tens$cmp_ge0001> created at line 67.
+    Found 8-bit adder for signal <hour_o$addsub0000> created at line 55.
+    Found 8-bit comparator greatequal for signal <hour_tens$cmp_ge0000> created at line 47.
+    Found 8-bit comparator greatequal for signal <hour_tens$cmp_ge0001> created at line 48.
     Found 4-bit subtractor for signal <min_digits$share0000>.
     Found 8-bit register for signal <min_o>.
-    Found 8-bit comparator greatequal for signal <min_tens$cmp_ge0000> created at line 54.
-    Found 8-bit comparator greatequal for signal <min_tens$cmp_ge0001> created at line 55.
-    Found 8-bit comparator greatequal for signal <min_tens$cmp_ge0002> created at line 56.
-    Found 8-bit comparator greatequal for signal <min_tens$cmp_ge0003> created at line 57.
-    Found 8-bit comparator greatequal for signal <min_tens$cmp_ge0004> created at line 58.
-    Found 8-bit adder for signal <old_min_o_4$addsub0000> created at line 73.
+    Found 8-bit comparator greatequal for signal <min_tens$cmp_ge0000> created at line 35.
+    Found 8-bit comparator greatequal for signal <min_tens$cmp_ge0001> created at line 36.
+    Found 8-bit comparator greatequal for signal <min_tens$cmp_ge0002> created at line 37.
+    Found 8-bit comparator greatequal for signal <min_tens$cmp_ge0003> created at line 38.
+    Found 8-bit comparator greatequal for signal <min_tens$cmp_ge0004> created at line 39.
+    Found 8-bit adder for signal <old_min_o_4$addsub0000> created at line 54.
     Found 4-bit subtractor for signal <sec_digits$share0000>.
     Found 8-bit register for signal <sec_o>.
-    Found 8-bit comparator greatequal for signal <sec_tens$cmp_ge0000> created at line 42.
-    Found 8-bit comparator greatequal for signal <sec_tens$cmp_ge0001> created at line 43.
-    Found 8-bit comparator greatequal for signal <sec_tens$cmp_ge0002> created at line 44.
-    Found 8-bit comparator greatequal for signal <sec_tens$cmp_ge0003> created at line 45.
-    Found 8-bit comparator greatequal for signal <sec_tens$cmp_ge0004> created at line 46.
+    Found 8-bit comparator greatequal for signal <sec_tens$cmp_ge0000> created at line 23.
+    Found 8-bit comparator greatequal for signal <sec_tens$cmp_ge0001> created at line 24.
+    Found 8-bit comparator greatequal for signal <sec_tens$cmp_ge0002> created at line 25.
+    Found 8-bit comparator greatequal for signal <sec_tens$cmp_ge0003> created at line 26.
+    Found 8-bit comparator greatequal for signal <sec_tens$cmp_ge0004> created at line 27.
     Summary:
 	inferred  48 D-type flip-flop(s).
 	inferred   6 Adder/Subtractor(s).
@@ -569,12 +569,12 @@ Offset:              4.040ns (Levels of Logic = 1)
 
 
 Total REAL time to Xst completion: 3.00 secs
-Total CPU time to Xst completion: 2.95 secs
+Total CPU time to Xst completion: 2.82 secs
  
 --> 
 
 
-Total memory usage is 611528 kilobytes
+Total memory usage is 611512 kilobytes
 
 Number of errors   :    0 (   0 filtered)
 Number of warnings :   51 (   0 filtered)

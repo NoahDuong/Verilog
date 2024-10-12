@@ -24,7 +24,15 @@ module topmodule(
 	input _50MHz_CLK,
 	output clk,
 	output stb,
-	output dio
+	output dio,
+	output [3:0] LED7SEG_0,
+	output [3:0] LED7SEG_1,
+	output [3:0] LED7SEG_2,
+	output [3:0] LED7SEG_3,
+	output [3:0] LED7SEG_4,
+	output [3:0] LED7SEG_5,
+	output [3:0] LED7SEG_6,
+   output [3:0] LED7SEG_7
 );
 //8buses
 wire [3:0]	LED7SEG_0, LED7SEG_1, LED7SEG_2,
@@ -53,13 +61,13 @@ TM1638_config tm1638(
 .dio(dio)
 );
 assign led = 0;
-assign LED7SEG_0 = 2;
-assign LED7SEG_1 = 2;
-assign LED7SEG_2 = 1;
-assign LED7SEG_3 = 1;
-assign LED7SEG_4 = 9;
-assign LED7SEG_5 = 1;
-assign LED7SEG_6 = 6;
-assign LED7SEG_7 = 6;
+assign LED7SEG_0 = 4'h2; // 2
+assign LED7SEG_1 = 4'h2; // 2
+assign LED7SEG_2 = 4'h1; // 1
+assign LED7SEG_3 = 4'h1; // 1
+assign LED7SEG_4 = 4'h9; // 9
+assign LED7SEG_5 = 4'h1; // 1
+assign LED7SEG_6 = 4'h6; // 6
+assign LED7SEG_7 = 4'h6; // 6
 endmodule
 

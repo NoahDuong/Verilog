@@ -1,0 +1,805 @@
+Release 14.7 - xst P.20131013 (lin64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+--> 
+Parameter TMPDIR set to xst/projnav.tmp
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.03 secs
+ 
+--> 
+Parameter xsthdpdir set to xst
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.03 secs
+ 
+--> 
+Reading design: mainblock.prj
+
+TABLE OF CONTENTS
+  1) Synthesis Options Summary
+  2) HDL Compilation
+  3) Design Hierarchy Analysis
+  4) HDL Analysis
+  5) HDL Synthesis
+     5.1) HDL Synthesis Report
+  6) Advanced HDL Synthesis
+     6.1) Advanced HDL Synthesis Report
+  7) Low Level Synthesis
+  8) Partition Report
+  9) Final Report
+	9.1) Device utilization summary
+	9.2) Partition Resource Summary
+	9.3) TIMING REPORT
+
+
+=========================================================================
+*                      Synthesis Options Summary                        *
+=========================================================================
+---- Source Parameters
+Input File Name                    : "mainblock.prj"
+Input Format                       : mixed
+Ignore Synthesis Constraint File   : NO
+
+---- Target Parameters
+Output File Name                   : "mainblock"
+Output Format                      : NGC
+Target Device                      : xc3s500e-5-fg320
+
+---- Source Options
+Top Module Name                    : mainblock
+Automatic FSM Extraction           : YES
+FSM Encoding Algorithm             : Auto
+Safe Implementation                : No
+FSM Style                          : LUT
+RAM Extraction                     : Yes
+RAM Style                          : Auto
+ROM Extraction                     : Yes
+Mux Style                          : Auto
+Decoder Extraction                 : YES
+Priority Encoder Extraction        : Yes
+Shift Register Extraction          : YES
+Logical Shifter Extraction         : YES
+XOR Collapsing                     : YES
+ROM Style                          : Auto
+Mux Extraction                     : Yes
+Resource Sharing                   : YES
+Asynchronous To Synchronous        : NO
+Multiplier Style                   : Auto
+Automatic Register Balancing       : No
+
+---- Target Options
+Add IO Buffers                     : YES
+Global Maximum Fanout              : 500
+Add Generic Clock Buffer(BUFG)     : 24
+Register Duplication               : YES
+Slice Packing                      : YES
+Optimize Instantiated Primitives   : NO
+Use Clock Enable                   : Yes
+Use Synchronous Set                : Yes
+Use Synchronous Reset              : Yes
+Pack IO Registers into IOBs        : Auto
+Equivalent register Removal        : YES
+
+---- General Options
+Optimization Goal                  : Speed
+Optimization Effort                : 1
+Keep Hierarchy                     : No
+Netlist Hierarchy                  : As_Optimized
+RTL Output                         : Yes
+Global Optimization                : AllClockNets
+Read Cores                         : YES
+Write Timing Constraints           : NO
+Cross Clock Analysis               : NO
+Hierarchy Separator                : /
+Bus Delimiter                      : <>
+Case Specifier                     : Maintain
+Slice Utilization Ratio            : 100
+BRAM Utilization Ratio             : 100
+Verilog 2001                       : YES
+Auto BRAM Packing                  : NO
+Slice Utilization Ratio Delta      : 5
+
+=========================================================================
+
+
+=========================================================================
+*                          HDL Compilation                              *
+=========================================================================
+Compiling verilog file "tm1638.v" in library work
+Compiling verilog file "counter.v" in library work
+Module <tm1638> compiled
+Compiling verilog file "Clock.v" in library work
+Module <counter> compiled
+Compiling verilog file "mainblock.v" in library work
+Module <Clock> compiled
+Module <mainblock> compiled
+No errors in compilation
+Analysis of file <"mainblock.prj"> succeeded.
+ 
+
+=========================================================================
+*                     Design Hierarchy Analysis                         *
+=========================================================================
+Analyzing hierarchy for module <mainblock> in library <work>.
+
+Analyzing hierarchy for module <Clock> in library <work>.
+
+Analyzing hierarchy for module <tm1638> in library <work>.
+
+Analyzing hierarchy for module <counter> in library <work>.
+
+
+=========================================================================
+*                            HDL Analysis                               *
+=========================================================================
+Analyzing top module <mainblock>.
+Module <mainblock> is correct for synthesis.
+ 
+Analyzing module <Clock> in library <work>.
+Module <Clock> is correct for synthesis.
+ 
+Analyzing module <tm1638> in library <work>.
+	Calling function <decode_sseg1>.
+	Calling function <decode_sseg2>.
+	Calling function <decode_sseg3>.
+	Calling function <decode_sseg4>.
+	Calling function <decode_sseg5>.
+	Calling function <decode_sseg6>.
+Module <tm1638> is correct for synthesis.
+ 
+Analyzing module <counter> in library <work>.
+Module <counter> is correct for synthesis.
+ 
+
+=========================================================================
+*                           HDL Synthesis                               *
+=========================================================================
+
+Performing bidirectional port resolution...
+
+Synthesizing Unit <Clock>.
+    Related source file is "Clock.v".
+    Found 1-bit register for signal <clk1>.
+    Found 1-bit register for signal <clk2>.
+    Found 25-bit up counter for signal <counter1>.
+    Found 25-bit up counter for signal <counter2>.
+    Summary:
+	inferred   2 Counter(s).
+	inferred   2 D-type flip-flop(s).
+Unit <Clock> synthesized.
+
+
+Synthesizing Unit <tm1638>.
+    Related source file is "tm1638.v".
+    Found 10x8-bit ROM for signal <decode_sseg1$mux0000>.
+    Found 10x8-bit ROM for signal <decode_sseg2$mux0000>.
+    Found 10x8-bit ROM for signal <decode_sseg3$mux0000>.
+    Found 10x8-bit ROM for signal <decode_sseg4$mux0000>.
+    Found 10x8-bit ROM for signal <decode_sseg5$mux0000>.
+    Found 10x8-bit ROM for signal <decode_sseg6$mux0000>.
+WARNING:Xst:737 - Found 8-bit latch for signal <decode_sseg1/1/decode_sseg1>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+INFO:Xst:2371 - HDL ADVISOR - Logic functions respectively driving the data and gate enable inputs of this latch share common terms. This situation will potentially lead to setup/hold violations and, as a result, to simulation problems. This situation may come from an incomplete case statement (all selector values are not covered). You should carefully review if it was in your intentions to describe such a latch.
+WARNING:Xst:737 - Found 8-bit latch for signal <decode_sseg2/1/decode_sseg2>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+INFO:Xst:2371 - HDL ADVISOR - Logic functions respectively driving the data and gate enable inputs of this latch share common terms. This situation will potentially lead to setup/hold violations and, as a result, to simulation problems. This situation may come from an incomplete case statement (all selector values are not covered). You should carefully review if it was in your intentions to describe such a latch.
+WARNING:Xst:737 - Found 8-bit latch for signal <decode_sseg3/1/decode_sseg3>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+INFO:Xst:2371 - HDL ADVISOR - Logic functions respectively driving the data and gate enable inputs of this latch share common terms. This situation will potentially lead to setup/hold violations and, as a result, to simulation problems. This situation may come from an incomplete case statement (all selector values are not covered). You should carefully review if it was in your intentions to describe such a latch.
+WARNING:Xst:737 - Found 8-bit latch for signal <decode_sseg4/1/decode_sseg4>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+INFO:Xst:2371 - HDL ADVISOR - Logic functions respectively driving the data and gate enable inputs of this latch share common terms. This situation will potentially lead to setup/hold violations and, as a result, to simulation problems. This situation may come from an incomplete case statement (all selector values are not covered). You should carefully review if it was in your intentions to describe such a latch.
+WARNING:Xst:737 - Found 8-bit latch for signal <decode_sseg5/1/decode_sseg5>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+INFO:Xst:2371 - HDL ADVISOR - Logic functions respectively driving the data and gate enable inputs of this latch share common terms. This situation will potentially lead to setup/hold violations and, as a result, to simulation problems. This situation may come from an incomplete case statement (all selector values are not covered). You should carefully review if it was in your intentions to describe such a latch.
+WARNING:Xst:737 - Found 8-bit latch for signal <decode_sseg6/1/decode_sseg6>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+INFO:Xst:2371 - HDL ADVISOR - Logic functions respectively driving the data and gate enable inputs of this latch share common terms. This situation will potentially lead to setup/hold violations and, as a result, to simulation problems. This situation may come from an incomplete case statement (all selector values are not covered). You should carefully review if it was in your intentions to describe such a latch.
+    Found 8-bit register for signal <data_check>.
+    Found 1-bit register for signal <dio>.
+    Found 1-bit register for signal <stb>.
+    Found 1-bit register for signal <sclk>.
+    Found 32-bit register for signal <cnt>.
+    Found 32-bit adder for signal <cnt$add0000> created at line 324.
+    Found 8-bit register for signal <command_activate>.
+    Found 8-bit register for signal <command_addr1>.
+    Found 8-bit register for signal <command_addr2>.
+    Found 8-bit register for signal <command_addr3>.
+    Found 8-bit register for signal <command_addr4>.
+    Found 8-bit register for signal <command_addr5>.
+    Found 8-bit register for signal <command_addr6>.
+    Found 8-bit register for signal <command_mode>.
+    Found 48-bit register for signal <data_hold>.
+    Found 33-bit comparator greatequal for signal <old_cnt_2$cmp_ge0000> created at line 182.
+    Found 33-bit comparator greatequal for signal <old_cnt_2$cmp_ge0001> created at line 195.
+    Found 33-bit comparator greatequal for signal <old_cnt_2$cmp_ge0002> created at line 201.
+    Found 33-bit comparator greatequal for signal <old_cnt_2$cmp_ge0003> created at line 214.
+    Found 33-bit comparator greatequal for signal <old_cnt_2$cmp_ge0004> created at line 220.
+    Found 33-bit comparator greatequal for signal <old_cnt_2$cmp_ge0005> created at line 233.
+    Found 33-bit comparator greatequal for signal <old_cnt_2$cmp_ge0006> created at line 239.
+    Found 33-bit comparator greatequal for signal <old_cnt_2$cmp_ge0007> created at line 252.
+    Found 33-bit comparator greatequal for signal <old_cnt_2$cmp_ge0008> created at line 258.
+    Found 33-bit comparator greatequal for signal <old_cnt_2$cmp_ge0009> created at line 271.
+    Found 33-bit comparator greatequal for signal <old_cnt_2$cmp_ge0010> created at line 277.
+    Found 33-bit comparator greatequal for signal <old_cnt_2$cmp_ge0011> created at line 290.
+    Found 33-bit comparator greatequal for signal <old_cnt_2$cmp_ge0012> created at line 296.
+    Found 33-bit comparator greatequal for signal <old_cnt_2$cmp_ge0013> created at line 309.
+    Found 33-bit comparator lessequal for signal <old_cnt_2$cmp_le0000> created at line 182.
+    Found 33-bit comparator lessequal for signal <old_cnt_2$cmp_le0001> created at line 195.
+    Found 33-bit comparator lessequal for signal <old_cnt_2$cmp_le0002> created at line 201.
+    Found 33-bit comparator lessequal for signal <old_cnt_2$cmp_le0003> created at line 214.
+    Found 33-bit comparator lessequal for signal <old_cnt_2$cmp_le0004> created at line 220.
+    Found 33-bit comparator lessequal for signal <old_cnt_2$cmp_le0005> created at line 233.
+    Found 33-bit comparator lessequal for signal <old_cnt_2$cmp_le0006> created at line 239.
+    Found 33-bit comparator lessequal for signal <old_cnt_2$cmp_le0007> created at line 252.
+    Found 33-bit comparator lessequal for signal <old_cnt_2$cmp_le0008> created at line 258.
+    Found 33-bit comparator lessequal for signal <old_cnt_2$cmp_le0009> created at line 271.
+    Found 33-bit comparator lessequal for signal <old_cnt_2$cmp_le0010> created at line 277.
+    Found 33-bit comparator lessequal for signal <old_cnt_2$cmp_le0011> created at line 290.
+    Found 33-bit comparator lessequal for signal <old_cnt_2$cmp_le0012> created at line 296.
+    Found 33-bit comparator lessequal for signal <old_cnt_2$cmp_le0013> created at line 309.
+    Found 33-bit comparator greater for signal <sclk$cmp_gt0000> created at line 309.
+    Found 33-bit comparator greater for signal <sclk$cmp_gt0001> created at line 296.
+    Found 33-bit comparator greater for signal <sclk$cmp_gt0002> created at line 290.
+    Found 33-bit comparator greater for signal <sclk$cmp_gt0003> created at line 277.
+    Found 33-bit comparator greater for signal <sclk$cmp_gt0004> created at line 271.
+    Found 33-bit comparator greater for signal <sclk$cmp_gt0005> created at line 258.
+    Found 33-bit comparator greater for signal <sclk$cmp_gt0006> created at line 252.
+    Found 33-bit comparator greater for signal <sclk$cmp_gt0007> created at line 239.
+    Found 33-bit comparator greater for signal <sclk$cmp_gt0008> created at line 233.
+    Found 33-bit comparator greater for signal <sclk$cmp_gt0009> created at line 220.
+    Found 33-bit comparator greater for signal <sclk$cmp_gt0010> created at line 214.
+    Found 33-bit comparator greater for signal <sclk$cmp_gt0011> created at line 201.
+    Found 33-bit comparator greater for signal <sclk$cmp_gt0012> created at line 195.
+    Found 33-bit comparator greater for signal <sclk$cmp_gt0013> created at line 182.
+    Found 33-bit comparator less for signal <sclk$cmp_lt0000> created at line 309.
+    Found 33-bit comparator less for signal <sclk$cmp_lt0001> created at line 296.
+    Found 33-bit comparator less for signal <sclk$cmp_lt0002> created at line 290.
+    Found 33-bit comparator less for signal <sclk$cmp_lt0003> created at line 277.
+    Found 33-bit comparator less for signal <sclk$cmp_lt0004> created at line 271.
+    Found 33-bit comparator less for signal <sclk$cmp_lt0005> created at line 258.
+    Found 33-bit comparator less for signal <sclk$cmp_lt0006> created at line 252.
+    Found 33-bit comparator less for signal <sclk$cmp_lt0007> created at line 239.
+    Found 33-bit comparator less for signal <sclk$cmp_lt0008> created at line 233.
+    Found 33-bit comparator less for signal <sclk$cmp_lt0009> created at line 220.
+    Found 33-bit comparator less for signal <sclk$cmp_lt0010> created at line 214.
+    Found 33-bit comparator less for signal <sclk$cmp_lt0011> created at line 201.
+    Found 33-bit comparator less for signal <sclk$cmp_lt0012> created at line 195.
+    Found 33-bit comparator less for signal <sclk$cmp_lt0013> created at line 182.
+    Summary:
+	inferred   6 ROM(s).
+	inferred 155 D-type flip-flop(s).
+	inferred   1 Adder/Subtractor(s).
+	inferred  56 Comparator(s).
+Unit <tm1638> synthesized.
+
+
+Synthesizing Unit <counter>.
+    Related source file is "counter.v".
+    Found 4-bit register for signal <hour_dv>.
+    Found 4-bit register for signal <hour_chuc>.
+    Found 4-bit register for signal <min_dv>.
+    Found 4-bit register for signal <sec_dv>.
+    Found 4-bit register for signal <sec_chuc>.
+    Found 4-bit register for signal <min_chuc>.
+    Found 8-bit comparator greatequal for signal <hour_chuc$cmp_ge0000> created at line 64.
+    Found 8-bit comparator greatequal for signal <hour_chuc$cmp_ge0001> created at line 65.
+    Found 4-bit subtractor for signal <hour_dv$share0000>.
+    Found 8-bit register for signal <hour_o>.
+    Found 8-bit adder for signal <hour_o$addsub0000> created at line 71.
+    Found 8-bit comparator greatequal for signal <min_chuc$cmp_ge0000> created at line 53.
+    Found 8-bit comparator greatequal for signal <min_chuc$cmp_ge0001> created at line 54.
+    Found 8-bit comparator greatequal for signal <min_chuc$cmp_ge0002> created at line 55.
+    Found 8-bit comparator greatequal for signal <min_chuc$cmp_ge0003> created at line 56.
+    Found 8-bit comparator greatequal for signal <min_chuc$cmp_ge0004> created at line 57.
+    Found 4-bit subtractor for signal <min_dv$share0000>.
+    Found 8-bit register for signal <min_o>.
+    Found 8-bit adder for signal <old_min_o_6$addsub0000> created at line 70.
+    Found 8-bit comparator greatequal for signal <sec_chuc$cmp_ge0000> created at line 41.
+    Found 8-bit comparator greatequal for signal <sec_chuc$cmp_ge0001> created at line 42.
+    Found 8-bit comparator greatequal for signal <sec_chuc$cmp_ge0002> created at line 43.
+    Found 8-bit comparator greatequal for signal <sec_chuc$cmp_ge0003> created at line 44.
+    Found 8-bit comparator greatequal for signal <sec_chuc$cmp_ge0004> created at line 45.
+    Found 4-bit subtractor for signal <sec_dv$share0000>.
+    Found 8-bit register for signal <sec_o>.
+    Summary:
+	inferred  48 D-type flip-flop(s).
+	inferred   6 Adder/Subtractor(s).
+	inferred  12 Comparator(s).
+Unit <counter> synthesized.
+
+
+Synthesizing Unit <mainblock>.
+    Related source file is "mainblock.v".
+Unit <mainblock> synthesized.
+
+INFO:Xst:1767 - HDL ADVISOR - Resource sharing has identified that some arithmetic operations in this design can share the same physical resources for reduced device utilization. For improved clock frequency you may try to disable resource sharing.
+
+=========================================================================
+HDL Synthesis Report
+
+Macro Statistics
+# ROMs                                                 : 6
+ 10x8-bit ROM                                          : 6
+# Adders/Subtractors                                   : 7
+ 32-bit adder                                          : 1
+ 4-bit subtractor                                      : 3
+ 8-bit adder                                           : 3
+# Counters                                             : 2
+ 25-bit up counter                                     : 2
+# Registers                                            : 25
+ 1-bit register                                        : 5
+ 32-bit register                                       : 1
+ 4-bit register                                        : 6
+ 48-bit register                                       : 1
+ 8-bit register                                        : 12
+# Latches                                              : 6
+ 8-bit latch                                           : 6
+# Comparators                                          : 68
+ 33-bit comparator greatequal                          : 14
+ 33-bit comparator greater                             : 14
+ 33-bit comparator less                                : 14
+ 33-bit comparator lessequal                           : 14
+ 8-bit comparator greatequal                           : 12
+
+=========================================================================
+
+=========================================================================
+*                       Advanced HDL Synthesis                          *
+=========================================================================
+
+INFO:Xst:2261 - The FF/Latch <sec_chuc_3> in Unit <counter> is equivalent to the following 3 FFs/Latches, which will be removed : <min_chuc_3> <hour_chuc_2> <hour_chuc_3> 
+WARNING:Xst:1293 - FF/Latch <command_mode_7> has a constant value of 0 in block <tm1638>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <sec_chuc_3> has a constant value of 0 in block <counter>. This FF/Latch will be trimmed during the optimization process.
+
+=========================================================================
+Advanced HDL Synthesis Report
+
+Macro Statistics
+# ROMs                                                 : 6
+ 10x8-bit ROM                                          : 6
+# Adders/Subtractors                                   : 7
+ 32-bit adder                                          : 1
+ 4-bit subtractor                                      : 3
+ 8-bit adder                                           : 3
+# Counters                                             : 2
+ 25-bit up counter                                     : 2
+# Registers                                            : 205
+ Flip-Flops                                            : 205
+# Latches                                              : 6
+ 8-bit latch                                           : 6
+# Comparators                                          : 68
+ 33-bit comparator greatequal                          : 14
+ 33-bit comparator greater                             : 14
+ 33-bit comparator less                                : 14
+ 33-bit comparator lessequal                           : 14
+ 8-bit comparator greatequal                           : 12
+
+=========================================================================
+
+=========================================================================
+*                         Low Level Synthesis                           *
+=========================================================================
+WARNING:Xst:1293 - FF/Latch <sec_chuc_3> has a constant value of 0 in block <counter>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <min_chuc_3> has a constant value of 0 in block <counter>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <hour_chuc_2> has a constant value of 0 in block <counter>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <hour_chuc_3> has a constant value of 0 in block <counter>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <command_mode_7> has a constant value of 0 in block <tm1638>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <decode_sseg6_1_decode_sseg6_7> (without init value) has a constant value of 0 in block <tm1638>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <decode_sseg5_1_decode_sseg5_7> (without init value) has a constant value of 0 in block <tm1638>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <decode_sseg4_1_decode_sseg4_7> (without init value) has a constant value of 0 in block <tm1638>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <decode_sseg3_1_decode_sseg3_7> (without init value) has a constant value of 0 in block <tm1638>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <decode_sseg2_1_decode_sseg2_7> (without init value) has a constant value of 0 in block <tm1638>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <decode_sseg1_1_decode_sseg1_7> (without init value) has a constant value of 0 in block <tm1638>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <data_hold_47> has a constant value of 0 in block <tm1638>. This FF/Latch will be trimmed during the optimization process.
+
+Optimizing unit <mainblock> ...
+
+Optimizing unit <Clock> ...
+
+Optimizing unit <counter> ...
+
+Optimizing unit <tm1638> ...
+WARNING:Xst:1710 - FF/Latch <tm1638/decode_sseg5_1_decode_sseg5_1> (without init value) has a constant value of 1 in block <mainblock>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1294 - Latch <tm1638/decode_sseg1_1_decode_sseg1_6> is equivalent to a wire in block <mainblock>.
+WARNING:Xst:1294 - Latch <tm1638/decode_sseg1_1_decode_sseg1_5> is equivalent to a wire in block <mainblock>.
+WARNING:Xst:1294 - Latch <tm1638/decode_sseg1_1_decode_sseg1_4> is equivalent to a wire in block <mainblock>.
+WARNING:Xst:1294 - Latch <tm1638/decode_sseg1_1_decode_sseg1_3> is equivalent to a wire in block <mainblock>.
+WARNING:Xst:1294 - Latch <tm1638/decode_sseg1_1_decode_sseg1_2> is equivalent to a wire in block <mainblock>.
+WARNING:Xst:1294 - Latch <tm1638/decode_sseg1_1_decode_sseg1_1> is equivalent to a wire in block <mainblock>.
+WARNING:Xst:1294 - Latch <tm1638/decode_sseg1_1_decode_sseg1_0> is equivalent to a wire in block <mainblock>.
+WARNING:Xst:1294 - Latch <tm1638/decode_sseg3_1_decode_sseg3_6> is equivalent to a wire in block <mainblock>.
+WARNING:Xst:1294 - Latch <tm1638/decode_sseg3_1_decode_sseg3_5> is equivalent to a wire in block <mainblock>.
+WARNING:Xst:1294 - Latch <tm1638/decode_sseg3_1_decode_sseg3_4> is equivalent to a wire in block <mainblock>.
+WARNING:Xst:1294 - Latch <tm1638/decode_sseg3_1_decode_sseg3_3> is equivalent to a wire in block <mainblock>.
+WARNING:Xst:1294 - Latch <tm1638/decode_sseg3_1_decode_sseg3_2> is equivalent to a wire in block <mainblock>.
+WARNING:Xst:1294 - Latch <tm1638/decode_sseg3_1_decode_sseg3_1> is equivalent to a wire in block <mainblock>.
+WARNING:Xst:1294 - Latch <tm1638/decode_sseg3_1_decode_sseg3_0> is equivalent to a wire in block <mainblock>.
+WARNING:Xst:1294 - Latch <tm1638/decode_sseg5_1_decode_sseg5_6> is equivalent to a wire in block <mainblock>.
+WARNING:Xst:1294 - Latch <tm1638/decode_sseg5_1_decode_sseg5_5> is equivalent to a wire in block <mainblock>.
+WARNING:Xst:1294 - Latch <tm1638/decode_sseg5_1_decode_sseg5_4> is equivalent to a wire in block <mainblock>.
+WARNING:Xst:1294 - Latch <tm1638/decode_sseg5_1_decode_sseg5_3> is equivalent to a wire in block <mainblock>.
+WARNING:Xst:1294 - Latch <tm1638/decode_sseg5_1_decode_sseg5_2> is equivalent to a wire in block <mainblock>.
+WARNING:Xst:1294 - Latch <tm1638/decode_sseg5_1_decode_sseg5_0> is equivalent to a wire in block <mainblock>.
+
+Mapping all equations...
+Building and optimizing final netlist ...
+Found area constraint ratio of 100 (+ 5) on block mainblock, actual ratio is 11.
+FlipFlop tm1638/cnt_0 has been replicated 3 time(s)
+FlipFlop tm1638/cnt_1 has been replicated 2 time(s)
+FlipFlop tm1638/cnt_10 has been replicated 2 time(s)
+FlipFlop tm1638/cnt_11 has been replicated 1 time(s)
+FlipFlop tm1638/cnt_12 has been replicated 1 time(s)
+FlipFlop tm1638/cnt_13 has been replicated 1 time(s)
+FlipFlop tm1638/cnt_14 has been replicated 2 time(s)
+FlipFlop tm1638/cnt_15 has been replicated 3 time(s)
+FlipFlop tm1638/cnt_16 has been replicated 3 time(s)
+FlipFlop tm1638/cnt_17 has been replicated 3 time(s)
+FlipFlop tm1638/cnt_18 has been replicated 2 time(s)
+FlipFlop tm1638/cnt_19 has been replicated 2 time(s)
+FlipFlop tm1638/cnt_2 has been replicated 1 time(s)
+FlipFlop tm1638/cnt_20 has been replicated 2 time(s)
+FlipFlop tm1638/cnt_21 has been replicated 1 time(s)
+FlipFlop tm1638/cnt_22 has been replicated 1 time(s)
+FlipFlop tm1638/cnt_23 has been replicated 2 time(s)
+FlipFlop tm1638/cnt_24 has been replicated 1 time(s)
+FlipFlop tm1638/cnt_25 has been replicated 1 time(s)
+FlipFlop tm1638/cnt_26 has been replicated 1 time(s)
+FlipFlop tm1638/cnt_27 has been replicated 1 time(s)
+FlipFlop tm1638/cnt_28 has been replicated 1 time(s)
+FlipFlop tm1638/cnt_29 has been replicated 1 time(s)
+FlipFlop tm1638/cnt_3 has been replicated 1 time(s)
+FlipFlop tm1638/cnt_30 has been replicated 1 time(s)
+FlipFlop tm1638/cnt_31 has been replicated 1 time(s)
+FlipFlop tm1638/cnt_4 has been replicated 2 time(s)
+FlipFlop tm1638/cnt_5 has been replicated 2 time(s)
+FlipFlop tm1638/cnt_7 has been replicated 1 time(s)
+FlipFlop tm1638/cnt_8 has been replicated 1 time(s)
+FlipFlop tm1638/cnt_9 has been replicated 2 time(s)
+
+Final Macro Processing ...
+
+=========================================================================
+Final Register Report
+
+Macro Statistics
+# Registers                                            : 298
+ Flip-Flops                                            : 298
+
+=========================================================================
+
+=========================================================================
+*                           Partition Report                            *
+=========================================================================
+
+Partition Implementation Status
+-------------------------------
+
+  No Partitions were found in this design.
+
+-------------------------------
+
+=========================================================================
+*                            Final Report                               *
+=========================================================================
+Final Results
+RTL Top Level Output File Name     : mainblock.ngr
+Top Level Output File Name         : mainblock
+Output Format                      : NGC
+Optimization Goal                  : Speed
+Keep Hierarchy                     : No
+
+Design Statistics
+# IOs                              : 37
+
+Cell Usage :
+# BELS                             : 1578
+#      GND                         : 1
+#      INV                         : 74
+#      LUT1                        : 92
+#      LUT2                        : 179
+#      LUT2_D                      : 17
+#      LUT2_L                      : 3
+#      LUT3                        : 131
+#      LUT3_D                      : 9
+#      LUT3_L                      : 8
+#      LUT4                        : 455
+#      LUT4_D                      : 35
+#      LUT4_L                      : 46
+#      MUXCY                       : 432
+#      MUXF5                       : 13
+#      VCC                         : 1
+#      XORCY                       : 82
+# FlipFlops/Latches                : 319
+#      FDC                         : 175
+#      FDCE                        : 3
+#      FDE                         : 118
+#      FDPE                        : 2
+#      LD                          : 21
+# Clock Buffers                    : 3
+#      BUFG                        : 2
+#      BUFGP                       : 1
+# IO Buffers                       : 36
+#      IBUF                        : 1
+#      OBUF                        : 35
+=========================================================================
+
+Device utilization summary:
+---------------------------
+
+Selected Device : 3s500efg320-5 
+
+ Number of Slices:                      555  out of   4656    11%  
+ Number of Slice Flip Flops:            319  out of   9312     3%  
+ Number of 4 input LUTs:               1049  out of   9312    11%  
+ Number of IOs:                          37
+ Number of bonded IOBs:                  37  out of    232    15%  
+ Number of GCLKs:                         3  out of     24    12%  
+
+---------------------------
+Partition Resource Summary:
+---------------------------
+
+  No Partitions were found in this design.
+
+---------------------------
+
+
+=========================================================================
+TIMING REPORT
+
+NOTE: THESE TIMING NUMBERS ARE ONLY A SYNTHESIS ESTIMATE.
+      FOR ACCURATE TIMING INFORMATION PLEASE REFER TO THE TRACE REPORT
+      GENERATED AFTER PLACE-and-ROUTE.
+
+Clock Information:
+------------------
+---------------------------------------------------------+----------------------------------------------+-------+
+Clock Signal                                             | Clock buffer(FF name)                        | Load  |
+---------------------------------------------------------+----------------------------------------------+-------+
+clk_50M                                                  | BUFGP                                        | 52    |
+Clock/clk21                                              | BUFG                                         | 44    |
+tm1638/decode_sseg2_or0000(tm1638/decode_sseg2_or00001:O)| NONE(*)(tm1638/decode_sseg2_1_decode_sseg2_6)| 7     |
+tm1638/decode_sseg4_or0000(tm1638/decode_sseg4_or00001:O)| NONE(*)(tm1638/decode_sseg4_1_decode_sseg4_6)| 7     |
+tm1638/decode_sseg6_or0000(tm1638/decode_sseg6_or00001:O)| NONE(*)(tm1638/decode_sseg6_1_decode_sseg6_6)| 7     |
+Clock/clk11                                              | BUFG                                         | 202   |
+---------------------------------------------------------+----------------------------------------------+-------+
+(*) These 3 clock signal(s) are generated by combinatorial logic,
+and XST is not able to identify which are the primary clock signals.
+Please use the CLOCK_SIGNAL constraint to specify the clock signal(s) generated by combinatorial logic.
+INFO:Xst:2169 - HDL ADVISOR - Some clock signals were not automatically buffered by XST with BUFG/BUFR resources. Please use the buffer_type constraint in order to insert these buffers to the clock signals to help prevent skew problems.
+
+Asynchronous Control Signals Information:
+----------------------------------------
+-----------------------------------+------------------------+-------+
+Control Signal                     | Buffer(FF name)        | Load  |
+-----------------------------------+------------------------+-------+
+reset                              | IBUF                   | 180   |
+-----------------------------------+------------------------+-------+
+
+Timing Summary:
+---------------
+Speed Grade: -5
+
+   Minimum period: 11.246ns (Maximum Frequency: 88.918MHz)
+   Minimum input arrival time before clock: 5.134ns
+   Maximum output required time after clock: 4.476ns
+   Maximum combinational path delay: No path found
+
+Timing Detail:
+--------------
+All values displayed in nanoseconds (ns)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'clk_50M'
+  Clock period: 5.283ns (frequency: 189.288MHz)
+  Total number of paths / destination ports: 1952 / 54
+-------------------------------------------------------------------------
+Delay:               5.283ns (Levels of Logic = 26)
+  Source:            Clock/counter2_1 (FF)
+  Destination:       Clock/counter2_24 (FF)
+  Source Clock:      clk_50M rising
+  Destination Clock: clk_50M rising
+
+  Data Path: Clock/counter2_1 to Clock/counter2_24
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDC:C->Q              2   0.514   0.532  Clock/counter2_1 (Clock/counter2_1)
+     LUT1:I0->O            1   0.612   0.000  Clock/Mcount_counter2_cy<1>_rt (Clock/Mcount_counter2_cy<1>_rt)
+     MUXCY:S->O            1   0.404   0.000  Clock/Mcount_counter2_cy<1> (Clock/Mcount_counter2_cy<1>)
+     MUXCY:CI->O           1   0.052   0.000  Clock/Mcount_counter2_cy<2> (Clock/Mcount_counter2_cy<2>)
+     MUXCY:CI->O           1   0.052   0.000  Clock/Mcount_counter2_cy<3> (Clock/Mcount_counter2_cy<3>)
+     MUXCY:CI->O           1   0.052   0.000  Clock/Mcount_counter2_cy<4> (Clock/Mcount_counter2_cy<4>)
+     MUXCY:CI->O           1   0.052   0.000  Clock/Mcount_counter2_cy<5> (Clock/Mcount_counter2_cy<5>)
+     MUXCY:CI->O           1   0.052   0.000  Clock/Mcount_counter2_cy<6> (Clock/Mcount_counter2_cy<6>)
+     MUXCY:CI->O           1   0.052   0.000  Clock/Mcount_counter2_cy<7> (Clock/Mcount_counter2_cy<7>)
+     MUXCY:CI->O           1   0.052   0.000  Clock/Mcount_counter2_cy<8> (Clock/Mcount_counter2_cy<8>)
+     MUXCY:CI->O           1   0.052   0.000  Clock/Mcount_counter2_cy<9> (Clock/Mcount_counter2_cy<9>)
+     MUXCY:CI->O           1   0.052   0.000  Clock/Mcount_counter2_cy<10> (Clock/Mcount_counter2_cy<10>)
+     MUXCY:CI->O           1   0.052   0.000  Clock/Mcount_counter2_cy<11> (Clock/Mcount_counter2_cy<11>)
+     MUXCY:CI->O           1   0.052   0.000  Clock/Mcount_counter2_cy<12> (Clock/Mcount_counter2_cy<12>)
+     MUXCY:CI->O           1   0.052   0.000  Clock/Mcount_counter2_cy<13> (Clock/Mcount_counter2_cy<13>)
+     MUXCY:CI->O           1   0.052   0.000  Clock/Mcount_counter2_cy<14> (Clock/Mcount_counter2_cy<14>)
+     MUXCY:CI->O           1   0.052   0.000  Clock/Mcount_counter2_cy<15> (Clock/Mcount_counter2_cy<15>)
+     MUXCY:CI->O           1   0.052   0.000  Clock/Mcount_counter2_cy<16> (Clock/Mcount_counter2_cy<16>)
+     MUXCY:CI->O           1   0.052   0.000  Clock/Mcount_counter2_cy<17> (Clock/Mcount_counter2_cy<17>)
+     MUXCY:CI->O           1   0.052   0.000  Clock/Mcount_counter2_cy<18> (Clock/Mcount_counter2_cy<18>)
+     MUXCY:CI->O           1   0.052   0.000  Clock/Mcount_counter2_cy<19> (Clock/Mcount_counter2_cy<19>)
+     MUXCY:CI->O           1   0.052   0.000  Clock/Mcount_counter2_cy<20> (Clock/Mcount_counter2_cy<20>)
+     MUXCY:CI->O           1   0.052   0.000  Clock/Mcount_counter2_cy<21> (Clock/Mcount_counter2_cy<21>)
+     MUXCY:CI->O           1   0.052   0.000  Clock/Mcount_counter2_cy<22> (Clock/Mcount_counter2_cy<22>)
+     MUXCY:CI->O           0   0.052   0.000  Clock/Mcount_counter2_cy<23> (Clock/Mcount_counter2_cy<23>)
+     XORCY:CI->O           1   0.699   0.509  Clock/Mcount_counter2_xor<24> (Clock/Result<24>1)
+     LUT2:I0->O            1   0.612   0.000  Clock/Mcount_counter2_eqn_241 (Clock/Mcount_counter2_eqn_24)
+     FDC:D                     0.268          Clock/counter2_24
+    ----------------------------------------
+    Total                      5.283ns (4.242ns logic, 1.041ns route)
+                                       (80.3% logic, 19.7% route)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'Clock/clk21'
+  Clock period: 9.038ns (frequency: 110.643MHz)
+  Total number of paths / destination ports: 1402 / 44
+-------------------------------------------------------------------------
+Delay:               9.038ns (Levels of Logic = 8)
+  Source:            counter/sec_o_7 (FF)
+  Destination:       counter/hour_o_6 (FF)
+  Source Clock:      Clock/clk21 rising
+  Destination Clock: Clock/clk21 rising
+
+  Data Path: counter/sec_o_7 to counter/hour_o_6
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDC:C->Q              7   0.514   0.754  counter/sec_o_7 (counter/sec_o_7)
+     LUT2_D:I0->O          9   0.612   0.700  counter/sec_chuc_cmp_ge0000111 (counter/N29)
+     LUT4_D:I3->LO         1   0.612   0.169  counter/old_min_o_6_cmp_eq0000 (N306)
+     LUT2:I1->O            2   0.612   0.383  counter/_old_min_o_6<2>12 (counter/N3)
+     LUT4:I3->O            1   0.612   0.360  counter/hour_o_cmp_eq0000_SW0 (N49)
+     LUT4_D:I3->LO         1   0.612   0.130  counter/hour_o_cmp_eq0000 (N307)
+     LUT3:I2->O            3   0.612   0.454  counter/hour_o_mux0000<2>11 (counter/N221)
+     LUT4_D:I3->O          2   0.612   0.410  counter/hour_o_mux0000<5>11 (counter/N22)
+     LUT3:I2->O            1   0.612   0.000  counter/hour_o_mux0000<6>1 (counter/hour_o_mux0000<6>)
+     FDC:D                     0.268          counter/hour_o_6
+    ----------------------------------------
+    Total                      9.038ns (5.678ns logic, 3.360ns route)
+                                       (62.8% logic, 37.2% route)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'Clock/clk11'
+  Clock period: 11.246ns (frequency: 88.918MHz)
+  Total number of paths / destination ports: 1465488 / 323
+-------------------------------------------------------------------------
+Delay:               11.246ns (Levels of Logic = 46)
+  Source:            tm1638/cnt_1_1 (FF)
+  Destination:       tm1638/cnt_31 (FF)
+  Source Clock:      Clock/clk11 rising
+  Destination Clock: Clock/clk11 rising
+
+  Data Path: tm1638/cnt_1_1 to tm1638/cnt_31
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDC:C->Q             17   0.514   1.045  tm1638/cnt_1_1 (tm1638/cnt_1_1)
+     LUT3:I0->O            1   0.612   0.000  tm1638/Mcompar_old_cnt_2_cmp_le0000_lut<1>5 (tm1638/Mcompar_old_cnt_2_cmp_le0000_lut<1>5)
+     MUXCY:S->O            1   0.404   0.000  tm1638/Mcompar_old_cnt_2_cmp_le0000_cy<1>_12 (tm1638/Mcompar_old_cnt_2_cmp_le0000_cy<1>13)
+     MUXCY:CI->O           1   0.052   0.000  tm1638/Mcompar_old_cnt_2_cmp_le0000_cy<2>_12 (tm1638/Mcompar_old_cnt_2_cmp_le0000_cy<2>13)
+     MUXCY:CI->O           1   0.052   0.000  tm1638/Mcompar_old_cnt_2_cmp_le0000_cy<3>_12 (tm1638/Mcompar_old_cnt_2_cmp_le0000_cy<3>13)
+     MUXCY:CI->O           1   0.052   0.000  tm1638/Mcompar_old_cnt_2_cmp_le0000_cy<4>_12 (tm1638/Mcompar_old_cnt_2_cmp_le0000_cy<4>13)
+     MUXCY:CI->O           1   0.052   0.000  tm1638/Mcompar_old_cnt_2_cmp_le0000_cy<5>_12 (tm1638/Mcompar_old_cnt_2_cmp_le0000_cy<5>13)
+     MUXCY:CI->O           1   0.052   0.000  tm1638/Mcompar_old_cnt_2_cmp_le0000_cy<6>_12 (tm1638/Mcompar_old_cnt_2_cmp_le0000_cy<6>13)
+     MUXCY:CI->O           1   0.052   0.000  tm1638/Mcompar_old_cnt_2_cmp_le0000_cy<7>_12 (tm1638/Mcompar_old_cnt_2_cmp_le0000_cy<7>13)
+     MUXCY:CI->O           1   0.052   0.000  tm1638/Mcompar_old_cnt_2_cmp_le0000_cy<8>_12 (tm1638/Mcompar_old_cnt_2_cmp_le0000_cy<8>13)
+     MUXCY:CI->O           1   0.052   0.000  tm1638/Mcompar_old_cnt_2_cmp_le0000_cy<9>_12 (tm1638/Mcompar_old_cnt_2_cmp_le0000_cy<9>12)
+     MUXCY:CI->O           5   0.400   0.690  tm1638/Mcompar_old_cnt_2_cmp_le0000_cy<10>_11 (tm1638/old_cnt_2_cmp_le0013)
+     LUT2:I0->O            2   0.612   0.532  tm1638/old_cnt_2_and00131 (tm1638/old_cnt_2_and0013)
+     LUT4:I0->O            4   0.612   0.529  tm1638/_old_cnt_2<10>1240_SW0 (N94)
+     LUT4_D:I2->O         11   0.612   0.796  tm1638/_old_cnt_2<10>1240 (tm1638/N72)
+     LUT4:I3->O            1   0.612   0.000  tm1638/_old_cnt_2<1> (tm1638/_old_cnt_2<1>)
+     MUXCY:S->O            1   0.404   0.000  tm1638/Madd_cnt_add0000_cy<1> (tm1638/Madd_cnt_add0000_cy<1>)
+     MUXCY:CI->O           1   0.052   0.000  tm1638/Madd_cnt_add0000_cy<2> (tm1638/Madd_cnt_add0000_cy<2>)
+     MUXCY:CI->O           1   0.052   0.000  tm1638/Madd_cnt_add0000_cy<3> (tm1638/Madd_cnt_add0000_cy<3>)
+     MUXCY:CI->O           1   0.052   0.000  tm1638/Madd_cnt_add0000_cy<4> (tm1638/Madd_cnt_add0000_cy<4>)
+     MUXCY:CI->O           1   0.052   0.000  tm1638/Madd_cnt_add0000_cy<5> (tm1638/Madd_cnt_add0000_cy<5>)
+     MUXCY:CI->O           1   0.052   0.000  tm1638/Madd_cnt_add0000_cy<6> (tm1638/Madd_cnt_add0000_cy<6>)
+     MUXCY:CI->O           1   0.052   0.000  tm1638/Madd_cnt_add0000_cy<7> (tm1638/Madd_cnt_add0000_cy<7>)
+     MUXCY:CI->O           1   0.052   0.000  tm1638/Madd_cnt_add0000_cy<8> (tm1638/Madd_cnt_add0000_cy<8>)
+     MUXCY:CI->O           1   0.052   0.000  tm1638/Madd_cnt_add0000_cy<9> (tm1638/Madd_cnt_add0000_cy<9>)
+     MUXCY:CI->O           1   0.052   0.000  tm1638/Madd_cnt_add0000_cy<10> (tm1638/Madd_cnt_add0000_cy<10>)
+     MUXCY:CI->O           1   0.051   0.000  tm1638/Madd_cnt_add0000_cy<11> (tm1638/Madd_cnt_add0000_cy<11>)
+     MUXCY:CI->O           1   0.051   0.000  tm1638/Madd_cnt_add0000_cy<12> (tm1638/Madd_cnt_add0000_cy<12>)
+     MUXCY:CI->O           1   0.051   0.000  tm1638/Madd_cnt_add0000_cy<13> (tm1638/Madd_cnt_add0000_cy<13>)
+     MUXCY:CI->O           1   0.051   0.000  tm1638/Madd_cnt_add0000_cy<14> (tm1638/Madd_cnt_add0000_cy<14>)
+     MUXCY:CI->O           1   0.051   0.000  tm1638/Madd_cnt_add0000_cy<15> (tm1638/Madd_cnt_add0000_cy<15>)
+     MUXCY:CI->O           1   0.051   0.000  tm1638/Madd_cnt_add0000_cy<16> (tm1638/Madd_cnt_add0000_cy<16>)
+     MUXCY:CI->O           1   0.051   0.000  tm1638/Madd_cnt_add0000_cy<17> (tm1638/Madd_cnt_add0000_cy<17>)
+     MUXCY:CI->O           1   0.051   0.000  tm1638/Madd_cnt_add0000_cy<18> (tm1638/Madd_cnt_add0000_cy<18>)
+     MUXCY:CI->O           1   0.051   0.000  tm1638/Madd_cnt_add0000_cy<19> (tm1638/Madd_cnt_add0000_cy<19>)
+     MUXCY:CI->O           1   0.051   0.000  tm1638/Madd_cnt_add0000_cy<20> (tm1638/Madd_cnt_add0000_cy<20>)
+     MUXCY:CI->O           1   0.051   0.000  tm1638/Madd_cnt_add0000_cy<21> (tm1638/Madd_cnt_add0000_cy<21>)
+     MUXCY:CI->O           1   0.051   0.000  tm1638/Madd_cnt_add0000_cy<22> (tm1638/Madd_cnt_add0000_cy<22>)
+     MUXCY:CI->O           1   0.051   0.000  tm1638/Madd_cnt_add0000_cy<23> (tm1638/Madd_cnt_add0000_cy<23>)
+     MUXCY:CI->O           1   0.051   0.000  tm1638/Madd_cnt_add0000_cy<24> (tm1638/Madd_cnt_add0000_cy<24>)
+     MUXCY:CI->O           1   0.051   0.000  tm1638/Madd_cnt_add0000_cy<25> (tm1638/Madd_cnt_add0000_cy<25>)
+     MUXCY:CI->O           1   0.051   0.000  tm1638/Madd_cnt_add0000_cy<26> (tm1638/Madd_cnt_add0000_cy<26>)
+     MUXCY:CI->O           1   0.051   0.000  tm1638/Madd_cnt_add0000_cy<27> (tm1638/Madd_cnt_add0000_cy<27>)
+     MUXCY:CI->O           1   0.051   0.000  tm1638/Madd_cnt_add0000_cy<28> (tm1638/Madd_cnt_add0000_cy<28>)
+     MUXCY:CI->O           1   0.051   0.000  tm1638/Madd_cnt_add0000_cy<29> (tm1638/Madd_cnt_add0000_cy<29>)
+     MUXCY:CI->O           0   0.051   0.000  tm1638/Madd_cnt_add0000_cy<30> (tm1638/Madd_cnt_add0000_cy<30>)
+     XORCY:CI->O           2   0.699   0.000  tm1638/Madd_cnt_add0000_xor<31> (tm1638/cnt_add0000<31>)
+     FDC:D                     0.268          tm1638/cnt_31
+    ----------------------------------------
+    Total                     11.246ns (7.654ns logic, 3.592ns route)
+                                       (68.1% logic, 31.9% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'Clock/clk11'
+  Total number of paths / destination ports: 133 / 118
+-------------------------------------------------------------------------
+Offset:              5.134ns (Levels of Logic = 3)
+  Source:            reset (PAD)
+  Destination:       tm1638/command_activate_7 (FF)
+  Destination Clock: Clock/clk11 rising
+
+  Data Path: reset to tm1638/command_activate_7
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O           191   1.106   1.268  reset_IBUF (reset_IBUF)
+     LUT2:I0->O            2   0.612   0.410  tm1638/command_activate_and000011 (tm1638/N74)
+     LUT4:I2->O            8   0.612   0.643  tm1638/command_activate_and00001 (tm1638/command_activate_and0000)
+     FDE:CE                    0.483          tm1638/command_activate_0
+    ----------------------------------------
+    Total                      5.134ns (2.813ns logic, 2.321ns route)
+                                       (54.8% logic, 45.2% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'Clock/clk11'
+  Total number of paths / destination ports: 11 / 11
+-------------------------------------------------------------------------
+Offset:              4.476ns (Levels of Logic = 1)
+  Source:            tm1638/sclk (FF)
+  Destination:       sclk (PAD)
+  Source Clock:      Clock/clk11 rising
+
+  Data Path: tm1638/sclk to sclk
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDPE:C->Q            11   0.514   0.793  tm1638/sclk (tm1638/sclk)
+     OBUF:I->O                 3.169          sclk_OBUF (sclk)
+    ----------------------------------------
+    Total                      4.476ns (3.683ns logic, 0.793ns route)
+                                       (82.3% logic, 17.7% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'Clock/clk21'
+  Total number of paths / destination ports: 20 / 20
+-------------------------------------------------------------------------
+Offset:              4.433ns (Levels of Logic = 1)
+  Source:            counter/hour_chuc_1 (FF)
+  Destination:       hour_chuc<1> (PAD)
+  Source Clock:      Clock/clk21 rising
+
+  Data Path: counter/hour_chuc_1 to hour_chuc<1>
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDC:C->Q             10   0.514   0.750  counter/hour_chuc_1 (counter/hour_chuc_1)
+     OBUF:I->O                 3.169          hour_chuc_1_OBUF (hour_chuc<1>)
+    ----------------------------------------
+    Total                      4.433ns (3.683ns logic, 0.750ns route)
+                                       (83.1% logic, 16.9% route)
+
+=========================================================================
+
+
+Total REAL time to Xst completion: 7.00 secs
+Total CPU time to Xst completion: 6.58 secs
+ 
+--> 
+
+
+Total memory usage is 631040 kilobytes
+
+Number of errors   :    0 (   0 filtered)
+Number of warnings :   41 (   0 filtered)
+Number of infos    :    9 (   0 filtered)
+

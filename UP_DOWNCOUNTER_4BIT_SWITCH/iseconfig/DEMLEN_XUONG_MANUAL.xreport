@@ -1,11 +1,11 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <report-views version="2.0" >
  <header>
-  <DateModified>2024-10-03T04:01:53</DateModified>
+  <DateModified>2024-10-12T15:21:43</DateModified>
   <ModuleName>DEMLEN_XUONG_MANUAL</ModuleName>
   <SummaryTimeStamp>Unknown</SummaryTimeStamp>
-  <SavedFilePath>/home/ise/UP_DOWNCOUNTER_4BIT_SWITCH/iseconfig/DEMLEN_XUONG_MANUAL.xreport</SavedFilePath>
-  <ImplementationReportsDirectory>/home/ise/UP_DOWNCOUNTER_4BIT_SWITCH</ImplementationReportsDirectory>
+  <SavedFilePath>/home/ise/FPGA/UP_DOWNCOUNTER_4BIT_SWITCH/iseconfig/DEMLEN_XUONG_MANUAL.xreport</SavedFilePath>
+  <ImplementationReportsDirectory>/home/ise/FPGA/UP_DOWNCOUNTER_4BIT_SWITCH/</ImplementationReportsDirectory>
   <DateInitialized>2024-10-03T04:01:53</DateInitialized>
   <EnableMessageFiltering>false</EnableMessageFiltering>
  </header>
